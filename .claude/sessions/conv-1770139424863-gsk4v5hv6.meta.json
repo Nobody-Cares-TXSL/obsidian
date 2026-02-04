@@ -1,0 +1,23 @@
+{
+  "id": "conv-1770139424863-gsk4v5hv6",
+  "title": "Read PDF document",
+  "titleGenerationStatus": "success",
+  "createdAt": 1770139424879,
+  "updatedAt": 1770139461128,
+  "lastResponseAt": 1770139461128,
+  "sessionId": "08e8ebc2-1e8f-4fb6-9aae-307999dbc413",
+  "sdkSessionId": "08e8ebc2-1e8f-4fb6-9aae-307999dbc413",
+  "currentNote": "01 收件箱/「卡码网」23种设计模式精讲.pdf",
+  "usage": {
+    "model": "glm-4.7",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  },
+  "displayContentMap": {
+    "msg-1770139424791-05dnleg": "阅读这个PDF"
+  }
+}
