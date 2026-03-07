@@ -21,8 +21,24 @@
               "icon": "lucide-file",
               "title": "单例模式"
             }
+          },
+          {
+            "id": "eebec7736a6a3bd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 八股/SQL50/寻找用户推荐人.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "寻找用户推荐人"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -79,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 241.5
   },
   "right": {
     "id": "1bd34a3a8515367d",
@@ -155,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 八股/设计模式/创建型模式/单例模式.md",
+                "file": "02 八股/LeetCode100/字母异位词分组.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "单例模式 的大纲"
+              "title": "字母异位词分组 的大纲"
             }
           },
           {
@@ -179,9 +195,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "02 八股/LeetCode100/字母异位词分组.md"
+              },
               "icon": "lucide-info",
-              "title": "笔记属性"
+              "title": "字母异位词分组的笔记属性"
             }
           }
         ],
@@ -189,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 715.5
+    "width": 793.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,26 +220,26 @@
       "bases:新建数据库": false,
       "workspaces:管理工作区布局": false,
       "claudian:Open Claudian": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "b57a28253bad7ea5",
+  "active": "eebec7736a6a3bd3",
   "lastOpenFiles": [
-    "02 八股/设计模式/创建型模式/单例模式.md.tmp.7869.1772892064752",
-    "02 八股/设计模式/创建型模式/单例模式.md.tmp.7869.1772891923837",
-    "02 八股/设计模式/创建型模式/单例模式.md.tmp.20243.1772891812702",
-    "03 调研",
-    "02 八股/设计模式/创建型模式/单例模式.md.tmp.20243.1772891557336",
     "02 八股/SQL50/可回收且低脂的产品.md",
-    "02 八股/LeetCode100/两数之和.md",
-    "02 八股/SQL50/可回收且低脂的产品.md.tmp.20243.1772891426061",
+    "01 资料/「卡码网」23种设计模式精讲.pdf",
     "02 八股/设计模式/创建型模式/单例模式.md",
-    "02 八股/LeetCode100/两数之和.md.tmp.20243.1772891303478",
-    "02 八股/设计模式/创建型模式",
-    "02 八股/设计模式",
-    "02 八股/SQL50",
-    "02 八股/LeetCode100",
+    "02 八股/LeetCode100/字母异位词分组.md",
+    "02 八股/SQL50/寻找用户推荐人.md",
+    "02 八股/SQL50/寻找用户推荐人.md.tmp.6466.1772904367575",
+    "02 八股/LeetCode100/两数之和.md",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.9120.1772903789899",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.9120.1772903787713",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.9120.1772903778855",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.9120.1772903640462",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.6466.1772902907388",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.6466.1772902887273",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.6466.1772902638370",
+    "02 八股/LeetCode100/字母异位词分组.md.tmp.6466.1772901226407",
     "未命名.md",
     "02 八股/设计模式/未命名.md",
     "02 文章/设计模式.md",
@@ -246,8 +264,6 @@
     "00.系统与管理/00.2 模板/日记模板.md",
     "00.系统与管理/00.2 模板/会议记录模板.md",
     "00.系统与管理/00.2 模板/读书笔记模板.md",
-    "00.系统与管理/目录使用指南.md",
-    "笔记.md",
     "被动收入架构.canvas"
   ]
 }
