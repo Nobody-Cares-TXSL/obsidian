@@ -1,1 +1,7 @@
 01 资料/
+
+# Obsidian 当前工作区状态（频繁变化，包含临时文件）
+.obsidian/workspace.json
+
+# Claude 会话历史
+.claude/sessions/
