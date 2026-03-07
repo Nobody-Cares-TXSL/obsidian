@@ -1,5 +1,6 @@
 {
   "showLineNumber": true,
   "showUnsupportedFiles": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "livePreview": false
 }
