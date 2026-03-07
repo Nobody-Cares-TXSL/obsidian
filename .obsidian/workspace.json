@@ -4,19 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "2783ce2f3cd6d6b0",
+        "id": "10fbd6d41ecb76e9",
         "type": "tabs",
         "children": [
           {
-            "id": "5c0f11f105fb7b54",
+            "id": "b57a28253bad7ea5",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "01 收件箱/「卡码网」23种设计模式精讲.pdf"
+                "file": "02 八股/设计模式/创建型模式/单例模式.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-file-text",
-              "title": "「卡码网」23种设计模式精讲"
+              "icon": "lucide-file",
+              "title": "单例模式"
             }
           }
         ]
@@ -76,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 309.5
   },
   "right": {
     "id": "1bd34a3a8515367d",
@@ -152,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 收件箱/「卡码网」23种设计模式精讲.pdf",
+                "file": "02 八股/设计模式/创建型模式/单例模式.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "「卡码网」23种设计模式精讲 的大纲"
+              "title": "单例模式 的大纲"
             }
           },
           {
@@ -169,16 +172,6 @@
               "state": {},
               "icon": "bot",
               "title": "Claudian"
-            }
-          },
-          {
-            "id": "3688723425293674",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
             }
           },
           {
@@ -196,7 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 445.5
+    "width": 715.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,27 +206,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5c0f11f105fb7b54",
+  "active": "4a812b2bebd749a9",
   "lastOpenFiles": [
-    "03 书籍/小岛经济学 ([美]彼得·希夫, 安德鲁·希夫) (Z-Library).pdf",
-    "03 书籍/认知世界的经济学【千万级财经大V珍大户重磅新作！超10万人付费学习的经济课！10余年投资管理实战经验总结，历时3年，25万字实用干货。一本书帮... (Z-Library).pdf",
-    "01 收件箱/「卡码网」23种设计模式精讲.pdf",
-    "02 文章/设计模式.md",
-    "测试.base",
     "未命名.md",
-    "02 文章",
-    "01 收件箱",
-    "00 配置",
+    "02 八股/设计模式/创建型模式/单例模式.md",
+    "01 资料/「卡码网」23种设计模式精讲.pdf",
+    "03 调研",
+    "02 八股/LeetCode100/两数之和.md",
+    "02 八股/设计模式/创建型模式/单例模式.md.tmp.4201.1772720591311",
+    "02 八股/设计模式/未命名.md",
+    "02 八股/设计模式/行为型模式",
+    "02 八股/设计模式/结构型模式",
+    "02 八股/设计模式/创建型模式",
+    "02 八股/SQL50/可回收且低脂的产品.md",
+    "02 八股/SQL50/可回收且低脂的产品.md.tmp.4201.1772710788409",
+    "02 文章/设计模式.md",
+    "02 八股/设计模式",
+    "02 八股/SQL50",
+    "02 八股/LeetCode100",
     "测试图表.flowchart.md",
     "文章创作流程-简化版.flowchart - 副本.md",
     "目录索引 - 副本.md",
     "测试图表.flowchart - 副本.md",
-    "tmpclaude-f8d2-cwd - 副本",
-    "tmpclaude-9525-cwd - 副本",
     "文章创作流程-简化版.flowchart.md",
-    "tmpclaude-717d-cwd",
     "文章创作流程.flowchart.md",
-    "文章创作流程-简化版.flowchart.md.tmp.9668.1769087056874",
     "Excalidraw/Drawing 2026-01-22 21.01.03.excalidraw.md",
     "目录索引.md",
     "00.系统与管理/目录结构总览.canvas",
@@ -251,8 +247,6 @@
     "00.系统与管理/00.2 模板/读书笔记模板.md",
     "00.系统与管理/目录使用指南.md",
     "笔记.md",
-    "Excalidraw/Drawing 2026-01-22 18.59.12.excalidraw.md",
-    "被动收入架构.canvas",
-    "被动收入流程图.md"
+    "被动收入架构.canvas"
   ]
 }
