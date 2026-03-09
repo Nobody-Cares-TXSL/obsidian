@@ -8,22 +8,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 这是一个用于存储学习笔记的 Obsidian 仓库，主要包含面试准备（八股文）、LeetCode 题解、设计模式和 SQL 练习。
 
-### 目录结构
-
-```
-├── 00 模板/          # 笔记模板
-│   ├── LeetCode算法题模板.md
-│   ├── LeetCode SQL题模板.md
-│   └── 设计模式模板.md
-├── 01 资料/          # 学习资料（PDF 等，已 .gitignore）
-├── 02 八股/          # 学习笔记
-│   ├── LeetCode100/  # LeetCode 百题
-│   ├── SQL50/        # SQL 五十题
-│   └── 设计模式/     # 设计模式笔记
-├── 03 调研/          # 技术调研笔记
-└── .claude/          # Claude Code 配置和自定义技能
-```
-
 ---
 
 ## 笔记格式规范
