@@ -5,16 +5,21 @@
 ## 目录结构
 
 ```
-├── 00 模板/          # 笔记模板
-├── 01 资料/          # 学习资料（PDF 等，已 .gitignore）
-├── 02 八股/          # 学习笔记
+├── README.md         # 仓库导航
+├── CLAUDE.md         # Claude Code 项目指导
+├── 00 模板/           # 笔记模板
+├── 01 资料/           # 学习资料（PDF 等，已 .gitignore）
+├── 02 算法与设计/      # 算法与设计模式
 │   ├── LeetCode100/  # LeetCode 热题 100
 │   ├── SQL50/        # SQL 50 题
-│   ├── 设计模式/     # 设计模式笔记
-│   └── README.md     # 八股笔记导航索引
-├── 03 调研/          # 技术调研笔记
-├── .claude/          # Claude Code 配置和自定义技能
-└── CLAUDE.md         # Claude Code 项目指导
+│   ├── 设计模式/      # 设计模式笔记
+│   └── README.md     # 导航索引
+├── 03 八股/          # 面试八股文
+│   ├── MySQL/       # MySQL 笔记
+│   └── README.md    # 导航索引
+├── 04 调研/          # 技术调研笔记
+├── .claude/         # Claude Code 配置和自定义技能
+└── .obsidian/       # Obsidian 配置
 ```
 
 ## Obsidian 插件
