@@ -5,3 +5,6 @@
 
 # Claude 会话历史
 .claude/sessions/
+
+# Obsidian Claudian 插件会话数据（每次打开生成新 ID）
+.obsidian/plugins/claudian/data.json
