@@ -35,7 +35,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **cm-editor-syntax-highlight-obsidian** - 代码语法高亮
 
 ### 快捷键
-- `Alt+Mod+B` - 打开 Claudian 视图
+- `Ctrl+Alt+B` - 打开 Claudian 视图
 
 ---
 
