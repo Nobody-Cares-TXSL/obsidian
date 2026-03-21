@@ -15,7 +15,7 @@ JWT = JSON 格式的规范化 Token
 | 特点 | 说明 |
 |------|------|
 | **无状态** | 自包含所有验证信息，服务端无需存储 |
-| **防 CSRF** | 存储在 localStorage，不涉及 Cookie |
+| **防 CSRF** | 不依赖 Cookie 机制时，可避免 CSRF 攻击 |
 | **跨语言** | 标准 JSON 格式，各语言通用 |
 | **适合移动端** | 不依赖 Cookie |
 | **单点登录友好** | 存在客户端，无跨域问题 |
@@ -74,6 +74,11 @@ xxxxx.yyyyy.zzzzz
 
 **验证原理**：服务端以 Secret 为密钥，用签名算法对 Header.Payload 重新计算签名，对比 JWT 中的 Signature。
 
+> 💡 **Base64Url vs Base64**：
+> JWT 使用的是 **Base64Url** 编码，而非普通 Base64。
+> - Base64Url 将 `+` 替换为 `-`，`/` 替换为 `_`，去除 `=` 填充
+> - 这样 JWT 可以安全地在 URL 中传输（如邮件激活链接）
+
 > 💡 **关键**：只要 Secret 不泄露，JWT 就无法被伪造。
 
 ### 完整示例
@@ -122,7 +127,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 | 类别 | 要点 |
 |------|------|
-| **存储** | localStorage（需防 XSS） > Memory > Cookie |
+| **存储** | **最安全**：HttpOnly Cookie（Refresh Token） + Memory（Access Token）<br/>**次选**：HttpOnly Cookie<br/>**不推荐**：localStorage / sessionStorage（易受 XSS 攻击） |
 | **内容** | 不存隐私、必须设置 exp、精简 Payload |
 | **密钥** | 足够复杂、定期更换、环境变量管理 |
 | **传输** | 使用 HTTPS、验证签发方（iss） |
@@ -135,7 +140,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 | 优势 | 说明 |
 |------|------|
 | 无状态 | 服务端无需存储，减轻压力 |
-| 防 CSRF | 不依赖 Cookie |
+| 避免 CSRF | 不依赖 Cookie 机制时（使用 Authorization Header） |
 | 跨语言 | 标准 JSON 格式 |
 | 适合移动端 | 不依赖 Cookie |
 | 单点登录友好 | 无跨域问题 |
@@ -160,6 +165,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 | 用户密钥 | 无需额外存储 | 多端冲突 |
 | 短期有效 | 降低风险 | 体验差 |
 | 密码哈希签名 | 改密即失效 | 需重新设计 |
+
+> ⚠️ **性能注意**：在微服务架构下，Redis 黑名单意味着每次请求网关都要查一次 Redis，
+> 这就完全丧失了 JWT "本地自校验不查库" 的最大性能优势。
+>
+> **业界常用解法**：短过期时间（Access Token 15-30 分钟）+ 网关只校验签名（不查库）
+> + 登出只删前端 Token 和后端的 Refresh Token。这能做到性能与安全的平衡。
 
 ### Q2: JWT 如何续签？
 
