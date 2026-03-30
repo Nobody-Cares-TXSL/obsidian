@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 仓库概述
 
-这是一个用于存储学习笔记的 Obsidian 仓库，主要包含面试准备（八股文）、LeetCode 题解、设计模式和 SQL 练习。
+这是一个用于存储学习笔记的 Obsidian 仓库，主要包含面试准备（八股文）、LeetCode 题解、设计模式、SQL 练习和英语学习笔记。
 
 ---
 
@@ -17,25 +17,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - @00 模板/LeetCode算法题模板.md
 - @00 模板/LeetCode SQL题模板.md
 - @00 模板/设计模式模板.md
+- @00 模板/新概念英语模板.md
 
 **核心要点：**
 - 代码块必须指定语言标识（`java`、`sql`、`text`）
 - 保留实际方法名（如：暴力枚举、哈希表），不使用"方法一"、"方法二"
 - 使用 `>` 引用块添加思路说明
 - 章节根据实际需要可选添加
-
----
-
-## Obsidian 插件配置
-
-### 已安装插件
-- **claudian** - Claude AI 集成
-- **obsidian-excalidraw-plugin** - 手绘风格图表
-- **dataview** - 数据查询和索引
-- **cm-editor-syntax-highlight-obsidian** - 代码语法高亮
-
-### 快捷键
-- `Ctrl+Alt+B` - 打开 Claudian 视图
 
 ---
 
@@ -55,6 +43,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **json-canvas** - 编辑 JSON Canvas 文件
 - **mermaid-visualizer** - 将文本转换为 Mermaid 图表
 - **obsidian-bases** - 创建和编辑 Obsidian Bases 数据库
+
+---
+
+## 自定义命令
+
+仓库包含以下自定义命令（位于 `.claude/commands/`）：
+
+- **/english-md `<url>`** - 从 learnenai.com 获取新概念英语课程并按模板格式生成笔记
+
+---
+
+## 英语笔记
+
+- 使用 `/english-md <url>` 命令从 learnenai.com 获取课程并生成笔记
+- 笔记存放于 `05 英语/` 目录，格式参照 `00 模板/新概念英语模板.md`
 
 ---
 
