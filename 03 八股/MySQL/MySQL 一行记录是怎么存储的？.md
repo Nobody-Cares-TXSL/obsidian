@@ -24,7 +24,7 @@ MySQL 数据存储在 `datadir` 目录（默认 `/var/lib/mysql/`），每个数
 
 ## InnoDB 行格式
 
-InnoDB 提供 4 种行格式：
+InnoDB 提供 4 种行格式（[[执行一条 select 语句，期间发生了什么？]]）：
 
 | 行格式 | 说明 |
 |--------|------|

@@ -18,7 +18,7 @@ JWT = JSON 格式的规范化 Token
 | **防 CSRF** | 不依赖 Cookie 机制时，可避免 CSRF 攻击 |
 | **跨语言** | 标准 JSON 格式，各语言通用 |
 | **适合移动端** | 不依赖 Cookie |
-| **单点登录友好** | 存在客户端，无跨域问题 |
+| **单点登录友好** | 存在客户端，无跨域问题（[[SSO单点登录]]） |
 
 ## JWT 组成
 
@@ -200,7 +200,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 | 分布式/微服务 | JWT + Redis 黑名单 |
 | 移动端 App | JWT |
 | 需要强控制 | Session / Token + Redis |
-| 单点登录 | JWT |
+| 单点登录 | JWT（[[SSO单点登录]]） |
 
 ## JWT vs OAuth 2.0
 
