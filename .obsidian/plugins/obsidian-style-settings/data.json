@@ -9,5 +9,6 @@
   "blue-topaz-theme@@toggle-divider-lines": false,
   "blue-topaz-theme@@toggle-header-bottom-line": false,
   "blue-topaz-theme@@colorful-p-kanban": false,
-  "blue-topaz-theme@@simple-p-kanban": false
+  "blue-topaz-theme@@simple-p-kanban": false,
+  "blue-topaz-theme@@blur-depth": 10
 }
