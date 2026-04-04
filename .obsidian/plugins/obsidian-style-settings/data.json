@@ -1,0 +1,13 @@
+{
+  "blue-topaz-theme@@background-settings-workplace-background-image": true,
+  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-in-the-note",
+  "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-theme-dark-custom-option",
+  "blue-topaz-theme@@toggle-bg-panel-page": false,
+  "blue-topaz-theme@@bg-panel-page-option-dark": "panel-page-bg-theme-dark-custom",
+  "blue-topaz-theme@@bt-status-on": false,
+  "blue-topaz-theme@@tab-title-bar-position": false,
+  "blue-topaz-theme@@toggle-divider-lines": false,
+  "blue-topaz-theme@@toggle-header-bottom-line": false,
+  "blue-topaz-theme@@colorful-p-kanban": false,
+  "blue-topaz-theme@@simple-p-kanban": false
+}
