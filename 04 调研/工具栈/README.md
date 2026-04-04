@@ -30,6 +30,7 @@
 
 - claude code cli
 - yazi + lazygit
+- opencli: [opencli文档](https://opencli.info/docs/zh/)
 
 ## 笔记
 
