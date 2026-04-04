@@ -43,6 +43,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **json-canvas** - 编辑 JSON Canvas 文件
 - **mermaid-visualizer** - 将文本转换为 Mermaid 图表
 - **obsidian-bases** - 创建和编辑 Obsidian Bases 数据库
+- **skill-lookup** - 查找和安装可复用的 AI 技能
 
 ---
 
@@ -51,6 +52,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 仓库包含以下自定义命令（位于 `.claude/commands/`）：
 
 - **/english-md `<url>`** - 从 learnenai.com 获取新概念英语课程并按模板格式生成笔记
+- **/sql-md `<url>`** - 从 LeetCode SQL 题目 URL 生成格式统一的 SQL 笔记
 
 ---
 
@@ -58,6 +60,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - 使用 `/english-md <url>` 命令从 learnenai.com 获取课程并生成笔记
 - 笔记存放于 `05 英语/` 目录，格式参照 `00 模板/新概念英语模板.md`
+
+---
+
+## 调研笔记
+
+- `04 调研/十五五笔记/` — 十五五规划纲要相关笔记
+- `04 调研/工具栈/` — 技术工具栈调研
+- `04 调研/资料/` — 调研参考资料（已 .gitignore）
 
 ---
 
