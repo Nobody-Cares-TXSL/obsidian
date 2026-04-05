@@ -35,6 +35,7 @@
 ## 笔记
 
 - obsidain
+- obsidian cli
 
 ### Obsidain的claude插件
 
