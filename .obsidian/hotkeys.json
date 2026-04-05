@@ -7,5 +7,14 @@
       ],
       "key": "B"
     }
+  ],
+  "claudian:close-current-tab": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "B"
+    }
   ]
 }

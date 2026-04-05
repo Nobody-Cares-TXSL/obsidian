@@ -8,24 +8,31 @@
 
 ### 语言栈
 
-- JAVA, Spring Boot
-- Git, Maven
-- MySQL, Redis
+| 类别 | 技术栈 |
+|------|------|
+| 语言 | Java |
+| 框架 | Spring Boot |
+| 工具 | Git · Maven |
+| 数据库 | MySQL · Redis |
 
 ## AI 工具
 
 ### AI 搜索
 
-- [秘塔AI](https://metaso.cn/) — 国内 AI 搜索
-- [Perplexity](https://www.perplexity.ai/) — 国外 AI 搜索
-- [Consensus](https://consensus.app/) — 学术/论文权威搜索
+| 工具 | 说明 |
+|------|------|
+| [秘塔AI](https://metaso.cn/) | 国内 AI 搜索 |
+| [Perplexity](https://www.perplexity.ai/) | 国外 AI 搜索 |
+| [Consensus](https://consensus.app/) | 学术/论文权威搜索 |
 
 ### Claude Code 技能与插件
 
 #### Skills
 
-- **agent-reach** — 多平台互联网搜索与交互
-- **notebooklm** — Google NotebookLM API 集成
+| 技能 | 功能 |
+|------|------|
+| **agent-reach** | 多平台互联网搜索与交互 |
+| **notebooklm** | Google NotebookLM API 集成 |
 
 #### Plugins
 
@@ -40,10 +47,12 @@
 
 ### 终端工具
 
-- **claude code cli** — Claude Code 命令行工具
-- **yazi + lazygit** — 文件管理器 + Git TUI
-- **opencli** — [opencli 文档](https://opencli.info/docs/zh/)
-- **github cli** — GitHub 官方命令行工具
+| 工具 | 说明 |
+|------|------|
+| **claude code cli** | Claude Code 命令行工具 |
+| **yazi + lazygit** | 文件管理器 + Git TUI |
+| [opencli](https://opencli.info/docs/zh/) | 命令行工具集合 |
+| [github cli](https://cli.github.com/) | GitHub 官方命令行工具 |
 
 ## 笔记
 
@@ -73,15 +82,19 @@
 
 #### Skills
 
-- **obsidian-canvas-creator** — 将文本内容转换为 Obsidian Canvas（思维导图、自由布局）
-- **excalidraw-diagram** — 生成 Excalidraw 格式图表
-- **mermaid-visualizer** — 将文本转换为 Mermaid 图表
-- **skill-lookup** — 查找和安装可复用的 AI 技能
+| 技能 | 功能 |
+|------|------|
+| **obsidian-canvas-creator** | 将文本内容转换为 Obsidian Canvas（思维导图、自由布局） |
+| **excalidraw-diagram** | 生成 Excalidraw 格式图表 |
+| **mermaid-visualizer** | 将文本转换为 Mermaid 图表 |
+| **skill-lookup** | 查找和安装可复用的 AI 技能 |
 
 #### Commands
 
-- **/english-md `<url>`** — 从 learnenai.com 获取新概念英语课程并按模板格式生成笔记
-- **/sql-md `<url>`** — 从 LeetCode SQL 题目 URL 生成格式统一的 SQL 笔记
+| 命令 | 功能 |
+|------|------|
+| `/english-md <url>` | 从 learnenai.com 获取新概念英语课程并按模板格式生成笔记 |
+| `/sql-md <url>` | 从 LeetCode SQL 题目 URL 生成格式统一的 SQL 笔记 |
 
 ### Obsidian 主题
 
@@ -89,9 +102,11 @@
 
 ### Obsidian 插件
 
-- **claudian** — Claude AI 集成
-- **obsidian-excalidraw-plugin** — 手绘风格图表
-- **obsidian-export-image** — 导出笔记为图片
-- **obsidian-style-settings** — 样式自定义设置
-- **dataview** — 数据查询和索引
-- **cm-editor-syntax-highlight-obsidian** — 代码语法高亮
+| 插件 | 功能 |
+|------|------|
+| **claudian** | Claude AI 集成 |
+| **obsidian-excalidraw-plugin** | 手绘风格图表 |
+| **obsidian-export-image** | 导出笔记为图片 |
+| **obsidian-style-settings** | 样式自定义设置 |
+| **dataview** | 数据查询和索引 |
+| **cm-editor-syntax-highlight-obsidian** | 代码语法高亮 |
