@@ -12,7 +12,7 @@
 |------|------|
 | 语言 | Java |
 | 框架 | Spring Boot |
-| 工具 | Git · Maven |
+| 工具 | Git · Maven · Jmeter |
 | 数据库 | MySQL · Redis |
 
 ## AI 工具
@@ -41,9 +41,21 @@
 
 ## 终端
 
-### 终端配置
+### Shell 与提示符
 
-- Alacritty + zsh + tmux 
+| 工具 | 说明 |
+|------|------|
+| **Oh My Zsh** | zsh 配置框架（zsh-autosuggestions · zsh-syntax-highlighting） |
+| **starship** | 跨 shell 极简提示符主题 |
+| **zoxide** | 智能 cd，按 frecency 跳转目录 |
+
+### 终端环境
+
+| 工具 | 说明 |
+|------|------|
+| **Alacritty + zsh + tmux** | 终端组合 |
+| **fastfetch** | 系统信息展示 |
+| **btop** | 资源监控 |
 
 ### 终端工具
 
@@ -51,6 +63,8 @@
 |------|------|
 | **claude code cli** | Claude Code 命令行工具 |
 | **yazi + lazygit** | 文件管理器 + Git TUI |
+| **glow** | 终端 Markdown 阅读器 |
+| **bat** | 带语法高亮的 cat 替代品 |
 | [opencli](https://opencli.info/docs/zh/) | 命令行工具集合 |
 | [github cli](https://cli.github.com/) | GitHub 官方命令行工具 |
 
