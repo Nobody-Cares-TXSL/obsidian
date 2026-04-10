@@ -124,3 +124,72 @@
 | **obsidian-style-settings** | 样式自定义设置 |
 | **dataview** | 数据查询和索引 |
 | **cm-editor-syntax-highlight-obsidian** | 代码语法高亮 |
+
+## 信息获取
+
+### 工具对比
+
+| 工具 | 定位 | 数据源 | 适用场景 |
+|------|------|--------|----------|
+| **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
+| **opencli** | 网站 CLI 框架 | 79 站点 · 502 命令（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv） | 精确平台操作、自动化任务、数据抓取 |
+| **agent-reach** | AI 工具编排器 | 15 通道（Jina·GitHub·xreach·mcporter·Camoufox·yt-dlp） | 中文平台深度访问、Agent 集成 |
+
+### 配置状态
+
+#### last30days
+
+| 通道 | 状态 | 说明 |
+|------|------|------|
+| Web · Reddit · X · YouTube · TikTok | ✓ 激活 | 默认 5 个源 |
+| Instagram · GitHub · HN · Polymarket · Bluesky · Threads · Pinterest · 小红书 · Perplexity | ⚠️ 待配置 | 需要 [ScrapeCreators](https://scrapecreators.com/) API（10,000 免费调用） |
+
+**核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
+
+#### opencli
+
+| 类别 | 状态 | 平台示例 |
+|------|------|----------|
+| 中文社交 | ✓ 内建 | 微博·知乎·B站·小红书·豆瓣·即刻·虎扑·V2EX·雪球 |
+| 国际平台 | ✓ 内建 | Twitter/X(23命令)·Reddit(14)·Instagram(17)·TikTok(15) |
+| AI 工具 | ✓ 内建 | ChatGPT·Cursor(10命令)·Gemini·NotebookLM(14) |
+| 生产力 | ✓ 内建 | Notion(8)·飞书·企业微信·钉钉 |
+| 公开 API | ✓ 内建 | HN·arXiv·Wikipedia·IMDb·Spotify·StackOverflow |
+
+**核心功能**：`opencli generate <url>` 一键生成适配器、`opencli record` 录制操作、`opencli operate` 浏览器自动化
+
+#### agent-reach
+
+| Tier | 平台 | 状态 | 依赖 |
+|------|------|------|------|
+| 0 零配置 | Jina Reader · GitHub · RSS · YouTube (yt-dlp) · B站 | ✓ 可用 | 无 |
+| 1 轻配置 | Twitter/X (xreach) · Reddit · 微博 · 小宇宙 · Exa 搜索 | ⚠️ 待配置 | API Key |
+| 2 深配置 | 小红书 · 抖音 · 微信公众号 · LinkedIn · Boss直聘 | ⚠️ 待配置 | Docker + Cookie + mcporter/Camoufox |
+
+**核心功能**：`agent-reach doctor` 诊断、`--from-browser` Cookie 导入、MCP Server 模式
+
+### 使用建议
+
+#### 调用方向
+
+| 工具 | 调用方式 | 输入 | 输出 |
+|------|----------|------|------|
+| **last30days** | Claude 技能 / 命令行 | 自然语言查询 | 跨源聚合报告 |
+| **opencli** | CLI 命令 | `<平台> <操作> <参数>` | 结构化数据 |
+| **agent-reach** | CLI / MCP Server | 平台 + 目标 | 原始内容/工具调用 |
+
+#### 命令格式
+
+- **last30days**: `/last30days [--deep] [--deep-research] [--store] <query>`
+- **opencli**: `opencli <platform> <command> [args]`
+- **agent-reach**: `agent-reach <platform> <action> [options]`
+
+#### 决策流程
+
+```
+了解话题全貌 → last30days（多源聚合）
+     ↓
+需要精确操作 → opencli（平台命令）
+     ↓
+深度中文访问 → agent-reach（配置依赖）
+```
