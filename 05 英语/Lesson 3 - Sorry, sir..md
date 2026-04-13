@@ -87,13 +87,6 @@ Thank you very much.
 
 **注意**：主语是名词时不完全倒装 — "Here is the bus"（不是 "Here the bus is"）
 
-### 物主代词：my vs your
-
-> my（我的）和 your（你的/您的）都是形容词性物主代词，必须跟名词。
-
-- "My coat"（我的大衣）、"your umbrella"（您的雨伞）
-- this 指近处，that 指远处
-
 ### this is not... 否定句
 
 > 结构：This + is + not + 名词，表示"这不是……"。
