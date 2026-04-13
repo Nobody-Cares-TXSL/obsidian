@@ -21,6 +21,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - `系统设计/` — 系统设计相关
 - `04 调研/` — 调研笔记（十五五规划、工具栈等）
 - `05 英语/` — 新概念英语笔记（Lesson N - Title.md）
+- `06 阅记/` — 阅读笔记
 
 ---
 
