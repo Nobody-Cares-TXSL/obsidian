@@ -1,4 +1,4 @@
-# Lesson 11: Is this your shirt?
+# Lesson 11: Whose shirt is white?
 > https://learnenai.com/nce-1/11
 
 ## 原文

@@ -1,4 +1,4 @@
-# Lesson 7: Are you a teacher?
+# Lesson 7: What is Rober's job?
 > https://learnenai.com/nce-1/7
 
 ## 原文

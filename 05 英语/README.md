@@ -13,6 +13,7 @@
 | 9 | [[Lesson 9 - How are you today]] | How are you?、How is [name]?、Nice to see you、too 的用法 |
 | 11 | [[Lesson 11 - Is this your shirt]] | Whose [noun] is that?、名词所有格 's、Here you are |
 | 13 | [[Lesson 13 - A new dress]] | What colour's?、祈使句、the same + noun、Here it is |
+| 15 | [[Lesson 15 - Your passports, please]] | Are these your [noun]?、Your [noun] please 礼貌请求 |
 
 ## 使用说明
 

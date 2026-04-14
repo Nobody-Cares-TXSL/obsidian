@@ -1,4 +1,4 @@
-# Lesson 9: How are you today?
+# Lesson 9: How is Emma?
 > https://learnenai.com/nce-1/9
 
 ## 原文

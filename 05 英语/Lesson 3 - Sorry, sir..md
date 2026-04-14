@@ -1,4 +1,4 @@
-# Lesson 3: Sorry, sir.
+# Lesson 3: Does the man get his umbrella back?
 > https://learnenai.com/nce-1/3
 
 ## 原文

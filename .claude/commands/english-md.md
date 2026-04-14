@@ -16,24 +16,33 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 
 ### 1. 获取网页内容
 
-开启代理并获取网页内容：
+开启代理：
 
 ```bash
 source ~/.zshrc && proxy-on
 ```
 
-优先使用 agent-reach 方式获取：`curl -s "https://r.jina.ai/$ARGUMENTS"`
-若 agent-reach 失败，退回 webReader MCP 工具（`return_format: markdown`，`retain_images: false`）。
+两个数据源互补，使用 agent-reach 并行获取：
+
+- **luzhenhua.cn**（课文正文 + Question）：
+  1. 从 URL 路径提取课号（如 `/nce-1/3` → Lesson 3），计算课程对编号（奇数课 N → `N&(N+1)`）
+  2. 获取 `https://nce.luzhenhua.cn/static/search_index.json`
+  3. 在 JSON 数组中找到 `l` 字段包含该对编号的条目（如 `"001&002"` 对应 Lesson 1）
+  4. 从该条目的 `c` 数组中取：索引 3 的英文文本作为 **Question**；索引 4+ 跳过引导语（"Listen to the tape..."）后逐句提取 **英文原文**和**中文翻译**
+
+- **learnenai.com**（句型/语法讲解，仅作参考）：获取 `$ARGUMENTS`
+  返回的是 learnenai.com 页面上的句型/语法讲解内容，作为编写**句型结构和语法要点**的参考素材，不作为原文和翻译的来源
 
 ### 2. 提取课程信息
 
-从网页内容中提取以下信息：
-- **课号和标题**：从 URL 路径（如 `/nce-1/3` → Lesson 3）和页面标题获取
-- **英文原文**：逐句提取英文文本
-- **中文翻译**：**逐句从原网页提取，严禁自行翻译或改写**。原网页的翻译是唯一权威来源，即使觉得原翻译不够通顺也不得修改
+- **课号**：从 URL 路径获取（如 `/nce-1/3` → Lesson 3）
+- **Question**：从 luzhenhua.cn search_index.json 获取（见步骤 1）
+- **Title**：从 learnenai.com 的 jina.ai 返回内容中提取页面标题
+- **英文原文**：从 luzhenhua.cn 逐句提取，严禁自行改写
+- **中文翻译**：从 luzhenhua.cn 逐句提取，**严禁自行翻译或改写**。luzhenhua.cn 的翻译是唯一权威来源，即使觉得原翻译不够通顺也不得修改
 - **生词**：自行从原文中提取生词和释义，然后用 AskUserQuestion 询问用户是否需要补充未提及的生词
-- **句型结构与语法要点**：
-  1. 从原文中提取所有候选句型和语法点
+- **句型结构与语法要点**（可参考 learnenai.com 的语法讲解）：
+  1. 从原文和 learnenai.com 语法讲解中提取所有候选句型和语法点
   2. 去重检查（不要逐篇读取全部笔记，用以下高效方式）：
      - 运行 vault-graph 技能获取 `05 英语/` 下已有的 Lesson 文件列表和关联关系
      - 用 Grep 在已有笔记中搜索当前候选知识点的关键词（如句型名称、语法术语），确认是否已在前课详细讲过
@@ -53,10 +62,10 @@ source ~/.zshrc && proxy-on
 
 严格参照以下文件格式：
 - 模板：读取 `00 模板/新概念英语模板.md`
-- 已有示例：读取 `05 英语/Lesson 1 - Excuse me!.md`
+- 已有示例：读取 `05 英语/` 下任意一个已有的 Lesson 文件（文件名格式为 `Lesson {N} - {Title}.md`）
 
 **输出格式要点**：
-- 标题：`# Lesson {N}: {Title}`
+- 标题：`# Lesson {N}: {Question}`（Question 为 "Listen to the tape then answer this question." 的下一句）
 - 链接：`> {URL}`
 - 原文：每句英文独占一个段落，中间空行
 - 中文翻译：放在 `<details><summary>中文翻译</summary>` 折叠块中，每句用 `  <br>` 换行
@@ -67,7 +76,7 @@ source ~/.zshrc && proxy-on
 
 ### 4. 写入文件
 
-将生成的笔记写入：`05 英语/Lesson {N} - {Title}.md`
+将生成的笔记写入：`05 英语/Lesson {N} - {Title}.md`（Title 为课文标题，从 learnenai.com 页面获取）
 
 使用 Write 工具写入文件。
 

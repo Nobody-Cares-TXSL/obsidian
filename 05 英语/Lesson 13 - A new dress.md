@@ -1,4 +1,4 @@
-# Lesson 13: A new dress
+# Lesson 13: What colour is Anna's hat?
 > https://learnenai.com/nce-1/13
 
 ## 原文
