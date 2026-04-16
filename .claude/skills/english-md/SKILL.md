@@ -16,22 +16,14 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 
 ### 1. 获取网页内容
 
-开启代理：
+两个数据源互补，**分别交给子代理并行获取**（在同一条消息中发起两个 Agent 调用）：
 
-```bash
-source ~/.zshrc && proxy-on
-```
+- **子代理 A — luzhenhua.cn**（课文正文 + Question + 权威标题）：
+  1. 从 URL 路径提取课号（如 `/nce-1/3` → Lesson 3）
+  2. 调用脚本获取数据：`bash .claude/skills/english-md/scripts/fetch-nce.sh <课号>`
+  3. 脚本输出 `=== META ===`（TITLE、FILENAME）和 `=== CONTENT ===`（QUESTION、逐句 EN/CN）。**filename 是生成 URL 和文件名的权威来源，包含原始标点（如 `Nice to Meet You.` 末尾有 `.`）**
 
-两个数据源互补，使用 agent-reach 并行获取：
-
-- **luzhenhua.cn**（课文正文 + Question + 权威标题）：
-  1. 从 URL 路径提取课号（如 `/nce-1/3` → Lesson 3），计算课程对编号（奇数课 N → `N&(N+1)`）
-  2. 获取 `https://nce.luzhenhua.cn/static/search_index.json` 和 `https://nce.luzhenhua.cn/static/data.json`
-  3. 在 search_index.json 中找到 `l` 字段包含该对编号的条目（如 `"001&002"` 对应 Lesson 1）
-  4. 从该条目的 `c` 数组中取：索引 3 的英文文本作为 **Question**；索引 4+ 跳过引导语（"Listen to the tape..."）后逐句提取 **英文原文**和**中文翻译**
-  5. 从 data.json 的 `1` 数组中，根据索引找到对应的 `filename` 和 `title` 字段（NCE1 每两条课为一个元素，索引 = `(N-1)//2`）。**filename 是生成 URL 和文件名的权威来源，包含原始标点（如 `Nice to Meet You.` 末尾有 `.`）**
-
-- **learnenai.com**（句型/语法讲解，仅作参考）：获取 `$ARGUMENTS`
+- **子代理 B — learnenai.com**（句型/语法讲解，仅作参考）：获取 `$ARGUMENTS`
   返回的是 learnenai.com 页面上的句型/语法讲解内容，作为编写**句型结构和语法要点**的参考素材，不作为原文和翻译的来源
 
 ### 2. 提取课程信息
