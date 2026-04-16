@@ -1,5 +1,5 @@
 # Lesson 13: What colour is Anna's hat?
-> https://learnenai.com/nce-1/13
+> https://nce.luzhenhua.cn/lesson.html#NCE1/013&014－A%20New%20Dress
 
 ## 原文
 

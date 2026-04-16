@@ -1,5 +1,5 @@
 # Lesson 21: Which book does the man want?
-> https://learnenai.com/nce-1/21
+> https://nce.luzhenhua.cn/lesson.html#NCE1/021&022－Which%20Book
 
 ## 原文
 

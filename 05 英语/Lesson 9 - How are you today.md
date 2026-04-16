@@ -1,5 +1,5 @@
 # Lesson 9: How is Emma?
-> https://learnenai.com/nce-1/9
+> https://nce.luzhenhua.cn/lesson.html#NCE1/009&010－How%20Are%20You%20Today
 
 ## 原文
 

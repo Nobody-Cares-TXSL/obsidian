@@ -1,5 +1,5 @@
 # Lesson 7: What is Rober's job?
-> https://learnenai.com/nce-1/7
+> https://nce.luzhenhua.cn/lesson.html#NCE1/007&008－Are%20You%20a%20Teacher
 
 ## 原文
 
@@ -93,7 +93,7 @@ I'm an engineer.
 > 结构：**What nationality** + **are** + **主语**，询问国籍。
 
 - 也可说 `Where are you from?`（更口语化）
-- 回答用 `I'm + 国籍形容词`：`I'm Italian.`（国籍形容词详见 [[Lesson 5 - Nice to meet you]]）
+- 回答用 `I'm + 国籍形容词`：`I'm Italian.`（国籍形容词详见 [[Lesson 5 - Nice to meet you.]]）
 
 ### What's your job?
 

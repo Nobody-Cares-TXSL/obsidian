@@ -1,5 +1,5 @@
 # Lesson 19: Why do the children thank their mother?
-> https://learnenai.com/nce-1/19
+> https://nce.luzhenhua.cn/lesson.html#NCE1/019&020－Tired%20and%20Thirsty
 
 ## 原文
 
@@ -101,5 +101,5 @@ Yes, we are, thank you!
 
 - **Here you are**（递东西给对方）→ 详见 [[Lesson 11 - Is this your shirt]]
 - **We're / we aren't** → 缩写同 [[Lesson 7 - Are you a teacher]] 的 I'm / I'm not 模式
-- **These ice creams are nice** → these 用法详见 [[Lesson 15 - Your passports, please]]
+- **These ice creams are nice** → these 用法详见 [[Lesson 15 - Your passports, please.]]
 - **Sit down here** →祈使句（动词开头），同前课肯定/否定祈使句模式

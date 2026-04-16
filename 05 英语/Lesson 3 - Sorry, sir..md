@@ -1,5 +1,5 @@
 # Lesson 3: Does the man get his umbrella back?
-> https://learnenai.com/nce-1/3
+> https://nce.luzhenhua.cn/lesson.html#NCE1/003&004－Sorry,%20Sir%2E
 
 ## 原文
 

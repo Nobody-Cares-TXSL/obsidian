@@ -1,5 +1,5 @@
 # Lesson 5: Is Chang-woo Chinese?
-> https://learnenai.com/nce-1/5
+> https://nce.luzhenhua.cn/lesson.html#NCE1/005&006－Nice%20to%20Meet%20You%2E
 
 ## 原文
 

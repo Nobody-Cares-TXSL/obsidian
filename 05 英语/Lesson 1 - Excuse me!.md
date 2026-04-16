@@ -1,5 +1,5 @@
 # Lesson 1: Whose handbag is it?
-> https://learnenai.com/nce-1/1
+> https://nce.luzhenhua.cn/lesson.html#NCE1/001&002－Excuse%20Me
 
 ## 原文
 

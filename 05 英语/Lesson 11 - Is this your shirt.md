@@ -1,5 +1,5 @@
 # Lesson 11: Whose shirt is white?
-> https://learnenai.com/nce-1/11
+> https://nce.luzhenhua.cn/lesson.html#NCE1/011&012－Is%20This%20Your%20Shirt
 
 ## 原文
 

@@ -1,5 +1,5 @@
 # Lesson 15: Is there a problem with the Customs officer?
-> https://learnenai.com/nce-1/15
+> https://nce.luzhenhua.cn/lesson.html#NCE1/015&016－Your%20Passports,%20Please%2E
 
 ## 原文
 
@@ -102,6 +102,6 @@ Thank you very much.
 本课语法点均在前课详细讲过，核心模式如下：
 
 - **be 动词疑问句 + 国籍**：`Are you Swedish?` → 详见 [[Lesson 7 - Are you a teacher]]
-- **国籍形容词**：Swedish / Danish / Norwegian → 详见 [[Lesson 5 - Nice to meet you]]
+- **国籍形容词**：Swedish / Danish / Norwegian → 详见 [[Lesson 5 - Nice to meet you.]]
 - **Here they are**（代词不倒装）→ 详见 [[Lesson 13 - A new dress]]
 - **短回答 + too**：`Are your friends Danish too?` → too 用法同 [[Lesson 13 - A new dress]]

@@ -1,5 +1,5 @@
 # Lesson 17: What are Michael Baker and Jeremy Short's jobs?
-> https://learnenai.com/nce-1/17
+> https://nce.luzhenhua.cn/lesson.html#NCE1/017&018－How%20do%20you%20do
 
 ## 原文
 
@@ -102,7 +102,7 @@ He's our office assistant.
 
 ### those（远指复数）
 
-> **those** 是 **that** 的复数形式，指代较远的多个人或物，与 [[Lesson 15 - Your passports, please]] 的 **these**（近指复数）对应。
+> **those** 是 **that** 的复数形式，指代较远的多个人或物，与 [[Lesson 15 - Your passports, please.]] 的 **these**（近指复数）对应。
 
 - this → these（近指），that → those（远指）
 - `Those women are very hard-working.` = 那些女士工作很勤奋
@@ -114,7 +114,7 @@ He's our office assistant.
 
 本课其余句型均在前课详细讲过：
 
-- **This is [Name]** 介绍他人 → 详见 [[Lesson 5 - Nice to meet you]]
+- **This is [Name]** 介绍他人 → 详见 [[Lesson 5 - Nice to meet you.]]
 - **What are their jobs?** → `What's your job?` 复数版，详见 [[Lesson 7 - Are you a teacher]]
 - **They're...** → they are 缩写，同 [[Lesson 7 - Are you a teacher]] 的 I'm / What's 缩写模式
 - **their** → 物主代词，详见 [[Lesson 1 - Excuse me!]]
