@@ -73,6 +73,16 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 
 使用 Write 工具写入文件。
 
+### 5. 更新目录索引
+
+笔记写入后，更新 `05 英语/README.md` 目录表，在最后一行后追加新条目：
+
+```
+| {课号} | [[Lesson {N} - {Title}]] | {核心知识点，用顿号分隔} |
+```
+
+核心知识点从本课"句型结构"和"语法要点"中提炼，每个知识点用简短名称概括（如"near 方位介词"、"There are + some + 复数名词"）。
+
 ## 输出原则
 
 - **简洁**：句型结构和语法要点要言简意赅，一句话定义 + 核心要点列表，避免长段落

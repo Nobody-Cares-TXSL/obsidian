@@ -18,6 +18,8 @@
 | 19 | [[Lesson 19 - Tired and thirsty]] | What's the matter?、Two [noun]s please 点单、There is/are 存在句 |
 | 21 | [[Lesson 21 - Which book]] | Give me a [noun] please、Which [noun]?、one 代词 |
 | 23 | [[Lesson 23 - Which Glasses]] | Give me some + 复数名词、ones 代词（复数） |
+| 25 | [[Lesson 25 - Mrs. Smith's Kitchen]] | 方位介词 on the right/left/in the middle of、There is + 方位短语 |
+| 27 | [[Lesson 27 - Mrs. Smith's Living Room]] | near 方位介词、There are + some + 复数名词 |
 
 ## 使用说明
 
