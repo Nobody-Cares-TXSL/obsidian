@@ -1,3 +1,13 @@
+---
+lesson: 11
+title: Is this your shirt
+vocabulary:
+  - shirt 衬衫
+  - whose 谁的
+  - perhaps 也许
+  - catch 接住
+---
+
 # Lesson 11: Whose shirt is white?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/011&012－Is%20This%20Your%20Shirt
 
@@ -43,16 +53,6 @@ Thank you, sir.
 谢谢你，先生。
 </details>
 
----
-
-# 生词
-
-- shirt 衬衫
-- whose 谁的
-- perhaps 也许
-- catch 接住
-
----
 
 ## 句型结构
 

@@ -1,3 +1,16 @@
+---
+lesson: 5
+title: Nice to meet you.
+vocabulary:
+  - Mr. (Mister) 先生
+  - Miss 小姐
+  - French 法国的；法国人
+  - German 德国的；德国人
+  - Japanese 日本的；日本人
+  - Korean 韩国的；韩国人
+  - meet 遇见；认识
+---
+
 # Lesson 5: Is Chang-woo Chinese?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/005&006－Nice%20to%20Meet%20You%2E
 
@@ -46,19 +59,6 @@ Nice to meet you.
 很高兴认识你。
 </details>
 
----
-
-## 生词
-
-- Mr. (Mister) 先生（对男性的正式称呼）
-- Miss 小姐（未婚女性称呼）
-- French 法国的；法国人
-- German 德国的；德国人
-- Japanese 日本的；日本人
-- Korean 韩国的；韩国人
-- meet 遇见；认识
-
----
 
 ## 句型结构
 

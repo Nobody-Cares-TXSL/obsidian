@@ -1,3 +1,11 @@
+---
+lesson: 1
+title: Excuse me!
+vocabulary:
+  - handbag 手提包
+  - pardon 请再说一遍
+---
+
 # Lesson 1: Whose handbag is it?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/001&002－Excuse%20Me
 
@@ -28,14 +36,6 @@ Thank you very much.
 非常感谢您。
 </details>
 
----
-
-# 生词
-
-- handbag 手提包
-- pardon 请再说一遍（用于未听清楚对方所说内容时）
-
----
 
 ## 句型结构
 

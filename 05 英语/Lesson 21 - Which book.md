@@ -1,3 +1,11 @@
+---
+lesson: 21
+title: Which book
+vocabulary:
+  - give 给
+  - which 哪一个
+---
+
 # Lesson 21: Which book does the man want?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/021&022－Which%20Book
 
@@ -31,14 +39,6 @@ Thank you.
 谢谢。
 </details>
 
----
-
-## 生词
-
-- give 给
-- which 哪一个
-
----
 
 ## 句型结构
 

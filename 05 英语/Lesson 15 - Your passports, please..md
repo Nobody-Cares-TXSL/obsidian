@@ -1,3 +1,18 @@
+---
+lesson: 15
+title: Your passports, please.
+vocabulary:
+  - Swedish 瑞典的；瑞典人
+  - Danish 丹麦的；丹麦人
+  - Norwegian 挪威的；挪威人
+  - passport 护照
+  - Customs 海关
+  - officer 官员
+  - case 箱子
+  - brown 棕色的
+  - tourist 游客
+---
+
 # Lesson 15: Is there a problem with the Customs officer?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/015&016－Your%20Passports,%20Please%2E
 
@@ -61,21 +76,6 @@ Thank you very much.
 非常感谢你们。
 </details>
 
----
-
-## 生词
-
-- Swedish 瑞典的；瑞典人
-- Danish 丹麦的；丹麦人
-- Norwegian 挪威的；挪威人
-- passport 护照
-- Customs 海关
-- officer 官员
-- case 箱子（行李箱）
-- brown 棕色的
-- tourist 游客
-
----
 
 ## 句型结构
 

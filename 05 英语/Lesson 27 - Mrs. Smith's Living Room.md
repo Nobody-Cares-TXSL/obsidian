@@ -1,3 +1,20 @@
+---
+lesson: 27
+title: Mrs. Smith's Living Room
+vocabulary:
+  - living room 客厅
+  - television 电视机
+  - near 在……附近
+  - window 窗户
+  - magazines 杂志
+  - newspapers 报纸
+  - armchairs 扶手椅
+  - stereo 立体声音响
+  - door 门
+  - pictures 画
+  - wall 墙
+---
+
 # Lesson 27: Where are the books?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/027&028－Mrs.%20Smith's%20Living%20Room
 
@@ -46,23 +63,6 @@ The pictures are on the wall.
 画在墙上。
 </details>
 
----
-
-## 生词
-
-- living room 客厅
-- television 电视机
-- near 在……附近
-- window 窗户
-- magazines 杂志（复数）
-- newspapers 报纸（复数）
-- armchairs 扶手椅（复数）
-- stereo 立体声音响
-- door 门
-- pictures 画（复数）
-- wall 墙
-
----
 
 ## 句型结构
 

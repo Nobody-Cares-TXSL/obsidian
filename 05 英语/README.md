@@ -21,6 +21,17 @@
 | 25 | [[Lesson 25 - Mrs. Smith's Kitchen]] | 方位介词 on the right/left/in the middle of、There is + 方位短语 |
 | 27 | [[Lesson 27 - Mrs. Smith's Living Room]] | near 方位介词、There are + some + 复数名词 |
 
+## 生词总览
+
+```dataview
+TABLE vocabulary AS "生词"
+FROM "05 英语"
+WHERE vocabulary
+SORT lesson ASC
+```
+
+---
+
 ## 使用说明
 
 - 使用 `/english-md <url>` 命令生成新笔记

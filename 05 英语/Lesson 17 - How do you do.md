@@ -1,3 +1,18 @@
+---
+lesson: 17
+title: How do you do
+vocabulary:
+  - employee 员工
+  - hard-working 勤奋的
+  - sales rep 销售代表
+  - lazy 懒惰的
+  - office assistant 办公室助理
+  - busy 忙的
+  - young 年轻的
+  - men 男人
+  - women 女人
+---
+
 # Lesson 17: What are Michael Baker and Jeremy Short's jobs?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/017&018－How%20do%20you%20do
 
@@ -61,20 +76,6 @@ He's our office assistant.
 他是我们的办公室助理。
 </details>
 
----
-
-## 生词
-
-- employee 员工
-- hard-working 勤奋的
-- sales rep 销售代表
-- lazy 懒惰的
-- office assistant 办公室助理
-- busy 忙的
-- young 年轻的
-- men / women 男人/女人们（man / woman 的复数）
-
----
 
 ## 句型结构
 

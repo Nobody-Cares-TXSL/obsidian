@@ -1,3 +1,15 @@
+---
+lesson: 3
+title: Sorry, sir.
+vocabulary:
+  - coat 大衣
+  - umbrella 雨伞
+  - ticket 票；凭证
+  - sir 先生
+  - number 号码；数字
+  - sorry 对不起
+---
+
 # Lesson 3: Does the man get his umbrella back?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/003&004－Sorry,%20Sir%2E
 
@@ -43,18 +55,6 @@ Thank you very much.
 非常感谢。
 </details>
 
----
-
-## 生词
-
-- coat 大衣
-- umbrella 雨伞
-- ticket 票；凭证
-- sir 先生（对男性的礼貌称呼）
-- number 号码；数字
-- sorry 对不起（用于道歉或礼貌纠正）
-
----
 
 ## 句型结构
 

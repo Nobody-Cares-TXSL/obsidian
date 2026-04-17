@@ -1,3 +1,16 @@
+---
+lesson: 13
+title: A new dress
+vocabulary:
+  - dress 连衣裙
+  - colour 颜色
+  - upstairs 楼上
+  - smart 时髦的；聪明的
+  - hat 帽子
+  - same 相同的
+  - lovely 可爱的；美丽的
+---
+
 # Lesson 13: What colour is Anna's hat?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/013&014－A%20New%20Dress
 
@@ -37,19 +50,6 @@ That is a lovely hat!
 那是一顶可爱的帽子！
 </details>
 
----
-
-# 生词
-
-- dress 连衣裙
-- colour 颜色（英式 spelling；美式为 color）
-- upstairs 楼上
-- smart 时髦的；聪明的
-- hat 帽子
-- same 相同的
-- lovely 可爱的；美丽的
-
----
 
 ## 句型结构
 

@@ -1,3 +1,14 @@
+---
+lesson: 19
+title: Tired and thirsty
+vocabulary:
+  - matter 事情；麻烦
+  - tired 累的
+  - thirsty 渴的
+  - ice cream 冰淇淋
+  - right 好的/没事的
+---
+
 # Lesson 19: Why do the children thank their mother?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/019&020－Tired%20and%20Thirsty
 
@@ -49,17 +60,6 @@ Yes, we are, thank you!
 是的，我们很好，谢谢！
 </details>
 
----
-
-## 生词
-
-- matter 事情；麻烦（What's the matter? = 怎么了？）
-- tired 累的
-- thirsty 渴的
-- ice cream 冰淇淋
-- right 好的/没事的（all right = 好了）
-
----
 
 ## 句型结构
 

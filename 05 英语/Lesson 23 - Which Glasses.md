@@ -1,3 +1,11 @@
+---
+lesson: 23
+title: Which Glasses
+vocabulary:
+  - glasses 眼镜
+  - shelf 架子
+---
+
 # Lesson 23: Which glasses does the man want?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/023&024－Which%20Glasses
 
@@ -34,14 +42,6 @@ Thanks.
 谢谢。
 </details>
 
----
-
-## 生词
-
-- glasses 眼镜（只有复数形式，一双眼镜 a pair of glasses）
-- shelf 架子（复数 shelves）
-
----
 
 ## 句型结构
 

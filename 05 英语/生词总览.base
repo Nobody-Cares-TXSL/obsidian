@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("05 英语")
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - vocabulary
+    rowHeight: medium

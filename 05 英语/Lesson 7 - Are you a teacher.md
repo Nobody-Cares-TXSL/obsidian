@@ -1,3 +1,14 @@
+---
+lesson: 7
+title: Are you a teacher
+vocabulary:
+  - nationality 国籍
+  - keyboard operator 键盘操作员
+  - engineer 工程师
+  - Italian 意大利人/意大利的
+  - French 法国人/法国的
+---
+
 # Lesson 7: What is Rober's job?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/007&008－Are%20You%20a%20Teacher
 
@@ -55,17 +66,6 @@ I'm an engineer.
 我是工程师。
 </details>
 
----
-
-# 生词
-
-- nationality 国籍
-- keyboard operator 键盘操作员
-- engineer 工程师
-- Italian 意大利人/意大利的
-- French 法国人/法国的
-
----
 
 ## 句型结构
 

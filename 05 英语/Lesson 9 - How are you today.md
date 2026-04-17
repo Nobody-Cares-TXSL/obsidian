@@ -1,3 +1,10 @@
+---
+lesson: 9
+title: How are you today
+vocabulary:
+  - well 好的/健康的
+---
+
 # Lesson 9: How is Emma?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/009&010－How%20Are%20You%20Today
 
@@ -40,13 +47,6 @@ Nice to see you, too, Steven. Goodbye.
 我也很高兴见到你，史蒂文。再见。
 </details>
 
----
-
-# 生词
-
-- well 好的/健康的
-
----
 
 ## 句型结构
 

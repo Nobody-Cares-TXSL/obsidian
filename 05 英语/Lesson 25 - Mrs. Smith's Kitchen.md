@@ -1,3 +1,17 @@
+---
+lesson: 25
+title: Mrs. Smith's Kitchen
+vocabulary:
+  - refrigerator 冰箱
+  - electric cooker 电炉
+  - right 右边
+  - left 左边
+  - middle 中间
+  - empty 空的
+  - clean 干净的
+  - kitchen 厨房
+---
+
 # Lesson 25: What colour is the electric cooker?
 > https://nce.luzhenhua.cn/lesson.html#NCE1/025&026－Mrs.%20Smith's%20Kitchen
 
@@ -43,20 +57,6 @@ The cup is clean.
 这个杯子是干净的。
 </details>
 
----
-
-## 生词
-
-- refrigerator 冰箱
-- electric cooker 电炉
-- right 右边
-- left 左边
-- middle 中间
-- empty 空的
-- clean 干净的
-- kitchen 厨房
-
----
 
 ## 句型结构
 
