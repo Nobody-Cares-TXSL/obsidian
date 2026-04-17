@@ -12,6 +12,19 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 
 - `$ARGUMENTS`：新概念英语课程页面 URL（如 `https://learnenai.com/nce-1/3`）
 
+## 路径映射
+
+从 URL 路径中的 `nce-{N}` 提取册数，映射为子目录名：
+
+| URL 路径 | 子目录 |
+|:---------|:-------|
+| `nce-1` | `05 英语/新概念一/` |
+| `nce-2` | `05 英语/新概念二/` |
+| `nce-3` | `05 英语/新概念三/` |
+| `nce-4` | `05 英语/新概念四/` |
+
+**输出路径**：`05 英语/{子目录}/Lesson {N} - {Title}.md`
+
 ## 工作流程
 
 ### 1. 获取网页内容
@@ -55,7 +68,7 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 
 严格参照以下文件格式：
 - 模板：读取 `00 模板/新概念英语模板.md`
-- 已有示例：读取 `05 英语/` 下任意一个已有的 Lesson 文件（文件名格式为 `Lesson {N} - {Title}.md`）
+- 已有示例：读取 `05 英语/{子目录}/` 下任意一个已有的 Lesson 文件（文件名格式为 `Lesson {N} - {Title}.md`）
 
 **输出格式要点**：
 - 标题：`# Lesson {N}: {Question}`（Question 为 "Listen to the tape then answer this question." 的下一句）
@@ -69,13 +82,13 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 
 ### 4. 写入文件
 
-将生成的笔记写入：`05 英语/Lesson {N} - {Title}.md`（Title 取自 data.json 的 `title` 字段，**保留原始标点**）
+将生成的笔记写入：`05 英语/{子目录}/Lesson {N} - {Title}.md`（子目录由路径映射决定，Title 取自 data.json 的 `title` 字段，**保留原始标点**）
 
 使用 Write 工具写入文件。
 
 ### 5. 更新目录索引
 
-笔记写入后，更新 `05 英语/README.md` 目录表，在最后一行后追加新条目：
+笔记写入后，更新 `05 英语/{子目录}/README.md` 目录表，在最后一行后追加新条目：
 
 ```
 | {课号} | [[Lesson {N} - {Title}]] | {核心知识点，用顿号分隔} |
