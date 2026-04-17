@@ -27,17 +27,39 @@
 
 ### Claude Code 技能与插件
 
+#### Plugins
+
+| 插件 | 技能 |
+|------|------|
+| **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · superpowers · claude-md-management |
+| **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
+| **last30days-skill** | last30days |
+
 #### Skills
+
+**全局技能** (`~/.claude/skills/`)
 
 | 技能 | 功能 |
 |------|------|
-| **agent-reach** | 多平台互联网搜索与交互 |
+| **agent-reach** | 多平台互联网搜索与交互（15 通道） |
 | **notebooklm** | Google NotebookLM API 集成 |
+| **smart-search** | 智能搜索路由（基于 opencli） |
+| **opencli** | 网站操作命令集（usage · operate · repair · explorer · oneshot） |
+| **docx** | Word 文档创建与编辑 |
+| **find-skills** | 查找和安装可复用 AI 技能 |
+| **deep-analysis** | NotebookLM 输出全景深度分析 |
+| **first-principles** | 第一性原理分析 |
 
-#### Plugins
+**项目技能** (`.claude/skills/`)
 
-- **claude-plugins-official** — 官方插件集
-  > code-review · code-simplifier · playground · skill-creator · superpowers
+| 技能 | 功能 |
+|------|------|
+| **english-md** | 新概念英语笔记生成 |
+| **vault-graph** | Obsidian 仓库关系图谱 |
+| **obsidian-canvas-creator** | 文本转 Obsidian Canvas |
+| **excalidraw-diagram** | Excalidraw 图表生成 |
+| **mermaid-visualizer** | Mermaid 图表生成 |
+| **skill-lookup** | 查找和安装可复用 AI 技能 |
 
 ## 终端
 
@@ -102,13 +124,6 @@
 | **excalidraw-diagram** | 生成 Excalidraw 格式图表 |
 | **mermaid-visualizer** | 将文本转换为 Mermaid 图表 |
 | **skill-lookup** | 查找和安装可复用的 AI 技能 |
-
-#### Commands
-
-| 命令 | 功能 |
-|------|------|
-| `/english-md <url>` | 从 learnenai.com 获取新概念英语课程并按模板格式生成笔记 |
-| `/sql-md <url>` | 从 LeetCode SQL 题目 URL 生成格式统一的 SQL 笔记 |
 
 ### Obsidian 主题
 

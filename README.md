@@ -40,3 +40,15 @@
 - **obsidian-style-settings** - 样式自定义设置
 - **dataview** - 数据查询和索引
 - **cm-editor-syntax-highlight-obsidian** - 代码语法高亮
+
+## 自定义 Commands 和 Skills
+
+仓库包含以下自定义命令和技能：
+
+### Skills（`.claude/skills/`）
+
+- **/english-md `<url>`** - 从 learnenai.com 获取新概念英语课程并按模板格式生成笔记
+
+### Commands（`.claude/commands/`）
+
+- **/sql-md `<url>`** - 从 LeetCode SQL 题目 URL 生成格式统一的 SQL 笔记

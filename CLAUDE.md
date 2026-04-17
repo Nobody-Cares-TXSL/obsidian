@@ -20,7 +20,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - `MySQL/` — MySQL 相关
   - `系统设计/` — 系统设计相关
 - `04 调研/` — 调研笔记（十五五规划、工具栈等）
-- `05 英语/` — 新概念英语笔记（Lesson N - Title.md）
+- `05 英语/` — 新概念英语笔记
+  - `新概念一/` — 第一册课程笔记
+  - `新概念二/` — 第二册课程笔记
+  - `新概念三/` — 第三册课程笔记
+  - `新概念四/` — 第四册课程笔记
 - `06 阅记/` — 阅读笔记
 
 ---
@@ -47,13 +51,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 分隔线 `---` 用于主要章节之间
 
 ---
-
-## 自定义Commands
-
-仓库包含以下自定义命令（位于 `.claude/commands/`）：
-
-- **/english-md `<url>`** - 从 learnenai.com 获取新概念英语课程并按模板格式生成笔记
-- **/sql-md `<url>`** - 从 LeetCode SQL 题目 URL 生成格式统一的 SQL 笔记
 
 ### 算法笔记
 
@@ -82,14 +79,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### 英语笔记
 
 - 使用 `/english-md <url>` 命令从 learnenai.com 获取课程并生成笔记
-- 笔记存放于 `05 英语/` 目录，格式参照 `00 模板/新概念英语模板.md`
-- 文件命名：`Lesson {N} - {Title}.md`
+- 笔记存放于 `05 英语/新概念{N}/` 子目录（如 `新概念一/`），格式参照 `00 模板/新概念英语模板.md`
+- 文件命名：`Lesson {N} - {Title}.md`（Title 保留原始标点）
 - 中文翻译用 `<details>` 折叠，句间用 `  <br>` 换行
 - 句型和语法要点言简意赅，用 `**注意**` 标注易错点
 
----
-
-## 调研笔记
+### 调研笔记
 
 - `04 调研/十五五笔记/` — 十五五规划纲要相关笔记
 - `04 调研/工具栈/` — 技术工具栈调研
