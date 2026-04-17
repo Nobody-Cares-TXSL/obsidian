@@ -50,6 +50,7 @@ That is a lovely hat!
 那是一顶可爱的帽子！
 </details>
 
+---
 
 ## 句型结构
 

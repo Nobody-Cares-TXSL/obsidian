@@ -57,6 +57,7 @@ The cup is clean.
 这个杯子是干净的。
 </details>
 
+---
 
 ## 句型结构
 

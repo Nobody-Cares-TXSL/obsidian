@@ -76,6 +76,7 @@ Thank you very much.
 非常感谢你们。
 </details>
 
+---
 
 ## 句型结构
 

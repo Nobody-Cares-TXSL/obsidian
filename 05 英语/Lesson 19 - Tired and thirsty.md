@@ -60,6 +60,7 @@ Yes, we are, thank you!
 是的，我们很好，谢谢！
 </details>
 
+---
 
 ## 句型结构
 

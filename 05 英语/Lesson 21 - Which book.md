@@ -39,6 +39,7 @@ Thank you.
 谢谢。
 </details>
 
+---
 
 ## 句型结构
 

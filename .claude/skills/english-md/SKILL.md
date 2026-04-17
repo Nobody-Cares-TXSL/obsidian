@@ -62,7 +62,7 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 - 链接：`> https://nce.luzhenhua.cn/lesson.html#NCE1/{filename}`，其中 filename 取自 data.json，**空格替换为 `%20`，末尾 `.` 替换为 `%2E`**（防止 markdown 解析器吞掉句号），其他字符保持原文
 - 原文：每句英文独占一个段落，中间空行
 - 中文翻译：放在 `<details><summary>中文翻译</summary>` 折叠块中，每句用 `  <br>` 换行
-- 生词：用无序列表，格式 `- word 释义`
+- frontmatter：包含 `lesson`（课号）、`title`（标题）、`vocabulary`（生词列表，格式 `- word 释义`），生词只放 frontmatter，正文中不再单独设置生词章节
 - 句型结构：每个句型用 `###` 标题，加 `>` 一句话定义，列表写要点，`**注意**` 标注易错点
 - 语法要点：每个语法点用 `###` 标题，加 `>` 一句话定义，列表写要点
 - 各章节间用 `---` 分隔
