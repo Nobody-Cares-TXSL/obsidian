@@ -1,6 +1,8 @@
 ---
 lesson: 25
 title: Mrs. Smith's Kitchen
+tags:
+  - NCE
 vocabulary:
   - refrigerator 冰箱
   - electric cooker 电炉

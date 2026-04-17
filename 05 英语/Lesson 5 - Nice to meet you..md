@@ -1,6 +1,8 @@
 ---
 lesson: 5
 title: Nice to meet you.
+tags:
+  - NCE
 vocabulary:
   - Mr. (Mister) 先生
   - Miss 小姐

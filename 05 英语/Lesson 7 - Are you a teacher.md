@@ -1,6 +1,8 @@
 ---
 lesson: 7
 title: Are you a teacher
+tags:
+  - NCE
 vocabulary:
   - nationality 国籍
   - keyboard operator 键盘操作员

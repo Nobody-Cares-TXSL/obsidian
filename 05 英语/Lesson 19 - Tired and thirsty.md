@@ -1,6 +1,8 @@
 ---
 lesson: 19
 title: Tired and thirsty
+tags:
+  - NCE
 vocabulary:
   - matter 事情；麻烦
   - tired 累的

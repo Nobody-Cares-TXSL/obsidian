@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("05 英语")
+    - file.hasTag("NCE")
 views:
   - type: table
     name: 表格

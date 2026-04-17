@@ -1,6 +1,8 @@
 ---
 lesson: 11
 title: Is this your shirt
+tags:
+  - NCE
 vocabulary:
   - shirt 衬衫
   - whose 谁的

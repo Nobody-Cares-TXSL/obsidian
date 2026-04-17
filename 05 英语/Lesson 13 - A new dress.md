@@ -1,6 +1,8 @@
 ---
 lesson: 13
 title: A new dress
+tags:
+  - NCE
 vocabulary:
   - dress 连衣裙
   - colour 颜色

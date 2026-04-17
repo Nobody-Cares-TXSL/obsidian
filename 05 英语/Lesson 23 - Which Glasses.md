@@ -1,6 +1,8 @@
 ---
 lesson: 23
 title: Which Glasses
+tags:
+  - NCE
 vocabulary:
   - glasses 眼镜
   - shelf 架子

@@ -1,6 +1,8 @@
 ---
 lesson: 9
 title: How are you today
+tags:
+  - NCE
 vocabulary:
   - well 好的/健康的
 ---

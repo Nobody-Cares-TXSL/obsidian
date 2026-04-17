@@ -25,7 +25,7 @@
 
 ```dataview
 TABLE vocabulary AS "生词"
-FROM "05 英语"
+FROM #NCE
 WHERE vocabulary
 SORT lesson ASC
 ```
