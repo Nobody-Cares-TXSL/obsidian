@@ -42,43 +42,48 @@ FROM Sales LEFT JOIN Product
 ON Sales.product_id = Product.product_id;
 ```
 
+---
+
+## SQL 流程
+
+### 原始表
+
+Sales 表（左表）
+
+| sale_id | product_id | year | quantity | price |
+|---------|------------|------|----------|-------|
+| 1       | 100        | 2008 | 10       | 5000  |
+| 2       | 100        | 2009 | 12       | 5000  |
+| 7       | 200        | 2011 | 15       | 9000  |
+
+Product 表（右表）
+
+| product_id | product_name |
+|------------|--------------|
+| 100        | Nokia        |
+| 200        | Apple        |
+| 300        | Samsung      |
+
+### LEFT JOIN ON product_id（以 Sales 为主，补充产品名）
+
+| S.sale_id | S.product_id | S.year | S.price | P.product_id | P.product_name |
+|-----------|--------------|--------|---------|--------------|----------------|
+| 1         | 100          | 2008   | 5000    | 100          | Nokia          |
+| 2         | 100          | 2009   | 5000    | 100          | Nokia          |
+| 7         | 200          | 2011   | 9000    | 200          | Apple          |
+
+> Sales 中所有 product_id 在 Product 中都有匹配，所以没有 NULL 行。Samsung（product_id=300）因为没有销售记录，不会出现在结果中。
+
+### SELECT product_name, year, price
+
+| product_name | year | price |
+|--------------|------|-------|
+| Nokia        | 2008 | 5000  |
+| Nokia        | 2009 | 5000  |
+| Apple        | 2011 | 9000  |
+
+---
+
 ## 关键要点
 
 > **JOIN** 用于关联两张表，`ON` 指定关联条件。核心区别在于对**不匹配行**的处理方式。
-
-### 三种 JOIN 对比
-
-以本题 `Sales`（左表）和 `Product`（右表）为例，假设 Sales 中有一条 product_id=400 的记录，但 Product 表中不存在该产品：
-
-| JOIN 类型 | 匹配的行 | Sales 无匹配的 product_id=400 | Product 无对应 Sales 的 product_id=300 |
-|-----------|---------|------|------|
-| **INNER JOIN** | 保留 | 丢弃 | 丢弃 |
-| **LEFT JOIN** | 保留 | 保留（右表列填 NULL） | 丢弃 |
-| **RIGHT JOIN** | 保留 | 丢弃 | 保留（左表列填 NULL） |
-
-```sql
--- INNER JOIN：只返回两表都能匹配上的行
-SELECT p.product_name, s.year, s.price
-FROM Sales s
-JOIN Product p ON s.product_id = p.product_id;
-
--- LEFT JOIN：保留左表（Sales）所有行，右表无匹配则填 NULL
-SELECT p.product_name, s.year, s.price
-FROM Sales s
-LEFT JOIN Product p ON s.product_id = p.product_id;
--- 若 Sales 有 product_id=400 但 Product 没有，结果中 product_name=NULL
-
--- RIGHT JOIN：保留右表（Product）所有行，左表无匹配则填 NULL
-SELECT p.product_name, s.year, s.price
-FROM Sales s
-RIGHT JOIN Product p ON s.product_id = p.product_id;
--- 若 Product 有 product_id=300 但 Sales 没有对应记录，结果中 year=NULL, price=NULL
-```
-
-### 使用场景
-
-- **INNER JOIN**：只需要**两边都有的数据**。例：查有销售记录的产品
-- **LEFT JOIN**：以左表为主，补充右表信息。例：查所有销售记录对应的产品名（产品被删除的记录也不丢）— **实际开发中最常用，推荐默认使用**
-- **RIGHT JOIN**：以右表为主，补充左表信息。例：查所有产品中哪些有销售记录（没卖过的产品也列出）。等同于把表换个位置写 `LEFT JOIN`
-
-> **实用建议**：日常开发优先用 `LEFT JOIN`，需要严格匹配时用 `INNER JOIN`，`RIGHT JOIN` 很少用（换个表顺序就能用 LEFT JOIN 替代）

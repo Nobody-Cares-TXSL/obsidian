@@ -36,6 +36,54 @@ FROM Employees es LEFT JOIN EmployeeUNI ei
 on es.id = ei.id;
 ```
 
+---
+
+## SQL 流程
+
+### 原始表
+
+Employees 表（左表）AS es
+
+| id | name     |
+|----|----------|
+| 1  | Alice    |
+| 7  | Bob      |
+| 11 | Meir     |
+| 90 | Winston  |
+| 3  | Jonathan |
+
+EmployeeUNI 表（右表） AS ei
+
+| id | unique_id |
+|----|-----------|
+| 3  | 1         |
+| 11 | 2         |
+| 90 | 3         |
+
+### LEFT JOIN ON id（左表为主，右表无匹配填 NULL）
+
+| es.id | es.name   | ei.id | ei.unique_id |
+|------|----------|------|-------------|
+| 1    | Alice    | NULL | NULL        |
+| 7    | Bob      | NULL | NULL        |
+| 11   | Meir     | 11   | 2           |
+| 90   | Winston  | 90   | 3           |
+| 3    | Jonathan | 3    | 1           |
+
+> Alice（id=1）和 Bob（id=7）在 EmployeeUNI 中没有对应记录，LEFT JOIN 保留左表所有行，所以 ei.unique_id 为 NULL。如果用 INNER JOIN，这两行会被丢弃。
+
+### SELECT ei.unique_id, es.name
+
+| ei.unique_id | es.name     |
+|-----------|----------|
+| null      | Alice    |
+| null      | Bob      |
+| 2         | Meir     |
+| 3         | Winston  |
+| 1         | Jonathan |
+
+---
+
 ## 关键要点
 
 **LEFT JOIN vs INNER JOIN**
