@@ -20,6 +20,9 @@
 | 23 | [[Lesson 23 - Which Glasses]] | Give me some + 复数名词、ones 代词（复数） |
 | 25 | [[Lesson 25 - Mrs. Smith's Kitchen]] | 方位介词 on the right/left/in the middle of、There is + 方位短语 |
 | 27 | [[Lesson 27 - Mrs. Smith's Living Room]] | near 方位介词、There are + some + 复数名词 |
+| 29 | [[Lesson 29 - Come In, Amy.]] | must 情态动词、Then 连续指令、祈使句综合运用 |
+| 31 | [[Lesson 31 - Where's Sally]] | 现在进行时 be+v-ing、What's doing?、What about? |
+| 33 | [[Lesson 33 - A Fine Day]] | look at、over 方位介词、现在进行时综合练习 |
 
 ## 生词总览
 
