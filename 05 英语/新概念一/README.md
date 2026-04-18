@@ -23,6 +23,9 @@
 | 29 | [[Lesson 29 - Come In, Amy.]] | must 情态动词、Then 连续指令、祈使句综合运用 |
 | 31 | [[Lesson 31 - Where's Sally]] | 现在进行时 be+v-ing、What's doing?、What about? |
 | 33 | [[Lesson 33 - A Fine Day]] | look at、over 方位介词、现在进行时综合练习 |
+| 35 | [[Lesson 35 - Our Village]] | between/beside 方位介词、along/across 方向介词、into/out of、Some of + 宾格代词 |
+| 37 | [[Lesson 37 - Making a Bookcase]] | be going to 将来时结构 |
+| 39 | [[Lesson 39 - Don't Drop It]] | do with 处理搭配、give + 宾语 + to + 人、in front of 方位介词 |
 
 ## 生词总览
 

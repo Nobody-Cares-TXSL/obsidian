@@ -71,6 +71,7 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 - 已有示例：读取 `05 英语/{子目录}/` 下任意一个已有的 Lesson 文件（文件名格式为 `Lesson {N} - {Title}.md`）
 
 **输出格式要点**：
+- **不要输出模板中的"编写说明"callout**（`> [!note] 编写说明`），那是给 AI 的指引，不属于笔记内容
 - 标题：`# Lesson {N}: {Question}`（Question 为 "Listen to the tape then answer this question." 的下一句）
 - 链接：`> https://nce.luzhenhua.cn/lesson.html#NCE1/{filename}`，其中 filename 取自 data.json，**空格替换为 `%20`，末尾 `.` 替换为 `%2E`**（防止 markdown 解析器吞掉句号），其他字符保持原文
 - 原文：每句英文独占一个段落，中间空行
