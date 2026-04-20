@@ -26,6 +26,12 @@
 | 35 | [[Lesson 35 - Our Village]] | between/beside 方位介词、along/across 方向介词、into/out of、Some of + 宾格代词 |
 | 37 | [[Lesson 37 - Making a Bookcase]] | be going to 将来时结构 |
 | 39 | [[Lesson 39 - Don't Drop It]] | do with 处理搭配、give + 宾语 + to + 人、in front of 方位介词 |
+| 41 | [[Lesson 41 - Penny's Bag]] | 量词短语 a+单位词+of、分数量词 half/a quarter of |
+| 43 | [[Lesson 43 - Hurry Up]] | Can you...? 礼貌请求、hurry up 催促、behind 方位介词、any/some 用法 |
+| 45 | [[Lesson 45 - The Boss's Letter]] | can 不随主语变化、a minute 虚指时间、next door 隔壁 |
+| 47 | [[Lesson 47 - A Cup of Coffee]] | Do you like...? 询问喜好、Do you want...? 询问意愿、助动词 do |
+| 49 | [[Lesson 49 - At the Butcher's]] | 选择疑问句 A or B、doesn't 第三人称否定、To tell you the truth 插入语 |
+| 51 | [[Lesson 51 - A Pleasant Climate]] | Where do you come from、What's...like?、频率副词、It 天气主语 |
 
 ## 生词总览
 
