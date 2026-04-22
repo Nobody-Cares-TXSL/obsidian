@@ -32,6 +32,9 @@
 | 47 | [[Lesson 47 - A Cup of Coffee]] | Do you like...? 询问喜好、Do you want...? 询问意愿、助动词 do |
 | 49 | [[Lesson 49 - At the Butcher's]] | 选择疑问句 A or B、doesn't 第三人称否定、To tell you the truth 插入语 |
 | 51 | [[Lesson 51 - A Pleasant Climate]] | Where do you come from、What's...like?、频率副词、It 天气主语 |
+| 53 | [[Lesson 53 - An Interesting Climate]] | Which...like best?、方位名词大写、rise/set 天体升降、not always 部分否定 |
+| 55 | [[Lesson 55 - The Sawyer Family]] | 时间状语句首、take sb. to sw.、arrive home 副词用法、sometimes 句首 |
+| 57 | [[Lesson 57 - An Unusual Day]] | 一般现在时 vs 现在进行时对比、by car/on foot 交通方式、At the moment |
 
 ## 生词总览
 
