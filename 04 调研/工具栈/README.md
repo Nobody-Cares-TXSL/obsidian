@@ -152,7 +152,7 @@
 
 ### 配置状态
 
-#### last30days
+#### [last30days](https://github.com/mvanhorn/last30days-skill)
 
 | 通道 | 状态 | 说明 |
 |------|------|------|
@@ -161,7 +161,7 @@
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### opencli
+#### [opencli](https://github.com/jackwener/opencli)
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
@@ -173,7 +173,7 @@
 
 **核心功能**：`opencli generate <url>` 一键生成适配器、`opencli record` 录制操作、`opencli operate` 浏览器自动化
 
-#### agent-reach
+#### [agent-reach](https://github.com/Panniantong/Agent-Reach)
 
 | Tier | 平台 | 状态 | 依赖 |
 |------|------|------|------|
