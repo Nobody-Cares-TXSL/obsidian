@@ -2,7 +2,7 @@
 lesson: 31
 title: "Where's Sally"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - garden 花园
   - under 在……下面

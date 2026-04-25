@@ -2,7 +2,7 @@
 lesson: 3
 title: Sorry, sir.
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - coat 大衣
   - umbrella 雨伞

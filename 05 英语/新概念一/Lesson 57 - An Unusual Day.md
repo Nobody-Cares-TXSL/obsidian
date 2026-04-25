@@ -2,7 +2,7 @@
 lesson: 57
 title: "An Unusual Day"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - unusual 不寻常的
   - o'clock ……点钟

@@ -2,7 +2,7 @@
 lesson: 43
 title: "Hurry Up"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - kettle 水壶
   - teapot 茶壶

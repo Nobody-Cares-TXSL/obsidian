@@ -2,7 +2,7 @@
 lesson: 1
 title: Excuse me!
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - handbag 手提包
   - pardon 请再说一遍

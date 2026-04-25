@@ -2,7 +2,7 @@
 lesson: 59
 title: "Is That All"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - envelope 信封
   - writing paper 信纸

@@ -2,7 +2,7 @@
 lesson: 29
 title: "Come In, Amy."
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - shut 关上
   - untidy 不整洁的，乱的

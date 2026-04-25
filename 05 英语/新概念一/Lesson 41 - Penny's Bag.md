@@ -2,7 +2,7 @@
 lesson: 41
 title: "Penny's Bag"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - heavy 重的
   - piece 块/片

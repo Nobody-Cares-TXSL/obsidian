@@ -2,7 +2,7 @@
 lesson: 49
 title: "At the Butcher's"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - meat 肉
   - beef 牛肉

@@ -2,7 +2,7 @@
 lesson: 47
 title: "A Cup of Coffee"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - sugar 糖
   - milk 牛奶

@@ -2,7 +2,7 @@
 lesson: 61
 title: "A Bad Cold"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - ill 生病的
   - tongue 舌头

@@ -2,7 +2,7 @@
 lesson: 17
 title: How do you do
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - employee 员工
   - hard-working 勤奋的

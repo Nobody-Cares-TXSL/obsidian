@@ -2,7 +2,7 @@
 lesson: 27
 title: Mrs. Smith's Living Room
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - living room 客厅
   - television 电视机

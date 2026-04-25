@@ -43,7 +43,7 @@
 
 ```dataview
 TABLE vocabulary AS "生词"
-FROM #NCE
+FROM #NCE-1
 WHERE vocabulary
 SORT lesson ASC
 ```

@@ -2,7 +2,7 @@
 lesson: 63
 title: "Thank You, Doctor."
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - better 更好的
   - certainly 当然

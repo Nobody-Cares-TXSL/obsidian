@@ -2,7 +2,7 @@
 lesson: 35
 title: "Our Village"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - photograph 照片
   - village 村庄

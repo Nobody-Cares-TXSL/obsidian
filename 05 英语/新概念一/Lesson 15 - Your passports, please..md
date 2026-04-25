@@ -2,7 +2,7 @@
 lesson: 15
 title: Your passports, please.
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - Swedish 瑞典的；瑞典人
   - Danish 丹麦的；丹麦人

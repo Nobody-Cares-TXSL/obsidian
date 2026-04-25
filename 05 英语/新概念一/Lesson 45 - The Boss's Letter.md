@@ -2,7 +2,7 @@
 lesson: 45
 title: "The Boss's Letter"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - boss 老板
   - minute 分钟

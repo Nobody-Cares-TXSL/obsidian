@@ -2,7 +2,7 @@
 lesson: 39
 title: "Don't Drop It"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - vase 花瓶
   - drop 掉落

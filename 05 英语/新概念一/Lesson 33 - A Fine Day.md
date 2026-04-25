@@ -2,7 +2,7 @@
 lesson: 33
 title: "A Fine Day"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - cloud 云
   - shine 发光，照耀

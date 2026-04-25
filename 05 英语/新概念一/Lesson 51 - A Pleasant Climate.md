@@ -2,7 +2,7 @@
 lesson: 51
 title: "A Pleasant Climate"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - Greece 希腊
   - climate 气候

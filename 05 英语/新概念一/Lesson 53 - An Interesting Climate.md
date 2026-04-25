@@ -2,7 +2,7 @@
 lesson: 53
 title: "An Interesting Climate"
 tags:
-  - NCE
+  - NCE-1
 vocabulary:
   - England 英格兰
   - country 国家
