@@ -1,8 +1,13 @@
-const files = app.vault.getMarkdownFiles();
+const BASE_PATH = null;
+const allFiles = app.vault.getMarkdownFiles();
 const resolved = new Map();
 const graph = {};
 
-files.forEach(f => { resolved.set(f.basename, f.path); resolved.set(f.path, f.path); });
+allFiles.forEach(f => { resolved.set(f.basename, f.path); resolved.set(f.path, f.path); });
+
+const files = BASE_PATH
+  ? allFiles.filter(f => f.path.startsWith(BASE_PATH.endsWith('/') ? BASE_PATH : BASE_PATH + '/'))
+  : allFiles;
 
 // 构建每篇笔记的出链、标签、属性
 files.forEach(f => {

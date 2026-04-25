@@ -17,13 +17,23 @@ allowed-tools: Bash(obsidian eval:*) Read
 
 ## 运行方式
 
-读取脚本内容后通过 `obsidian eval` 执行：
+读取脚本内容后通过 `obsidian eval` 执行。
+
+**扫描全仓库（默认）：**
 
 ```bash
 SCRIPT=$(cat {baseDir}/scripts/vault-graph.js) && obsidian eval code="$SCRIPT"
 ```
 
+**扫描指定目录：** 将 `BASE_PATH` 替换为目标路径（如 `05 英语/新概念一`）：
+
+```bash
+SCRIPT=$(sed 's|const BASE_PATH = null;|const BASE_PATH = "05 英语/新概念一";|' {baseDir}/scripts/vault-graph.js) && obsidian eval code="$SCRIPT"
+```
+
 脚本位于 `scripts/vault-graph.js`。
+
+> 指定路径时，只输出该目录下的文件，但链接解析仍覆盖全仓库（会显示指向仓库其他位置的出链/入链）。
 
 ## 输出结构
 

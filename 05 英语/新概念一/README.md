@@ -35,6 +35,9 @@
 | 53 | [[Lesson 53 - An Interesting Climate]] | Which...like best?、方位名词大写、rise/set 天体升降、not always 部分否定 |
 | 55 | [[Lesson 55 - The Sawyer Family]] | 时间状语句首、take sb. to sw.、arrive home 副词用法、sometimes 句首 |
 | 57 | [[Lesson 57 - An Unusual Day]] | 一般现在时 vs 现在进行时对比、by car/on foot 交通方式、At the moment |
+| 59 | [[Lesson 59 - Is That All]] | What else 疑问句、购物场景综合运用 |
+| 61 | [[Lesson 61 - A Bad Cold]] | have a cold 表达疾病、feel/look 感官系动词、for + 时间段 |
+| 63 | [[Lesson 63 - Thank You, Doctor.]] | mustn't 禁止、keep + 宾语 + 形容词、for another + 数量 |
 
 ## 生词总览
 
