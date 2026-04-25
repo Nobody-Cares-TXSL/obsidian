@@ -51,7 +51,11 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
   1. 从原文和 learnenai.com 语法讲解中提取所有候选句型和语法点
   2. 去重检查（不要逐篇读取全部笔记，用以下高效方式）：
      - 运行 vault-graph 技能（传入当前课程所在子目录路径，如 `05 英语/新概念一`）获取该册下已有 Lesson 文件的出链/入链关系
-     - 用 Grep 在已有笔记中搜索当前候选知识点的关键词（如句型名称、语法术语），确认是否已在前课详细讲过
+     - 用 Grep 在已有笔记中搜索当前候选知识点的关键词，确认是否已在前课详细讲过。**搜索规则**：
+       - 使用**英文核心词或标准语法术语**搜索（如 `there be`、`present continuous`、`modal verb`），不要用中文表述
+       - 每个候选知识点设计 2-3 个**宽泛匹配词**（如 `some.*any`、`mustn't|must not`、`for.*another`），避免因措辞差异漏匹配
+       - 所有搜索必须使用 `grep -i`（忽略大小写）+ 正则表达式
+       - README 索引表的"核心知识点"列也是快速参考：先用 grep 扫 README 确认大类是否已存在
   3. 按以下标准筛选：
      - **排除**已在之前课程中详细讲过的重复内容（首次出现时详细讲，后续课用 `[[Lesson X - Title]]` wikilink 引用或一句话带过）
      - **排除**纯词汇替换、不含结构规律的简单句
