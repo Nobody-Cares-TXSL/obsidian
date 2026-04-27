@@ -11,3 +11,4 @@
 
 # Claudian 插件设置（包含明文 API Key）
 .claude/claudian-settings.json
+.gstack/

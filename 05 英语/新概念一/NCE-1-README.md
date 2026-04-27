@@ -38,6 +38,9 @@
 | 59 | [[Lesson 59 - Is That All]] | What else 疑问句、购物场景综合运用 |
 | 61 | [[Lesson 61 - A Bad Cold]] | have a cold 表达疾病、feel/look 感官系动词、for + 时间段 |
 | 63 | [[Lesson 63 - Thank You, Doctor.]] | mustn't 禁止、keep + 宾语 + 形容词、for another + 数量 |
+| 65 | [[Lesson 65 - Not a Baby]] | 反身代词 enjoy yourself、名词 + to + 名词所属关系 |
+| 67 | [[Lesson 67 - The Weekend]] | be 动词过去时 was/were、's 表示店铺、spend + 时间 + 地点、否定疑问句感叹 |
+| 69 | [[Lesson 69 - The Car Race]] | There was/were 过去存在句、否定祈使句 Don't + verb、hundreds of 概数表达 |
 
 ## 生词总览
 

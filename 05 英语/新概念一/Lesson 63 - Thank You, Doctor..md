@@ -15,6 +15,7 @@ vocabulary:
   - stay 停留/待
   - another 另一个/再
   - hours 小时（hour 复数）
+  - each 每个/各自
 ---
 
 # Lesson 63: Who else is in bed today? Why?

@@ -55,7 +55,7 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
        - 使用**英文核心词或标准语法术语**搜索（如 `there be`、`present continuous`、`modal verb`），不要用中文表述
        - 每个候选知识点设计 2-3 个**宽泛匹配词**（如 `some.*any`、`mustn't|must not`、`for.*another`），避免因措辞差异漏匹配
        - 所有搜索必须使用 `grep -i`（忽略大小写）+ 正则表达式
-       - README 索引表的"核心知识点"列也是快速参考：先用 grep 扫 README 确认大类是否已存在
+       - NCE-{N}-README 索引表的"核心知识点"列也是快速参考：先用 grep 扫 NCE-{N}-README 确认大类是否已存在
   3. 按以下标准筛选：
      - **排除**已在之前课程中详细讲过的重复内容（首次出现时详细讲，后续课用 `[[Lesson X - Title]]` wikilink 引用或一句话带过）
      - **排除**纯词汇替换、不含结构规律的简单句
@@ -93,7 +93,7 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 
 ### 5. 更新目录索引
 
-笔记写入后，更新 `05 英语/{子目录}/README.md` 目录表，在最后一行后追加新条目：
+笔记写入后，更新 `05 英语/{子目录}/NCE-{N}-README.md` 目录表，在最后一行后追加新条目：
 
 ```
 | {课号} | [[Lesson {N} - {Title}]] | {核心知识点，用顿号分隔} |
