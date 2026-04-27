@@ -65,3 +65,15 @@ WHERE referee_id = NULL
 - 纯 ASCII 场景两者相同，但有中文/emoji 时会不一致
 
 > 来源：[[无效的推文]]
+
+---
+
+## DATEDIFF 日期差
+
+> `DATEDIFF(date1, date2)` 返回 `date1 - date2` 的天数，可用于比较相邻日期。
+
+- MySQL 中 `DATEDIFF('2015-01-03', '2015-01-01')` = 2
+- 只取日期部分，忽略时间
+- 替代写法：`date1 = DATE_ADD(date2, INTERVAL 1 DAY)`
+
+> 来源：[[上升的温度]]
