@@ -41,6 +41,9 @@
 | 65 | [[Lesson 65 - Not a Baby]] | 反身代词 enjoy yourself、名词 + to + 名词所属关系 |
 | 67 | [[Lesson 67 - The Weekend]] | be 动词过去时 was/were、's 表示店铺、spend + 时间 + 地点、否定疑问句感叹 |
 | 69 | [[Lesson 69 - The Car Race]] | There was/were 过去存在句、否定祈使句 Don't + verb、hundreds of 概数表达 |
+| 71 | [[Lesson 71 - He's Awful]] | 直接引语 He/I said, '...'、What's...like? 询问人物性格 |
+| 73 | [[Lesson 73 - The Way to King Street]] | Can you tell me the way to? 问路、lose one's way 迷路 |
+| 75 | [[Lesson 75 - Uncomfortable Shoes]] | I'm afraid (that)... 委婉拒绝、in fashion 流行/过时、un- 否定前缀 |
 
 ## 生词总览
 

@@ -46,7 +46,7 @@ allowed-tools: Bash, Skill, Read, Write, Glob, Grep, AskUserQuestion, mcp__web_r
 - **Title**：使用 data.json 中的 `title` 字段，**保留原始标点**（如末尾的 `.`）
 - **英文原文**：从 luzhenhua.cn 逐句提取，严禁自行改写
 - **中文翻译**：从 luzhenhua.cn 逐句提取，**严禁自行翻译或改写**。luzhenhua.cn 的翻译是唯一权威来源，即使觉得原翻译不够通顺也不得修改
-- **生词**：自行从原文中提取生词和释义，然后用 AskUserQuestion 询问用户是否需要补充未提及的生词
+- **生词**：自行从原文中提取生词和释义，然后用 AskUserQuestion 询问用户是否需要补充未提及的生词。**变形词标注规则**：如果原文中出现的是单词的变形形式（如过去式、过去分词、现在分词、比较级等），生词条目以原文中的变形词为词头，释义中用括号注明原形和变化类型，格式为 `变形词 释义（原形 的 变化类型）`，例如：`spoke 说（speak 的过去式）`、`running 跑（run 的现在分词）`、`worse 更差的（bad/well 的比较级）`
 - **句型结构与语法要点**（可参考 learnenai.com 的语法讲解）：
   1. 从原文和 learnenai.com 语法讲解中提取所有候选句型和语法点
   2. 去重检查（不要逐篇读取全部笔记，用以下高效方式）：
