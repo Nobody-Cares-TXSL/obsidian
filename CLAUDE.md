@@ -49,6 +49,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 笔记应使用 frontmatter 记录元数据（如 tags、日期等）
 - 使用 `[[笔记名]]` wikilinks 交叉引用相关知识点（如算法题链接同思路的其他题）
 - 分隔线 `---` 用于主要章节之间
+- **Markdown 转义**：表格中出现的 Markdown 特殊字符（`*`、`_` 等）需用 `\` 转义，否则会被 Obsidian 解析为格式语法导致显示异常
 
 ---
 
