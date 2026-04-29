@@ -4,12 +4,12 @@ title: "Making a Bookcase"
 tags:
   - NCE-1
 vocabulary:
-  - bookcase 书架
-  - hammer 锤子
-  - paint 刷漆
-  - pink 粉色
-  - favourite 最喜欢的
-  - daughter 女儿
+  - { word: bookcase, trans: 书架 }
+  - { word: hammer, trans: 锤子 }
+  - { word: paint, trans: 刷漆 }
+  - { word: pink, trans: 粉色 }
+  - { word: favourite, trans: 最喜欢的 }
+  - { word: daughter, trans: 女儿 }
 ---
 
 # Lesson 37: What is Susan's favourite colour?

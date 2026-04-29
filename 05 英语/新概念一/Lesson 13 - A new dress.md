@@ -4,13 +4,13 @@ title: A new dress
 tags:
   - NCE-1
 vocabulary:
-  - dress 连衣裙
-  - colour 颜色
-  - upstairs 楼上
-  - smart 时髦的；聪明的
-  - hat 帽子
-  - same 相同的
-  - lovely 可爱的；美丽的
+  - { word: dress, trans: 连衣裙 }
+  - { word: colour, trans: 颜色 }
+  - { word: upstairs, trans: 楼上 }
+  - { word: smart, trans: 时髦的；聪明的 }
+  - { word: hat, trans: 帽子 }
+  - { word: same, trans: 相同的 }
+  - { word: lovely, trans: 可爱的；美丽的 }
 ---
 
 # Lesson 13: What colour is Anna's hat?

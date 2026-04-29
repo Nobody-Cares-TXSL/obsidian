@@ -4,18 +4,18 @@ title: "Thank You, Doctor."
 tags:
   - NCE-1
 vocabulary:
-  - better 更好的
-  - certainly 当然
-  - upstairs 楼上
-  - rich 油腻的
-  - remain 保持/留下
-  - temperature 体温/发烧
-  - keep 保持
-  - yet 还/尚
-  - stay 停留/待
-  - another 另一个/再
-  - hours 小时（hour 复数）
-  - each 每个/各自
+  - { word: better, trans: 更好的 }
+  - { word: certainly, trans: 当然 }
+  - { word: upstairs, trans: 楼上 }
+  - { word: rich, trans: 油腻的 }
+  - { word: remain, trans: 保持/留下 }
+  - { word: temperature, trans: 体温/发烧 }
+  - { word: keep, trans: 保持 }
+  - { word: yet, trans: 还/尚 }
+  - { word: stay, trans: 停留/待 }
+  - { word: another, trans: 另一个/再 }
+  - { word: hours, trans: 小时（hour 复数） }
+  - { word: each, trans: 每个/各自 }
 ---
 
 # Lesson 63: Who else is in bed today? Why?

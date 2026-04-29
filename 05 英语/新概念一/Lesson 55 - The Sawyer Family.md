@@ -4,20 +4,20 @@ title: "The Sawyer Family"
 tags:
   - NCE-1
 vocabulary:
-  - live 居住
-  - stay 待，停留
-  - lunch 午饭
-  - housework 家务
-  - noon 中午
-  - together 一起
-  - arrive 到达
-  - newspaper 报纸
-  - sometimes 有时候
-  - usually 通常
-  - wife 妻子
-  - king 国王
-  - street 街道
-  - television 电视
+  - { word: live, trans: 居住 }
+  - { word: stay, trans: 待，停留 }
+  - { word: lunch, trans: 午饭 }
+  - { word: housework, trans: 家务 }
+  - { word: noon, trans: 中午 }
+  - { word: together, trans: 一起 }
+  - { word: arrive, trans: 到达 }
+  - { word: newspaper, trans: 报纸 }
+  - { word: sometimes, trans: 有时候 }
+  - { word: usually, trans: 通常 }
+  - { word: wife, trans: 妻子 }
+  - { word: king, trans: 国王 }
+  - { word: street, trans: 街道 }
+  - { word: television, trans: 电视 }
 ---
 
 # Lesson 55: When do the children do their homework?

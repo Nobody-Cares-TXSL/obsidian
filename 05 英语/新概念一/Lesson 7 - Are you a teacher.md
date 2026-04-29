@@ -4,11 +4,11 @@ title: Are you a teacher
 tags:
   - NCE-1
 vocabulary:
-  - nationality 国籍
-  - keyboard operator 键盘操作员
-  - engineer 工程师
-  - Italian 意大利人/意大利的
-  - French 法国人/法国的
+  - { word: nationality, trans: 国籍 }
+  - { word: "keyboard operator", trans: 键盘操作员 }
+  - { word: engineer, trans: 工程师 }
+  - { word: Italian, trans: 意大利人/意大利的 }
+  - { word: French, trans: 法国人/法国的 }
 ---
 
 # Lesson 7: What is Rober's job?

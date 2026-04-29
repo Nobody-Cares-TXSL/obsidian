@@ -4,8 +4,8 @@ title: Which book
 tags:
   - NCE-1
 vocabulary:
-  - give 给
-  - which 哪一个
+  - { word: give, trans: 给 }
+  - { word: which, trans: 哪一个 }
 ---
 
 # Lesson 21: Which book does the man want?

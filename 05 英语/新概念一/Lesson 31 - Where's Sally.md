@@ -4,15 +4,15 @@ title: "Where's Sally"
 tags:
   - NCE-1
 vocabulary:
-  - garden 花园
-  - under 在……下面
-  - sit 坐
-  - climb 爬，攀登
-  - grass 草地
-  - run after 追赶
-  - across 穿过
-  - beg 请求
-  - I beg your pardon 请再说一遍
+  - { word: garden, trans: 花园 }
+  - { word: under, trans: 在……下面 }
+  - { word: sit, trans: 坐 }
+  - { word: climb, trans: 爬，攀登 }
+  - { word: grass, trans: 草地 }
+  - { word: "run after", trans: 追赶 }
+  - { word: across, trans: 穿过 }
+  - { word: beg, trans: 请求 }
+  - { word: "I beg your pardon", trans: 请再说一遍 }
 ---
 
 # Lesson 31: Is the cat climbing the tree?

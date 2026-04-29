@@ -4,13 +4,13 @@ title: Nice to meet you.
 tags:
   - NCE-1
 vocabulary:
-  - Mr. (Mister) 先生
-  - Miss 小姐
-  - French 法国的；法国人
-  - German 德国的；德国人
-  - Japanese 日本的；日本人
-  - Korean 韩国的；韩国人
-  - meet 遇见；认识
+  - { word: "Mr. (Mister)", trans: 先生 }
+  - { word: Miss, trans: 小姐 }
+  - { word: French, trans: 法国的；法国人 }
+  - { word: German, trans: 德国的；德国人 }
+  - { word: Japanese, trans: 日本的；日本人 }
+  - { word: Korean, trans: 韩国的；韩国人 }
+  - { word: meet, trans: 遇见；认识 }
 ---
 
 # Lesson 5: Is Chang-woo Chinese?

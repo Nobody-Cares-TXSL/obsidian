@@ -4,18 +4,18 @@ title: He's Awful
 tags:
   - NCE-1
 vocabulary:
-  - awful 糟糕的，极坏的
-  - telephone 打电话（动词）
-  - type 打字
-  - again 又，再一次
-  - the day before yesterday 前天
-  - yesterday 昨天
-  - typing letters 打信件
-  - arrive 到达（过去式 arrived）
-  - last 最近的，上一个
-  - then 然后
-  - answer 接（电话）/ 回答
-  - daughter 女儿
+  - { word: awful, trans: 糟糕的，极坏的 }
+  - { word: telephone, trans: 打电话（动词） }
+  - { word: type, trans: 打字 }
+  - { word: again, trans: 又，再一次 }
+  - { word: "the day before yesterday", trans: 前天 }
+  - { word: yesterday, trans: 昨天 }
+  - { word: "typing letters", trans: 打信件 }
+  - { word: arrive, trans: 到达（过去式 arrived） }
+  - { word: last, trans: 最近的，上一个 }
+  - { word: then, trans: 然后 }
+  - { word: answer, trans: 接（电话）/ 回答 }
+  - { word: daughter, trans: 女儿 }
 ---
 
 # Lesson 71: How did Pauline answer the telephone at nine o'clock?

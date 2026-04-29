@@ -4,25 +4,25 @@ title: "Penny's Bag"
 tags:
   - NCE-1
 vocabulary:
-  - heavy 重的
-  - piece 块/片
-  - cheese 奶酪
-  - loaf 一条（面包）
-  - bread 面包
-  - bar 一块（条状物）
-  - soap 肥皂
-  - chocolate 巧克力
-  - bottle 瓶
-  - milk 牛奶
-  - pound 磅
-  - sugar 糖
-  - half 一半
-  - coffee 咖啡
-  - quarter 四分之一
-  - tea 茶
-  - tin 罐
-  - tobacco 烟草
-  - certainly 当然
+  - { word: heavy, trans: 重的 }
+  - { word: piece, trans: 块/片 }
+  - { word: cheese, trans: 奶酪 }
+  - { word: loaf, trans: 一条（面包） }
+  - { word: bread, trans: 面包 }
+  - { word: bar, trans: 一块（条状物） }
+  - { word: soap, trans: 肥皂 }
+  - { word: chocolate, trans: 巧克力 }
+  - { word: bottle, trans: 瓶 }
+  - { word: milk, trans: 牛奶 }
+  - { word: pound, trans: 磅 }
+  - { word: sugar, trans: 糖 }
+  - { word: half, trans: 一半 }
+  - { word: coffee, trans: 咖啡 }
+  - { word: quarter, trans: 四分之一 }
+  - { word: tea, trans: 茶 }
+  - { word: tin, trans: 罐 }
+  - { word: tobacco, trans: 烟草 }
+  - { word: certainly, trans: 当然 }
 ---
 
 # Lesson 41: Who is the tin of tobacco for?

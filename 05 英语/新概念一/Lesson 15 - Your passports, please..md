@@ -4,15 +4,15 @@ title: Your passports, please.
 tags:
   - NCE-1
 vocabulary:
-  - Swedish 瑞典的；瑞典人
-  - Danish 丹麦的；丹麦人
-  - Norwegian 挪威的；挪威人
-  - passport 护照
-  - Customs 海关
-  - officer 官员
-  - case 箱子
-  - brown 棕色的
-  - tourist 游客
+  - { word: Swedish, trans: 瑞典的；瑞典人 }
+  - { word: Danish, trans: 丹麦的；丹麦人 }
+  - { word: Norwegian, trans: 挪威的；挪威人 }
+  - { word: passport, trans: 护照 }
+  - { word: Customs, trans: 海关 }
+  - { word: officer, trans: 官员 }
+  - { word: case, trans: 箱子 }
+  - { word: brown, trans: 棕色的 }
+  - { word: tourist, trans: 游客 }
 ---
 
 # Lesson 15: Is there a problem with the Customs officer?

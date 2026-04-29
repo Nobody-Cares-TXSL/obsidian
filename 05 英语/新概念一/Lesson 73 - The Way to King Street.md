@@ -4,28 +4,28 @@ title: The Way to King Street
 tags:
   - NCE-1
 vocabulary:
-  - lose 迷失（lose one's way 迷路）
-  - suddenly 突然
-  - bus stop 公交车站
-  - pleasantly 愉快地
-  - understand 理解
-  - speak 说（某种语言）
-  - German 德语/德国的
-  - tourist 游客
-  - pocket 口袋
-  - phrasebook 短语手册
-  - slowly 慢慢地
-  - smile 微笑
-  - London 伦敦
-  - lost 迷失的（lose 的过去式）
-  - said 说（say 的过去式）
-  - tell 告诉
-  - King Street 国王街
-  - spoke 说（speak 的过去式）
-  - then 然后
-  - took 拿（take 的过去式）
-  - phrase 短语
-  - found 找到（find 的过去式）
+  - { word: lose, trans: 迷失（lose one's way 迷路） }
+  - { word: suddenly, trans: 突然 }
+  - { word: "bus stop", trans: 公交车站 }
+  - { word: pleasantly, trans: 愉快地 }
+  - { word: understand, trans: 理解 }
+  - { word: speak, trans: 说（某种语言） }
+  - { word: German, trans: 德语/德国的 }
+  - { word: tourist, trans: 游客 }
+  - { word: pocket, trans: 口袋 }
+  - { word: phrasebook, trans: 短语手册 }
+  - { word: slowly, trans: 慢慢地 }
+  - { word: smile, trans: 微笑 }
+  - { word: London, trans: 伦敦 }
+  - { word: lost, trans: 迷失的（lose 的过去式） }
+  - { word: said, trans: 说（say 的过去式） }
+  - { word: tell, trans: 告诉 }
+  - { word: "King Street", trans: 国王街 }
+  - { word: spoke, trans: 说（speak 的过去式） }
+  - { word: then, trans: 然后 }
+  - { word: took, trans: 拿（take 的过去式） }
+  - { word: phrase, trans: 短语 }
+  - { word: found, trans: 找到（find 的过去式） }
 ---
 
 # Lesson 73: Why did the man need a phrasebook?

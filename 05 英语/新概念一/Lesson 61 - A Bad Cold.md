@@ -4,15 +4,15 @@ title: "A Bad Cold"
 tags:
   - NCE-1
 vocabulary:
-  - ill 生病的
-  - tongue 舌头
-  - cold 感冒（名词）
-  - news 消息
-  - remember 记住
-  - call 叫/打电话叫
-  - telephone 电话
-  - mouth 嘴巴
-  - stay 停留/待
+  - { word: ill, trans: 生病的 }
+  - { word: tongue, trans: 舌头 }
+  - { word: cold, trans: 感冒（名词） }
+  - { word: news, trans: 消息 }
+  - { word: remember, trans: 记住 }
+  - { word: call, trans: 叫/打电话叫 }
+  - { word: telephone, trans: 电话 }
+  - { word: mouth, trans: 嘴巴 }
+  - { word: stay, trans: 停留/待 }
 ---
 
 # Lesson 61: What is good news for Jimmy?

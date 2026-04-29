@@ -4,18 +4,18 @@ title: Uncomfortable Shoes
 tags:
   - NCE-1
 vocabulary:
-  - size 尺码
-  - pair 一双（a pair of）
-  - bought 买（buy 的过去式）
-  - uncomfortable 不舒服的
-  - wear 穿着
-  - fashion 时尚/流行
-  - afraid 恐怕的
-  - shoes 鞋子
-  - month 月份/月
-  - those 那些
-  - ago ……以前
-  - the year before last 前年
+  - { word: size, trans: 尺码 }
+  - { word: pair, trans: 一双（a pair of） }
+  - { word: bought, trans: 买（buy 的过去式） }
+  - { word: uncomfortable, trans: 不舒服的 }
+  - { word: wear, trans: 穿着 }
+  - { word: fashion, trans: 时尚/流行 }
+  - { word: afraid, trans: 恐怕的 }
+  - { word: shoes, trans: 鞋子 }
+  - { word: month, trans: 月份/月 }
+  - { word: those, trans: 那些 }
+  - { word: ago, trans: ……以前 }
+  - { word: "the year before last", trans: 前年 }
 ---
 
 # Lesson 75: What's wrong with the fashionable shoes?

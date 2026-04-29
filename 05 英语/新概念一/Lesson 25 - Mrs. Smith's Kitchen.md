@@ -4,14 +4,14 @@ title: Mrs. Smith's Kitchen
 tags:
   - NCE-1
 vocabulary:
-  - refrigerator 冰箱
-  - electric cooker 电炉
-  - right 右边
-  - left 左边
-  - middle 中间
-  - empty 空的
-  - clean 干净的
-  - kitchen 厨房
+  - { word: refrigerator, trans: 冰箱 }
+  - { word: "electric cooker", trans: 电炉 }
+  - { word: right, trans: 右边 }
+  - { word: left, trans: 左边 }
+  - { word: middle, trans: 中间 }
+  - { word: empty, trans: 空的 }
+  - { word: clean, trans: 干净的 }
+  - { word: kitchen, trans: 厨房 }
 ---
 
 # Lesson 25: What colour is the electric cooker?

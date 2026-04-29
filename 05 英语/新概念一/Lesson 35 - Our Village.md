@@ -4,20 +4,20 @@ title: "Our Village"
 tags:
   - NCE-1
 vocabulary:
-  - photograph 照片
-  - village 村庄
-  - valley 山谷
-  - hill 小山
-  - between 在……之间
-  - another 另一个
-  - beside 在……旁边
-  - building 建筑物
-  - park 公园
-  - into 进入
-  - along 沿着
-  - across 穿过
-  - bank 河岸（也指"银行"）
-  - wife 妻子
+  - { word: photograph, trans: 照片 }
+  - { word: village, trans: 村庄 }
+  - { word: valley, trans: 山谷 }
+  - { word: hill, trans: 小山 }
+  - { word: between, trans: 在……之间 }
+  - { word: another, trans: 另一个 }
+  - { word: beside, trans: 在……旁边 }
+  - { word: building, trans: 建筑物 }
+  - { word: park, trans: 公园 }
+  - { word: into, trans: 进入 }
+  - { word: along, trans: 沿着 }
+  - { word: across, trans: 穿过 }
+  - { word: bank, trans: 河岸（也指"银行"） }
+  - { word: wife, trans: 妻子 }
 ---
 
 # Lesson 35: Are the children coming out of the park or going into it?

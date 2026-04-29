@@ -4,12 +4,12 @@ title: "Hurry Up"
 tags:
   - NCE-1
 vocabulary:
-  - kettle 水壶
-  - teapot 茶壶
-  - boil 煮沸
-  - cupboard 橱柜
-  - behind 在……后面
-  - hurry up 快点
+  - { word: kettle, trans: 水壶 }
+  - { word: teapot, trans: 茶壶 }
+  - { word: boil, trans: 煮沸 }
+  - { word: cupboard, trans: 橱柜 }
+  - { word: behind, trans: 在……后面 }
+  - { word: "hurry up", trans: 快点 }
 ---
 
 # Lesson 43: How do you know Sam doesn't make the tea very often?

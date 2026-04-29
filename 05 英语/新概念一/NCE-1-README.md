@@ -2,6 +2,13 @@
 
 基于 [learnenai.com](https://learnenai.com/) 的新概念英语第一册学习笔记。
 
+```dataviewjs
+let pages = dv.pages("#NCE-1").where(p => p.vocabulary);
+let allWords = pages.array().flatMap(p => p.vocabulary.map(v => v.word));
+let uniqueWords = new Set(allWords);
+dv.paragraph(`新概念一现有 **${uniqueWords.size}** 个不重复生词（共 ${allWords.length} 条）`);
+```
+
 ## 目录
 
 | 课号 | 标题 | 核心知识点 |
@@ -47,16 +54,16 @@
 
 ## 生词总览
 
-```dataview
-TABLE vocabulary AS "生词"
-FROM #NCE-1
-WHERE vocabulary
-SORT lesson ASC
+```dataviewjs
+dv.table(["课程", "生词"],
+  dv.pages("#NCE-1")
+    .where(p => p.vocabulary)
+    .sort(p => p.lesson, "asc")
+    .map(p => [
+      p.file.link,
+      p.vocabulary.map(v => v.word + " " + v.trans).join("<br>")
+    ])
+)
 ```
 
 ---
-
-## 使用说明
-
-- 使用 `/english-md <url>` 命令生成新笔记
-- 格式参照 `00 模板/新概念英语模板.md`

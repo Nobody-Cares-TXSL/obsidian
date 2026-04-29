@@ -4,8 +4,8 @@ title: Excuse me!
 tags:
   - NCE-1
 vocabulary:
-  - handbag 手提包
-  - pardon 请再说一遍
+  - { word: handbag, trans: 手提包 }
+  - { word: pardon, trans: 请再说一遍 }
 ---
 
 # Lesson 1: Whose handbag is it?

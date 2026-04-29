@@ -4,12 +4,12 @@ title: Sorry, sir.
 tags:
   - NCE-1
 vocabulary:
-  - coat 大衣
-  - umbrella 雨伞
-  - ticket 票；凭证
-  - sir 先生
-  - number 号码；数字
-  - sorry 对不起
+  - { word: coat, trans: 大衣 }
+  - { word: umbrella, trans: 雨伞 }
+  - { word: ticket, trans: 票；凭证 }
+  - { word: sir, trans: 先生 }
+  - { word: number, trans: 号码；数字 }
+  - { word: sorry, trans: 对不起 }
 ---
 
 # Lesson 3: Does the man get his umbrella back?

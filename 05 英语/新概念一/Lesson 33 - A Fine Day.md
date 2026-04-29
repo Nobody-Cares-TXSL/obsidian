@@ -4,17 +4,17 @@ title: "A Fine Day"
 tags:
   - NCE-1
 vocabulary:
-  - cloud 云
-  - shine 发光，照耀
-  - bridge 桥
-  - boat 船
-  - ship 轮船
-  - aeroplane 飞机
-  - over 在……上方，越过
-  - look at 看……
-  - family 家庭
-  - river 河
-  - wife 妻子
+  - { word: cloud, trans: 云 }
+  - { word: shine, trans: 发光，照耀 }
+  - { word: bridge, trans: 桥 }
+  - { word: boat, trans: 船 }
+  - { word: ship, trans: 轮船 }
+  - { word: aeroplane, trans: 飞机 }
+  - { word: over, trans: 在……上方，越过 }
+  - { word: "look at", trans: 看…… }
+  - { word: family, trans: 家庭 }
+  - { word: river, trans: 河 }
+  - { word: wife, trans: 妻子 }
 ---
 
 # Lesson 33: Where is the Jones family?

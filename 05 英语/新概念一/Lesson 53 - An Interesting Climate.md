@@ -4,26 +4,26 @@ title: "An Interesting Climate"
 tags:
   - NCE-1
 vocabulary:
-  - England 英格兰
-  - country 国家
-  - climate 气候
-  - pleasant 宜人的
-  - mild 温和的
-  - wet 潮湿的
-  - North 北方
-  - East 东方
-  - West 西方
-  - South 南方
-  - season 季节
-  - best 最好的
-  - early 早的
-  - late 迟的
-  - rise 升起
-  - set 落下
-  - interesting 有趣的
-  - certainly 确实，的确
-  - subject 话题
-  - conversation 交谈
+  - { word: England, trans: 英格兰 }
+  - { word: country, trans: 国家 }
+  - { word: climate, trans: 气候 }
+  - { word: pleasant, trans: 宜人的 }
+  - { word: mild, trans: 温和的 }
+  - { word: wet, trans: 潮湿的 }
+  - { word: North, trans: 北方 }
+  - { word: East, trans: 东方 }
+  - { word: West, trans: 西方 }
+  - { word: South, trans: 南方 }
+  - { word: season, trans: 季节 }
+  - { word: best, trans: 最好的 }
+  - { word: early, trans: 早的 }
+  - { word: late, trans: 迟的 }
+  - { word: rise, trans: 升起 }
+  - { word: set, trans: 落下 }
+  - { word: interesting, trans: 有趣的 }
+  - { word: certainly, trans: 确实，的确 }
+  - { word: subject, trans: 话题 }
+  - { word: conversation, trans: 交谈 }
 ---
 
 # Lesson 53: What is the favourite subject of conversation in England?

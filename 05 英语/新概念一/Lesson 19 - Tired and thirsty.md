@@ -4,11 +4,11 @@ title: Tired and thirsty
 tags:
   - NCE-1
 vocabulary:
-  - matter 事情；麻烦
-  - tired 累的
-  - thirsty 渴的
-  - ice cream 冰淇淋
-  - right 好的/没事的
+  - { word: matter, trans: 事情；麻烦 }
+  - { word: tired, trans: 累的 }
+  - { word: thirsty, trans: 渴的 }
+  - { word: "ice cream", trans: 冰淇淋 }
+  - { word: right, trans: 好的/没事的 }
 ---
 
 # Lesson 19: Why do the children thank their mother?

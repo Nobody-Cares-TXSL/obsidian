@@ -4,7 +4,7 @@ title: How are you today
 tags:
   - NCE-1
 vocabulary:
-  - well 好的/健康的
+  - { word: well, trans: 好的/健康的 }
 ---
 
 # Lesson 9: How is Emma?

@@ -4,17 +4,17 @@ title: Mrs. Smith's Living Room
 tags:
   - NCE-1
 vocabulary:
-  - living room 客厅
-  - television 电视机
-  - near 在……附近
-  - window 窗户
-  - magazines 杂志
-  - newspapers 报纸
-  - armchairs 扶手椅
-  - stereo 立体声音响
-  - door 门
-  - pictures 画
-  - wall 墙
+  - { word: "living room", trans: 客厅 }
+  - { word: television, trans: 电视机 }
+  - { word: near, trans: 在……附近 }
+  - { word: window, trans: 窗户 }
+  - { word: magazines, trans: 杂志 }
+  - { word: newspapers, trans: 报纸 }
+  - { word: armchairs, trans: 扶手椅 }
+  - { word: stereo, trans: 立体声音响 }
+  - { word: door, trans: 门 }
+  - { word: pictures, trans: 画 }
+  - { word: wall, trans: 墙 }
 ---
 
 # Lesson 27: Where are the books?

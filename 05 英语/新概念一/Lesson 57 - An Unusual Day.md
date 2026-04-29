@@ -4,15 +4,15 @@ title: "An Unusual Day"
 tags:
   - NCE-1
 vocabulary:
-  - unusual 不寻常的
-  - o'clock ……点钟
-  - by car 乘车
-  - on foot 步行
-  - shop 商店
-  - tonight 今晚
-  - moment 片刻，时刻
-  - living room 客厅
-  - garden 花园
+  - { word: unusual, trans: 不寻常的 }
+  - { word: "o'clock", trans: ……点钟 }
+  - { word: "by car", trans: 乘车 }
+  - { word: "on foot", trans: 步行 }
+  - { word: shop, trans: 商店 }
+  - { word: tonight, trans: 今晚 }
+  - { word: moment, trans: 片刻，时刻 }
+  - { word: "living room", trans: 客厅 }
+  - { word: garden, trans: 花园 }
 ---
 
 # Lesson 57: What is Mr. Sawyer doing tonight?

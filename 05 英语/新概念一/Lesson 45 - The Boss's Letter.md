@@ -4,14 +4,14 @@ title: "The Boss's Letter"
 tags:
   - NCE-1
 vocabulary:
-  - boss 老板
-  - minute 分钟
-  - ask 请求
-  - type 打字
-  - letter 信件
-  - handwriting 笔迹
-  - terrible 糟糕的
-  - next door 隔壁
+  - { word: boss, trans: 老板 }
+  - { word: minute, trans: 分钟 }
+  - { word: ask, trans: 请求 }
+  - { word: type, trans: 打字 }
+  - { word: letter, trans: 信件 }
+  - { word: handwriting, trans: 笔迹 }
+  - { word: terrible, trans: 糟糕的 }
+  - { word: "next door", trans: 隔壁 }
 ---
 
 # Lesson 45: Why can't Pamela type the letter?

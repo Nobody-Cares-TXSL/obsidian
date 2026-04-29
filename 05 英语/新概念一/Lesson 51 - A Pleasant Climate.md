@@ -4,30 +4,30 @@ title: "A Pleasant Climate"
 tags:
   - NCE-1
 vocabulary:
-  - Greece 希腊
-  - climate 气候
-  - pleasant 宜人的
-  - windy 有风的
-  - shine 照耀
-  - March 三月
-  - always 总是
-  - warm 温暖的
-  - April 四月
-  - May 五月
-  - rain 下雨
-  - summer 夏天
-  - hot 炎热的
-  - June 六月
-  - July 七月
-  - August 八月
-  - cold 寒冷的
-  - autumn 秋天
-  - September 九月
-  - October 十月
-  - November 十一月
-  - winter 冬天
-  - December 十二月
-  - January 一月
+  - { word: Greece, trans: 希腊 }
+  - { word: climate, trans: 气候 }
+  - { word: pleasant, trans: 宜人的 }
+  - { word: windy, trans: 有风的 }
+  - { word: shine, trans: 照耀 }
+  - { word: March, trans: 三月 }
+  - { word: always, trans: 总是 }
+  - { word: warm, trans: 温暖的 }
+  - { word: April, trans: 四月 }
+  - { word: May, trans: 五月 }
+  - { word: rain, trans: 下雨 }
+  - { word: summer, trans: 夏天 }
+  - { word: hot, trans: 炎热的 }
+  - { word: June, trans: 六月 }
+  - { word: July, trans: 七月 }
+  - { word: August, trans: 八月 }
+  - { word: cold, trans: 寒冷的 }
+  - { word: autumn, trans: 秋天 }
+  - { word: September, trans: 九月 }
+  - { word: October, trans: 十月 }
+  - { word: November, trans: 十一月 }
+  - { word: winter, trans: 冬天 }
+  - { word: December, trans: 十二月 }
+  - { word: January, trans: 一月 }
   - February 二月
   - snow 下雪
   - country 国家

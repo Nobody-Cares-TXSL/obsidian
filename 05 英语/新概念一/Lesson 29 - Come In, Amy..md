@@ -4,14 +4,14 @@ title: "Come In, Amy."
 tags:
   - NCE-1
 vocabulary:
-  - shut 关上
-  - untidy 不整洁的，乱的
-  - air 使通风，换空气
-  - wardrobe 衣柜
-  - dust 掸去……的灰尘
-  - sweep 扫，打扫
-  - dressing table 梳妆台
-  - make the bed 整理床铺
+  - { word: shut, trans: 关上 }
+  - { word: untidy, trans: 不整洁的，乱的 }
+  - { word: air, trans: 使通风，换空气 }
+  - { word: wardrobe, trans: 衣柜 }
+  - { word: dust, trans: 掸去……的灰尘 }
+  - { word: sweep, trans: 扫，打扫 }
+  - { word: "dressing table", trans: 梳妆台 }
+  - { word: "make the bed", trans: 整理床铺 }
 ---
 
 # Lesson 29: How must Amy clean the floor?

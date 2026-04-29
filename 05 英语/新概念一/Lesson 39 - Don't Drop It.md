@@ -4,12 +4,12 @@ title: "Don't Drop It"
 tags:
   - NCE-1
 vocabulary:
-  - vase 花瓶
-  - drop 掉落
-  - flower 花
-  - careful 小心的
-  - front 前面
-  - shelf 架子
+  - { word: vase, trans: 花瓶 }
+  - { word: drop, trans: 掉落 }
+  - { word: flower, trans: 花 }
+  - { word: careful, trans: 小心的 }
+  - { word: front, trans: 前面 }
+  - { word: shelf, trans: 架子 }
 ---
 
 # Lesson 39: Where does Sam put the vase in the end?

@@ -4,22 +4,22 @@ title: The Car Race
 tags:
   - NCE-1
 vocabulary:
-  - town 城镇
-  - race 比赛
-  - hundreds 数百（hundred 复数形式）
-  - crowd 人群
-  - exciting 激动人心的
-  - finish 结尾/终点
-  - winner 获胜者
-  - fifteen 十五
-  - twenty 二十
-  - behind 在……后面
-  - drive 驾驶
-  - quickly 快地
-  - standing 站立（stand 的现在分词）
-  - American 美国的/美国人
-  - on the way home 在回家的路上
-  - say to 对……说
+  - { word: town, trans: 城镇 }
+  - { word: race, trans: 比赛 }
+  - { word: hundreds, trans: 数百（hundred 复数形式） }
+  - { word: crowd, trans: 人群 }
+  - { word: exciting, trans: 激动人心的 }
+  - { word: finish, trans: 结尾/终点 }
+  - { word: winner, trans: 获胜者 }
+  - { word: fifteen, trans: 十五 }
+  - { word: twenty, trans: 二十 }
+  - { word: behind, trans: 在……后面 }
+  - { word: drive, trans: 驾驶 }
+  - { word: quickly, trans: 快地 }
+  - { word: standing, trans: 站立（stand 的现在分词） }
+  - { word: American, trans: 美国的/美国人 }
+  - { word: "on the way home", trans: 在回家的路上 }
+  - { word: "say to", trans: 对……说 }
 ---
 
 # Lesson 69: Which car was the winner in 1995?

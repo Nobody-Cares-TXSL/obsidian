@@ -4,16 +4,16 @@ title: "At the Butcher's"
 tags:
   - NCE-1
 vocabulary:
-  - meat 肉
-  - beef 牛肉
-  - lamb 羊肉
-  - steak 牛排
-  - mince 肉末
-  - chicken 鸡/鸡肉
-  - butcher 肉贩
-  - truth 真相
-  - husband 丈夫
-  - either 也（否定句）
+  - { word: meat, trans: 肉 }
+  - { word: beef, trans: 牛肉 }
+  - { word: lamb, trans: 羊肉 }
+  - { word: steak, trans: 牛排 }
+  - { word: mince, trans: 肉末 }
+  - { word: chicken, trans: 鸡/鸡肉 }
+  - { word: butcher, trans: 肉贩 }
+  - { word: truth, trans: 真相 }
+  - { word: husband, trans: 丈夫 }
+  - { word: either, trans: 也（否定句） }
 ---
 
 # Lesson 49: What does Mr. Bird like?

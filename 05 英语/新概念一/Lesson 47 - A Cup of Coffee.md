@@ -4,10 +4,10 @@ title: "A Cup of Coffee"
 tags:
   - NCE-1
 vocabulary:
-  - sugar 糖
-  - milk 牛奶
-  - biscuit 饼干
-  - black coffee 黑咖啡
+  - { word: sugar, trans: 糖 }
+  - { word: milk, trans: 牛奶 }
+  - { word: biscuit, trans: 饼干 }
+  - { word: "black coffee", trans: 黑咖啡 }
 ---
 
 # Lesson 47: How does Ann like her coffee?

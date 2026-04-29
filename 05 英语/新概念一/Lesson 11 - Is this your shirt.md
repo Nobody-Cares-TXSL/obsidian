@@ -4,10 +4,10 @@ title: Is this your shirt
 tags:
   - NCE-1
 vocabulary:
-  - shirt 衬衫
-  - whose 谁的
-  - perhaps 也许
-  - catch 接住
+  - { word: shirt, trans: 衬衫 }
+  - { word: whose, trans: 谁的 }
+  - { word: perhaps, trans: 也许 }
+  - { word: catch, trans: 接住 }
 ---
 
 # Lesson 11: Whose shirt is white?

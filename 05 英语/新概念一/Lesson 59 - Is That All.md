@@ -4,13 +4,13 @@ title: "Is That All"
 tags:
   - NCE-1
 vocabulary:
-  - envelope 信封
-  - writing paper 信纸
-  - pad 便签簿
-  - glue 胶水
-  - chalk 粉笔
-  - change 零钱/找零
-  - large 大的
+  - { word: envelope, trans: 信封 }
+  - { word: "writing paper", trans: 信纸 }
+  - { word: pad, trans: 便签簿 }
+  - { word: glue, trans: 胶水 }
+  - { word: chalk, trans: 粉笔 }
+  - { word: change, trans: 零钱/找零 }
+  - { word: large, trans: 大的 }
 ---
 
 # Lesson 59: Does the lady buy any chalk?

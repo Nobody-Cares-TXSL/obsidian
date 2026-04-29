@@ -4,15 +4,15 @@ title: How do you do
 tags:
   - NCE-1
 vocabulary:
-  - employee 员工
-  - hard-working 勤奋的
-  - sales rep 销售代表
-  - lazy 懒惰的
-  - office assistant 办公室助理
-  - busy 忙的
-  - young 年轻的
-  - men 男人
-  - women 女人
+  - { word: employee, trans: 员工 }
+  - { word: hard-working, trans: 勤奋的 }
+  - { word: "sales rep", trans: 销售代表 }
+  - { word: lazy, trans: 懒惰的 }
+  - { word: "office assistant", trans: 办公室助理 }
+  - { word: busy, trans: 忙的 }
+  - { word: young, trans: 年轻的 }
+  - { word: men, trans: 男人 }
+  - { word: women, trans: 女人 }
 ---
 
 # Lesson 17: What are Michael Baker and Jeremy Short's jobs?

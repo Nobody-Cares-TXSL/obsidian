@@ -4,8 +4,8 @@ title: Which Glasses
 tags:
   - NCE-1
 vocabulary:
-  - glasses 眼镜
-  - shelf 架子
+  - { word: glasses, trans: 眼镜 }
+  - { word: shelf, trans: 架子 }
 ---
 
 # Lesson 23: Which glasses does the man want?

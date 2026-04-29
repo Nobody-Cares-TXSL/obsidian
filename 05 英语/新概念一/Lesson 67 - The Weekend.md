@@ -4,21 +4,21 @@ title: The Weekend
 tags:
   - NCE-1
 vocabulary:
-  - butcher 肉贩/肉店
-  - greengrocer's 蔬菜水果店
-  - absent 缺席的
-  - spend 度过/花费
-  - weekend 周末
-  - country 乡下
-  - lucky 幸运的
-  - were be 动词过去式（复数/第二人称）
-  - Monday 周一
-  - Tuesday 周二
-  - Wednesday 周三
-  - Thursday 周四
-  - Friday 周五
-  - Saturday 周六
-  - Sunday 周日
+  - { word: butcher, trans: 肉贩/肉店 }
+  - { word: "greengrocer's", trans: 蔬菜水果店 }
+  - { word: absent, trans: 缺席的 }
+  - { word: spend, trans: 度过/花费 }
+  - { word: weekend, trans: 周末 }
+  - { word: country, trans: 乡下 }
+  - { word: lucky, trans: 幸运的 }
+  - { word: were, trans: be 动词过去式（复数/第二人称） }
+  - { word: Monday, trans: 周一 }
+  - { word: Tuesday, trans: 周二 }
+  - { word: Wednesday, trans: 周三 }
+  - { word: Thursday, trans: 周四 }
+  - { word: Friday, trans: 周五 }
+  - { word: Saturday, trans: 周六 }
+  - { word: Sunday, trans: 周日 }
 ---
 
 # Lesson 67: What are the Johnsons going to do at the weekend?

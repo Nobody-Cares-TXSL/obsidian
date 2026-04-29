@@ -4,17 +4,17 @@ title: Not a Baby
 tags:
   - NCE-1
 vocabulary:
-  - evening 晚上
-  - late 迟的/晚的
-  - early 早的
-  - key 钥匙
-  - front door 前门
-  - baby 婴儿
-  - hear 听见
-  - enjoy 享受
-  - half past ……点半
-  - after a quarter past 过一刻后
-  - ourselves 我们自己（反身代词）
+  - { word: evening, trans: 晚上 }
+  - { word: late, trans: 迟的/晚的 }
+  - { word: early, trans: 早的 }
+  - { word: key, trans: 钥匙 }
+  - { word: "front door", trans: 前门 }
+  - { word: baby, trans: 婴儿 }
+  - { word: hear, trans: 听见 }
+  - { word: enjoy, trans: 享受 }
+  - { word: "half past", trans: ……点半 }
+  - { word: "after a quarter past", trans: 过一刻后 }
+  - { word: ourselves, trans: 我们自己（反身代词） }
 ---
 
 # Lesson 65: Does Jill take the key to the front door?
