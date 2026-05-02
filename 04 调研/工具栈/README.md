@@ -44,7 +44,7 @@
 | **agent-reach** | 多平台互联网搜索与交互（15 通道） |
 | **notebooklm** | Google NotebookLM API 集成 |
 | **smart-search** | 智能搜索路由（基于 opencli） |
-| **opencli** | 网站操作命令集（usage · operate · repair · explorer · oneshot） |
+| **opencli** | 网站 CLI 框架（usage · browser · adapter-author · autofix · smart-search） |
 | **docx** | Word 文档创建与编辑 |
 | **find-skills** | 查找和安装可复用 AI 技能 |
 | **deep-analysis** | NotebookLM 输出全景深度分析 |
@@ -147,8 +147,8 @@
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
 | **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 79 站点 · 502 命令（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv） | 精确平台操作、自动化任务、数据抓取 |
-| **agent-reach** | AI 工具编排器 | 15 通道（Jina·GitHub·xreach·mcporter·Camoufox·yt-dlp） | 中文平台深度访问、Agent 集成 |
+| **opencli** | 网站 CLI 框架 | 103 站点 · 628 命令（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv） | 精确平台操作、自动化任务、数据抓取 |
+| **agent-reach** | 多平台信息代理 | 15 通道（Jina·GitHub·xreach·mcporter·Camoufox·yt-dlp） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
 
@@ -161,27 +161,30 @@
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### [opencli](https://github.com/jackwener/opencli)
+#### [opencli](https://github.com/jackwener/opencli) v1.7.8
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
 | 中文社交 | ✓ 内建 | 微博·知乎·B站·小红书·豆瓣·即刻·虎扑·V2EX·雪球 |
-| 国际平台 | ✓ 内建 | Twitter/X(23命令)·Reddit(14)·Instagram(17)·TikTok(15) |
-| AI 工具 | ✓ 内建 | ChatGPT·Cursor(10命令)·Gemini·NotebookLM(14) |
-| 生产力 | ✓ 内建 | Notion(8)·飞书·企业微信·钉钉 |
+| 国际平台 | ✓ 内建 | Twitter/X·Reddit·Instagram·TikTok |
+| AI 工具 | ✓ 内建 | ChatGPT·Cursor·Gemini·NotebookLM |
+| 生产力 | ✓ 内建 | Notion·飞书·企业微信·钉钉 |
+| 电商 | ✓ 内建 | 1688·淘宝·京东·拼多多 |
 | 公开 API | ✓ 内建 | HN·arXiv·Wikipedia·IMDb·Spotify·StackOverflow |
 
-**核心功能**：`opencli generate <url>` 一键生成适配器、`opencli record` 录制操作、`opencli operate` 浏览器自动化
+**核心技能**：`usage`（使用指南）· `browser`（浏览器自动化）· `adapter-author`（编写适配器）· `autofix`（自动修复适配器）· `smart-search`（智能搜索路由）
 
 #### [agent-reach](https://github.com/Panniantong/Agent-Reach)
 
 | Tier | 平台 | 状态 | 依赖 |
 |------|------|------|------|
-| 0 零配置 | Jina Reader · GitHub · RSS · YouTube (yt-dlp) · B站 | ✓ 可用 | 无 |
-| 1 轻配置 | Twitter/X (xreach) · Reddit · 微博 · 小宇宙 · Exa 搜索 | ⚠️ 待配置 | API Key |
-| 2 深配置 | 小红书 · 抖音 · 微信公众号 · LinkedIn · Boss直聘 | ⚠️ 待配置 | Docker + Cookie + mcporter/Camoufox |
+| 0 零配置 | GitHub · RSS · 任意网页 (Jina Reader) | ✓ 可用 | 无 |
+| 1 已配置 | YouTube (yt-dlp) · Twitter/X (xreach) · Reddit (代理) · Exa 语义搜索 · B站 · 微博 · 微信公众号 | ✓ 可用 | mcporter + xreach |
+| 2 待配置 | 小红书 · 抖音 · 小宇宙 · LinkedIn · Boss直聘 | ⚠️ 待配置 | Docker · Groq API · MCP Server |
 
-**核心功能**：`agent-reach doctor` 诊断、`--from-browser` Cookie 导入、MCP Server 模式
+**当前状态**：10/15 通道可用
+
+**核心功能**：`agent-reach doctor` 诊断、`agent-reach read <url>` 读取任意网页、`agent-reach search-twitter` 搜索推文、mcporter MCP 路由
 
 ### 使用建议
 
