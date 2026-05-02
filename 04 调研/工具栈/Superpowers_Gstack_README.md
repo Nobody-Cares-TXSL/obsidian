@@ -1,6 +1,6 @@
 **Superpowers + gstack 最佳实践使用指南**
 
-> 最后更新：2026-04-22，基于 Superpowers v5.0.7 + gstack v1.6.1.0 实际安装验证
+> 最后更新：2026-05-02，基于 Superpowers v5.0.7 + gstack v1.25.1.0 实际安装验证
 
 ## 更新日志源文件
 
@@ -27,7 +27,7 @@
 | 插件 | 版本 | 来源 | 定位 |
 |:-----|:-----|:-----|:-----|
 | Superpowers | 5.0.7 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
-| gstack | 1.6.1.0 | ~/.claude/skills/gstack/（手动安装） | 虚拟团队派：37 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
+| gstack | 1.25.1.0 | ~/.claude/skills/gstack/（手动安装） | 虚拟团队派：43 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
 
 ---
 
@@ -77,14 +77,14 @@ brainstorming（硬性门控）
 
 ## 二、gstack 单独使用
 
-### 核心机制：37 个 Slash Commands
+### 核心机制：43 个 Slash Commands
 
 gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一个角色/职能。
 
 ### 按阶段分组
 
 **决策层（新项目必用）**：
-- `/office-hours` — YC 风格 6 个 forcing questions，框定需求和设计
+- `/office-hours` — YC 风格 6 个 forcing questions，框定需求和设计（Phase 4 硬性门控，自动停止等待决策）
 - `/plan-ceo-review` — CEO 视角审计划（Expansion / Selective / Hold / Reduction）
 - `/plan-eng-review` — 工程经理锁架构、数据流、边角 case、测试计划
 - `/autoplan` — 一键自动跑 CEO → Design → Eng 审查流水线
@@ -108,20 +108,26 @@ gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一�
 - `/ship` — Release Engineer 打包 PR + 覆盖率检查
 - `/land-and-deploy` — 合并 + 上线
 - `/canary` — 金丝雀监控
+- `/landing-report` — 合并后生成落地报告（v1.25+ 新增）
 - `/document-release` — 生成 release notes
 - `/retro` — 周报回顾（shipping streak、测试健康度）
 
 **工具层**：
 - `/browse` — headless Chromium 浏览器（点击、截图、console）
+- `/scrape` — 网页抓取与结构化提取（v1.20+ 新增）
 - `/connect-chrome` — 连接本地 Chrome DevTools
 - `/setup-browser-cookies` — 配置浏览器 cookies
 - `/pair-agent` — 双 agent 结对编程
-- `/codex` — 召唤 OpenAI Codex 做第二意见
+- `/codex` — 召唤 OpenAI Codex 做第二意见（输出含 Recommendation 行）
 - `/benchmark` — 性能基准测试
 - `/health` — 项目健康检查
 - `/make-pdf` — 生成 PDF
 - `/learn` — 学习 gstack 用法
 - `/gstack-upgrade` — 升级 gstack
+
+**Skill 工程**：
+- `/skillify` — 从代码或文档生成 gstack skill（v1.20+ 新增）
+- `/setup-gbrain` — gbrain 联邦记忆初始化（v1.17+ 新增，跨机器同步）
 
 ### Garry Tan 日常流程
 
@@ -149,10 +155,11 @@ gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一�
 | **任务分解** | **Superpowers writing-plans** | 精确到文件名和验证步骤 |
 | **代码实现** | **Superpowers subagent-driven + TDD** | 强制测试、结构化执行 |
 | **调试** | Superpowers systematic-debugging + gstack `/investigate` | 双保险 |
-| 代码审查 | gstack `/review` | Staff Engineer 视角 |
+| 代码审查 | gstack `/review` + `/codex` | Staff Engineer + Codex 第二意见（含 Recommendation 行） |
 | 视觉审查 | gstack `/design-review` | 自动修复 |
 | QA 测试 | gstack `/qa` | 真实浏览器测试 |
 | 上线 | gstack `/ship` → `/land-and-deploy` → `/canary` | 完整发布流水线 |
+| 落地报告 | gstack `/landing-report` | 合并后生成落地报告 |
 | 复盘 | gstack `/retro` | 数据驱动回顾 |
 
 ### 推荐组合工作流
@@ -214,6 +221,7 @@ TDD 的 GREEN 阶段可能包含多次小修改。配合 `using-git-worktrees` �
 1. **`/plan-eng-review` 之后** — 架构和数据流锁定，写代码前的最后安全门
 2. **`brainstorming` 设计文档产出后** — 确认设计方向符合预期再分解任务
 3. **`writing-plans` 计划产出后** — 确认任务拆分粒度合理再开始实现
+4. **`/office-hours` Phase 4** — 架构分支选择（A/B/C），v1.25 硬性门控自动停止
 
 ### 安全防护组合
 
@@ -223,3 +231,12 @@ TDD 的 GREEN 阶段可能包含多次小修改。配合 `using-git-worktrees` �
 | 防破坏性操作 | — | `/careful` 警告 rm -rf / force-push |
 | 全模式 | — | `/guard` = careful + freeze |
 | 防调试乱改 | `systematic-debugging` 强制根因分析 | `/investigate` 自动冻结 |
+
+### v1.25 主要更新（2026-05-01）
+
+- **Office-hours Phase 4 硬性门控** — 架构分支选择不再自动跳过，必须等待用户确认
+- **Recommendation 质量评分** — Haiku 4.5 评委对推荐理由打分（1-5），低于 4 分不通过
+- **Codex 合成输出规范化** — `/codex` 的 review/challenge/consult 模式都输出 `Recommendation: <action> because <reason>` 行
+- **跨平台加固** — Windows 支持 + Bun.which 解析器 + 路径可移植性
+- **新增 4 个 skill** — `/landing-report`、`/scrape`、`/setup-gbrain`、`/skillify`
+- **gbrain 联邦记忆** — 跨机器 gstack 记忆同步（v1.9+）/browser-skills 运行时 + HN 前端 skill
