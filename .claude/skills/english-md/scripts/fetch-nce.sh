@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
+set -euo pipefail
 # 从 luzhenhua.cn 获取 NCE 课程数据
 # 用法: fetch-nce.sh <lesson_number>
 # 示例: fetch-nce.sh 25
 
 LESSON_NUM=${1:?"用法: fetch-nce.sh <lesson_number>"}
 
-source ~/.zshrc 2>/dev/null; proxy-on
+# 代理设置（失败不阻塞）
+(source ~/.zshrc 2>/dev/null && type proxy-on &>/dev/null && proxy-on) || true
 
 PADDED=$(printf "%03d" "$LESSON_NUM")
 NEXT_PADDED=$(printf "%03d" $((LESSON_NUM + 1)))
@@ -13,7 +15,7 @@ PAIR="${PADDED}&${NEXT_PADDED}"
 INDEX=$(( (LESSON_NUM - 1) / 2 ))
 
 # 获取 search_index.json 中的课文内容
-CONTENT=$(curl -s 'https://nce.luzhenhua.cn/static/search_index.json' | python3 -c "
+CONTENT=$(curl -sf --connect-timeout 10 --max-time 30 'https://nce.luzhenhua.cn/static/search_index.json' | python3 -c "
 import json, sys
 
 data = json.load(sys.stdin)
@@ -33,7 +35,7 @@ for item in data:
 ")
 
 # 获取 data.json 中的 filename 和 title
-META=$(curl -s 'https://nce.luzhenhua.cn/static/data.json' | python3 -c "
+META=$(curl -sf --connect-timeout 10 --max-time 30 'https://nce.luzhenhua.cn/static/data.json' | python3 -c "
 import json, sys
 
 data = json.load(sys.stdin)
