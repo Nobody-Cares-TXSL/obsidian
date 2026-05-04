@@ -41,20 +41,17 @@
 
 | 技能 | 功能 |
 |------|------|
-| **agent-reach** | 多平台互联网搜索与交互（15 通道） |
-| **notebooklm** | Google NotebookLM API 集成 |
-| **smart-search** | 智能搜索路由（基于 opencli） |
-| **opencli** | 网站 CLI 框架（usage · browser · adapter-author · autofix · smart-search） |
-| **docx** | Word 文档创建与编辑 |
+| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（15 通道） |
+| **[notebooklm](https://github.com/teng-lin/notebooklm-py)** | Google NotebookLM API 集成 |
+| **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · adapter-author · autofix · smart-search） |
 | **find-skills** | 查找和安装可复用 AI 技能 |
-| **deep-analysis** | NotebookLM 输出全景深度分析 |
-| **first-principles** | 第一性原理分析 |
 
 **项目技能** (`.claude/skills/`)
 
 | 技能 | 功能 |
 |------|------|
 | **english-md** | 新概念英语笔记生成 |
+| **learn-in-all** | 领域深度学习工作流（NotebookLM 建库 → 苏格拉底式问答 → Obsidian 笔记沉淀） |
 | **vault-graph** | Obsidian 仓库关系图谱 |
 | **obsidian-canvas-creator** | 文本转 Obsidian Canvas |
 | **excalidraw-diagram** | Excalidraw 图表生成 |
@@ -90,7 +87,7 @@
 | [opencli](https://opencli.info/docs/zh/) | 命令行工具集合 |
 | [github cli](https://cli.github.com/) | GitHub 官方命令行工具 |
 
-## 笔记
+## Obsidian 笔记
 
 - obsidian
 - obsidian cli
@@ -133,12 +130,13 @@
 
 | 插件 | 功能 |
 |------|------|
-| **claudian** | Claude AI 集成 |
-| **obsidian-excalidraw-plugin** | 手绘风格图表 |
-| **obsidian-export-image** | 导出笔记为图片 |
-| **obsidian-style-settings** | 样式自定义设置 |
-| **dataview** | 数据查询和索引 |
-| **cm-editor-syntax-highlight-obsidian** | 代码语法高亮 |
+| **claudian** | Claude AI 集成，将 vault 作为工作目录，支持文件读写、搜索和终端命令 |
+| **obsidian-excalidraw-plugin** | 手绘风格图表编辑与查看 |
+| **obsidian-export-image** | 将笔记导出为图片 |
+| **obsidian-style-settings** | 主题、插件和 CSS 片段的样式变量自定义 |
+| **dataview** | 数据查询和索引，支持类 SQL 语法查询笔记元数据 |
+| **cm-editor-syntax-highlight-obsidian** | 编辑器中代码块语法高亮 |
+| **terminal** | 在 Obsidian 中集成终端/Shell |
 
 ## 信息获取
 
