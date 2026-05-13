@@ -1,6 +1,6 @@
 **Superpowers + gstack 最佳实践使用指南**
 
-> 最后更新：2026-05-02，基于 Superpowers v5.0.7 + gstack v1.25.1.0 实际安装验证
+> 最后更新：2026-05-13，基于 Superpowers v5.1.0 + gstack v1.33.2.0 实际安装验证
 
 ## 更新日志源文件
 
@@ -26,8 +26,8 @@
 
 | 插件 | 版本 | 来源 | 定位 |
 |:-----|:-----|:-----|:-----|
-| Superpowers | 5.0.7 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
-| gstack | 1.25.1.0 | ~/.claude/skills/gstack/（手动安装） | 虚拟团队派：43 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
+| Superpowers | 5.1.0 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
+| gstack | 1.33.2.0 | ~/.claude/skills/gstack/（手动安装） | 虚拟团队派：46 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
 
 ---
 
@@ -77,7 +77,7 @@ brainstorming（硬性门控）
 
 ## 二、gstack 单独使用
 
-### 核心机制：43 个 Slash Commands
+### 核心机制：46 个 Slash Commands
 
 gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一个角色/职能。
 
@@ -128,6 +128,7 @@ gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一�
 **Skill 工程**：
 - `/skillify` — 从代码或文档生成 gstack skill（v1.20+ 新增）
 - `/setup-gbrain` — gbrain 联邦记忆初始化（v1.17+ 新增，跨机器同步）
+- `/sync-gbrain` — gbrain 联邦记忆同步（v1.33+ 新增）
 
 ### Garry Tan 日常流程
 
@@ -231,6 +232,14 @@ TDD 的 GREEN 阶段可能包含多次小修改。配合 `using-git-worktrees` �
 | 防破坏性操作 | — | `/careful` 警告 rm -rf / force-push |
 | 全模式 | — | `/guard` = careful + freeze |
 | 防调试乱改 | `systematic-debugging` 强制根因分析 | `/investigate` 自动冻结 |
+
+### v1.33 主要更新（2026-05-13）
+
+- **gbrain 联邦记忆增强** — 新增 `/sync-gbrain` 同步命令、`gstack-memory-ingest.ts` 批量记忆导入、`gstack-gbrain-sync.ts` 同步引擎
+- **浏览器安全加固** — SOCKS 代理桥接、代理配置/脱敏、Xvfb 虚拟显示、WebDriver 隐身模式、文件权限控制
+- **迁移系统** — `gstack-upgrade/migrations/v1.27.0.0.sh` 自动迁移脚本
+- **新增 skill** — `/sync-gbrain`（gbrain 联邦记忆同步）
+- **总计 46 个 skills**（较 v1.25 新增 1 个）
 
 ### v1.25 主要更新（2026-05-01）
 

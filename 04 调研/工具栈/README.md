@@ -41,9 +41,9 @@
 
 | 技能 | 功能 |
 |------|------|
-| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（15 通道） |
+| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（16 通道） |
 | **[notebooklm](https://github.com/teng-lin/notebooklm-py)** | Google NotebookLM API 集成 |
-| **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · adapter-author · autofix · smart-search） |
+| **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · adapter-author · autofix · smart-search · find-skills） |
 | **find-skills** | 查找和安装可复用 AI 技能 |
 
 **项目技能** (`.claude/skills/`)
@@ -145,8 +145,8 @@
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
 | **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 103 站点 · 628 命令（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv） | 精确平台操作、自动化任务、数据抓取 |
-| **agent-reach** | 多平台信息代理 | 15 通道（Jina·GitHub·xreach·mcporter·Camoufox·yt-dlp） | 中文平台深度访问、Agent 集成 |
+| **opencli** | 网站 CLI 框架 | 141 站点 · 810 命令 · 10 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv） | 精确平台操作、自动化任务、数据抓取 |
+| **agent-reach** | 多平台信息代理 | 16 通道（Jina·GitHub·xreach·mcporter·Camoufox·yt-dlp） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
 
@@ -159,14 +159,14 @@
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### [opencli](https://github.com/jackwener/opencli) v1.7.8
+#### [opencli](https://github.com/jackwener/opencli) v1.7.18
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
 | 中文社交 | ✓ 内建 | 微博·知乎·B站·小红书·豆瓣·即刻·虎扑·V2EX·雪球 |
 | 国际平台 | ✓ 内建 | Twitter/X·Reddit·Instagram·TikTok |
 | AI 工具 | ✓ 内建 | ChatGPT·Cursor·Gemini·NotebookLM |
-| 生产力 | ✓ 内建 | Notion·飞书·企业微信·钉钉 |
+| 生产力 | ✓ 内建 | Notion·飞书(Lark CLI)·企业微信·钉钉(DWS) |
 | 电商 | ✓ 内建 | 1688·淘宝·京东·拼多多 |
 | 公开 API | ✓ 内建 | HN·arXiv·Wikipedia·IMDb·Spotify·StackOverflow |
 
@@ -176,11 +176,12 @@
 
 | Tier | 平台 | 状态 | 依赖 |
 |------|------|------|------|
-| 0 零配置 | GitHub · RSS · 任意网页 (Jina Reader) | ✓ 可用 | 无 |
-| 1 已配置 | YouTube (yt-dlp) · Twitter/X (xreach) · Reddit (代理) · Exa 语义搜索 · B站 · 微博 · 微信公众号 | ✓ 可用 | mcporter + xreach |
-| 2 待配置 | 小红书 · 抖音 · 小宇宙 · LinkedIn · Boss直聘 | ⚠️ 待配置 | Docker · Groq API · MCP Server |
+| 0 零配置 | GitHub · RSS · 任意网页 (Jina Reader) · V2EX | ✓ 可用 | 无 |
+| 1 已安装 | YouTube (yt-dlp) · B站 (yt-dlp) | ✓ 可用 | yt-dlp |
+| 1 已安装 | Reddit · 微信公众号 · Exa 语义搜索 | ⚠️ 部分可用 | rdt-cli · Exa API |
+| 2 可选 | Twitter/X · 小红书 · 微博 · 小宇宙 · 雪球 · 抖音 · LinkedIn | ⚠️ 待安装 | 对应平台 CLI/API |
 
-**当前状态**：10/15 通道可用
+**当前状态**：6/16 通道可用
 
 **核心功能**：`agent-reach doctor` 诊断、`agent-reach read <url>` 读取任意网页、`agent-reach search-twitter` 搜索推文、mcporter MCP 路由
 
