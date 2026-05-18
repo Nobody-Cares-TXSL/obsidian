@@ -33,7 +33,7 @@
 |------|------|
 | **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · superpowers · claude-md-management |
 | **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
-| **last30days-skill** | last30days |
+| **last30days-skill** | last30days（v3.2.3） |
 
 #### Skills
 
@@ -145,7 +145,7 @@
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
 | **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 141 站点 · 810 命令 · 10 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv） | 精确平台操作、自动化任务、数据抓取 |
+| **opencli** | 网站 CLI 框架 | 143 站点 · 813 命令 · 12 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
 | **agent-reach** | 多平台信息代理 | 16 通道（Jina·GitHub·xreach·mcporter·Camoufox·yt-dlp） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
@@ -159,7 +159,7 @@
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### [opencli](https://github.com/jackwener/opencli) v1.7.18
+#### [opencli](https://github.com/jackwener/opencli) v1.7.22
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
