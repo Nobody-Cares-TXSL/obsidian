@@ -81,7 +81,7 @@
 | 工具 | 说明 |
 |------|------|
 | **claude code cli** | Claude Code 命令行工具 |
-| **yazi + lazygit** | 文件管理器 + Git TUI |
+| **yazi + lazygit** | 文件管理器 + Git TUI · [[yazi快捷键速查表]] |
 | **glow** | 终端 Markdown 阅读器 |
 | **bat** | 带语法高亮的 cat 替代品 |
 | [opencli](https://opencli.info/docs/zh/) | 命令行工具集合 |
