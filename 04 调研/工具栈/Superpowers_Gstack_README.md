@@ -1,6 +1,6 @@
 **Superpowers + gstack 最佳实践使用指南**
 
-> 最后更新：2026-05-16，基于 Superpowers v5.1.0 + gstack v1.39.1.0 实际安装验证
+> 最后更新：2026-06-06，基于 Superpowers v5.1.0 + gstack v1.56.0.0 实际安装验证
 
 ## 更新日志源文件
 
@@ -27,7 +27,7 @@
 | 插件 | 版本 | 来源 | 定位 |
 |:-----|:-----|:-----|:-----|
 | Superpowers | 5.1.0 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
-| gstack | 1.39.1.0 | ~/.claude/skills/gstack/（手动安装，opencode 侧通过符号链接访问） | 虚拟团队派：47 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
+| gstack | 1.56.0.0 | ~/.claude/skills/gstack/（手动安装，opencode 侧通过符号链接访问） | 虚拟团队派：53 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
 
 ---
 
@@ -77,7 +77,7 @@ brainstorming（硬性门控）
 
 ## 二、gstack 单独使用
 
-### 核心机制：47 个 Slash Commands
+### 核心机制：53 个 Slash Commands
 
 gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一个角色/职能。
 
@@ -88,6 +88,7 @@ gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一�
 - `/plan-ceo-review` — CEO 视角审计划（Expansion / Selective / Hold / Reduction）
 - `/plan-eng-review` — 工程经理锁架构、数据流、边角 case、测试计划
 - `/autoplan` — 一键自动跑 CEO → Design → Eng 审查流水线
+- `/spec` — 将模糊意图转化为精确可执行规格（五阶段）
 
 **设计层**：
 - `/design-consultation` — 从 0 建设计系统
@@ -130,6 +131,13 @@ gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一�
 - `/skillify` — 从代码或文档生成 gstack skill（v1.20+ 新增）
 - `/setup-gbrain` — gbrain 联邦记忆初始化（v1.17+ 新增，跨机器同步）
 - `/sync-gbrain` — gbrain 联邦记忆同步（v1.33+ 新增）
+
+**iOS 层**（SwiftUI 应用开发）：
+- `/ios-qa` — 真机 iOS QA 测试
+- `/ios-fix` — 自动化 iOS bug 修复
+- `/ios-design-review` — iOS 视觉设计审计
+- `/ios-clean` — 移除 DebugBridge SPM 包及 DEBUG 代码
+- `/ios-sync` — 同步重新生成 iOS debug bridge
 
 ### Garry Tan 日常流程
 
