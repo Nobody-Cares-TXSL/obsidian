@@ -1,6 +1,6 @@
 **Superpowers + gstack 最佳实践使用指南**
 
-> 最后更新：2026-06-06，基于 Superpowers v5.1.0 + gstack v1.56.0.0 实际安装验证
+> 最后更新：2026-06-14，基于 Superpowers v5.1.0 + gstack v1.58.0.0 实际安装验证
 
 ## 更新日志源文件
 
@@ -27,7 +27,7 @@
 | 插件 | 版本 | 来源 | 定位 |
 |:-----|:-----|:-----|:-----|
 | Superpowers | 5.1.0 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
-| gstack | 1.56.0.0 | ~/.claude/skills/gstack/（手动安装，opencode 侧通过符号链接访问） | 虚拟团队派：53 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
+| gstack | 1.58.0.0 | ~/.claude/skills/gstack/（手动安装，opencode 侧通过符号链接访问） | 虚拟团队派：54 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
 
 ---
 
@@ -77,7 +77,7 @@ brainstorming（硬性门控）
 
 ## 二、gstack 单独使用
 
-### 核心机制：53 个 Slash Commands
+### 核心机制：54 个 Slash Commands
 
 gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一个角色/职能。
 
@@ -124,6 +124,7 @@ gstack 将 Claude Code 变成虚拟工程团队，每个 `/xxx` 命令对应一�
 - `/benchmark` — 性能基准测试
 - `/health` — 项目健康检查
 - `/make-pdf` — 生成 PDF
+- `/diagram` — 生成图表（v1.58+ 新增）
 - `/learn` — 学习 gstack 用法
 - `/gstack-upgrade` — 升级 gstack
 

@@ -33,7 +33,7 @@
 |------|------|
 | **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · superpowers · claude-md-management |
 | **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
-| **last30days-skill** | last30days（v3.3.1） |
+| **last30days-skill** | last30days（v3.3.2） |
 
 #### Skills
 
@@ -41,9 +41,9 @@
 
 | 技能 | 功能 |
 |------|------|
-| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（16 通道） |
+| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（13 平台） |
 | **[notebooklm](https://github.com/teng-lin/notebooklm-py)** | Google NotebookLM API 集成 |
-| **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · browser-sitemap · sitemap-author · adapter-author · autofix · smart-search · find-skills） |
+| **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · browser-sitemap · sitemap-author · adapter-author · autofix · smart-search） |
 | **find-skills** | 查找和安装可复用 AI 技能 |
 
 **项目技能** (`.claude/skills/`)
@@ -145,8 +145,8 @@
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
 | **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 143 站点 · 813 命令 · 12 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
-| **agent-reach** | 多平台信息代理 | 16 通道（Jina·GitHub·xreach·mcporter·Camoufox·yt-dlp） | 中文平台深度访问、Agent 集成 |
+| **opencli** | 网站 CLI 框架 | 162 站点 · 1050 命令 · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
+| **agent-reach** | 多平台信息代理 | 13 平台（Jina·GitHub·yt-dlp·语义搜索） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
 
@@ -176,12 +176,11 @@
 
 | Tier | 平台 | 状态 | 依赖 |
 |------|------|------|------|
-| 0 零配置 | GitHub · RSS · 任意网页 (Jina Reader) · V2EX | ✓ 可用 | 无 |
-| 1 已安装 | YouTube (yt-dlp) · B站 (yt-dlp) | ✓ 可用 | yt-dlp |
-| 1 已安装 | Reddit · 微信公众号 · Exa 语义搜索 | ⚠️ 部分可用 | rdt-cli · Exa API |
-| 2 可选 | Twitter/X · 小红书 · 微博 · 小宇宙 · 雪球 · 抖音 · LinkedIn | ⚠️ 待安装 | 对应平台 CLI/API |
+| 0 零配置 | GitHub · YouTube · V2EX · RSS · 全网语义搜索 · 任意网页 (Jina Reader) | ✓ 可用 | 无 |
+| 1 已安装 | B站 (yt-dlp) | ✓ 可用 | yt-dlp |
+| 2 可选 | Twitter/X · Reddit · 小红书 · 小宇宙 · 雪球 · LinkedIn | ⚠️ 待安装 | 对应平台 CLI/API |
 
-**当前状态**：6/16 通道可用
+**当前状态**：7/13 渠道可用
 
 **核心功能**：`agent-reach doctor` 诊断、`agent-reach read <url>` 读取任意网页、`agent-reach search-twitter` 搜索推文、mcporter MCP 路由
 
