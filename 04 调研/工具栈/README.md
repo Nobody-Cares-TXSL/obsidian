@@ -81,7 +81,7 @@
 | 工具 | 说明 |
 |------|------|
 | **claude code cli** | Claude Code 命令行工具 |
-| **[RTK](https://github.com/rtk-ai/rtk)** | Token 优化代理，为 AI 编码助手节省 60-90% token（单 Rust 二进制，100+ 命令支持） |
+| **[RTK](https://github.com/rtk-ai/rtk)** | Token 优化代理，为 Claude Code / OpenCode 节省 60-90% token（单 Rust 二进制，100+ 命令支持） |
 | **yazi + lazygit** | 文件管理器 + Git TUI · [[04 调研/资料/yazi快捷键速查表]] |
 | **glow** | 终端 Markdown 阅读器 |
 | **bat** | 带语法高亮的 cat 替代品 |
