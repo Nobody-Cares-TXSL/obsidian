@@ -1,6 +1,6 @@
 **Superpowers + gstack 最佳实践使用指南**
 
-> 最后更新：2026-06-14，基于 Superpowers v5.1.0 + gstack v1.58.0.0 实际安装验证
+> 最后更新：2026-06-22，基于 Superpowers v6.0.3 + gstack v1.58.4.0 实际安装验证
 
 ## 更新日志源文件
 
@@ -26,8 +26,8 @@
 
 | 插件 | 版本 | 来源 | 定位 |
 |:-----|:-----|:-----|:-----|
-| Superpowers | 5.1.0 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
-| gstack | 1.58.0.0 | ~/.claude/skills/gstack/（手动安装，opencode 侧通过符号链接访问） | 虚拟团队派：54 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
+| Superpowers | 6.0.3 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
+| gstack | 1.58.4.0 | ~/.claude/skills/gstack/（手动安装，opencode 侧通过符号链接访问） | 虚拟团队派：54 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
 
 ---
 

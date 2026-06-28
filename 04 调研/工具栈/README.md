@@ -33,7 +33,7 @@
 |------|------|
 | **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · superpowers · claude-md-management |
 | **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
-| **last30days-skill** | last30days（v3.3.2） |
+| **last30days-skill** | last30days（v3.8.0） |
 
 #### Skills
 
@@ -81,6 +81,7 @@
 | 工具 | 说明 |
 |------|------|
 | **claude code cli** | Claude Code 命令行工具 |
+| **[RTK](https://github.com/rtk-ai/rtk)** | Token 优化代理，为 AI 编码助手节省 60-90% token（单 Rust 二进制，100+ 命令支持） |
 | **yazi + lazygit** | 文件管理器 + Git TUI · [[04 调研/资料/yazi快捷键速查表]] |
 | **glow** | 终端 Markdown 阅读器 |
 | **bat** | 带语法高亮的 cat 替代品 |
@@ -145,7 +146,7 @@
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
 | **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 162 站点 · 1050 命令 · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
+| **opencli** | 网站 CLI 框架 | 164 站点 · 1225 命令 · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
 | **agent-reach** | 多平台信息代理 | 13 平台（Jina·GitHub·yt-dlp·语义搜索） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
@@ -159,7 +160,7 @@
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### [opencli](https://github.com/jackwener/opencli) v1.8.3
+#### [opencli](https://github.com/jackwener/opencli) v1.8.4
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
@@ -180,7 +181,7 @@
 | 1 已安装 | B站 (yt-dlp) | ✓ 可用 | yt-dlp |
 | 2 可选 | Twitter/X · Reddit · 小红书 · 小宇宙 · 雪球 · LinkedIn | ⚠️ 待安装 | 对应平台 CLI/API |
 
-**当前状态**：7/13 渠道可用
+**当前状态**：6/13 渠道可用
 
 **核心功能**：`agent-reach doctor` 诊断、`agent-reach read <url>` 读取任意网页、`agent-reach search-twitter` 搜索推文、mcporter MCP 路由
 
