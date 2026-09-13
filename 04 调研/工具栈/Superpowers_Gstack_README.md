@@ -1,13 +1,15 @@
 **Superpowers + gstack 最佳实践使用指南**
 
-> 最后更新：2026-06-22，基于 Superpowers v6.0.3 + gstack v1.58.4.0 实际安装验证
+> ⚠️ **gstack 已弃用（2026-08-07）**：`~/.claude/skills/gstack` 已移除，opencode 侧符号链接与 `/xxx` 命令已清理。本文档仅保留 Superpowers 部分有效，gstack 相关章节仅供历史参考。
+
+> 最后更新：2026-09-13，基于 Superpowers v6.3.0 实际安装验证（gstack v1.58.4.0 已弃用）
 
 ## 更新日志源文件
 
 更新本文档时，读取以下两个文件获取最新版本信息：
 
 - Superpowers：`~/.claude/plugins/cache/claude-plugins-official/superpowers/*/CHANGELOG.md`
-- gstack：`~/.claude/skills/gstack/CHANGELOG.md`
+- gstack：~~`~/.claude/skills/gstack/CHANGELOG.md`~~（已弃用，目录已移除）
 
 ---
 
@@ -26,8 +28,8 @@
 
 | 插件 | 版本 | 来源 | 定位 |
 |:-----|:-----|:-----|:-----|
-| Superpowers | 6.0.3 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
-| gstack | 1.58.4.0 | ~/.claude/skills/gstack/（手动安装，opencode 侧通过符号链接访问） | 虚拟团队派：54 个 slash commands，CEO/设计师/工程经理/QA 等角色 |
+| Superpowers | 6.3.0 | claude-plugins-official marketplace | 流程铁律派：强制 TDD + 子代理 + 结构化执行 |
+| gstack | ~~1.58.4.0~~ | ~~~/.claude/skills/gstack/~~（已弃用 2026-08-07，opencode 侧符号链接已清理） | 虚拟团队派：~~54 个 slash commands~~，CEO/设计师/工程经理/QA 等角色 |
 
 ---
 

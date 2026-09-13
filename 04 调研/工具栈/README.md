@@ -33,7 +33,7 @@
 |------|------|
 | **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · superpowers · claude-md-management |
 | **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
-| **last30days-skill** | last30days（v3.8.0） |
+| **last30days-skill** | last30days（v3.24.0） |
 
 #### Skills
 
@@ -146,7 +146,7 @@
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
 | **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 164 站点 · 1225 命令 · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
+| **opencli** | 网站 CLI 框架 | 167 站点 · 1332 命令 · 10 apps · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
 | **agent-reach** | 多平台信息代理 | 13 平台（Jina·GitHub·yt-dlp·语义搜索） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
@@ -160,7 +160,7 @@
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### [opencli](https://github.com/jackwener/opencli) v1.8.4
+#### [opencli](https://github.com/jackwener/opencli) v1.8.7
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
@@ -177,11 +177,12 @@
 
 | Tier | 平台 | 状态 | 依赖 |
 |------|------|------|------|
-| 0 零配置 | GitHub · YouTube · V2EX · RSS · 全网语义搜索 · 任意网页 (Jina Reader) | ✓ 可用 | 无 |
+| 0 零配置 | GitHub · V2EX · RSS · 任意网页 (Jina Reader) | ✓ 可用 | 无 |
+| 0 零配置 | YouTube (yt-dlp) · 全网语义搜索 (Exa) | ⚠️ 待配置 | Node/deno JS runtime · Exa API |
 | 1 已安装 | B站 (yt-dlp) | ✓ 可用 | yt-dlp |
 | 2 可选 | Twitter/X · Reddit · 小红书 · 小宇宙 · 雪球 · LinkedIn | ⚠️ 待安装 | 对应平台 CLI/API |
 
-**当前状态**：6/13 渠道可用
+**当前状态**：5/13 渠道可用
 
 **核心功能**：`agent-reach doctor` 诊断、`agent-reach read <url>` 读取任意网页、`agent-reach search-twitter` 搜索推文、mcporter MCP 路由
 
