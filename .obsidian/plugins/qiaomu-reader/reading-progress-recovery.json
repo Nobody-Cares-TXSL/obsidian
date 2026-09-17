@@ -1,0 +1,22 @@
+{
+  "sourcePath": "reading-progress.json",
+  "progress": {
+    "Books/示例书库/世说新语.epub": {
+      "pct": 0.009009009009009009,
+      "percent": 1,
+      "lastRead": 1789654528887,
+      "cfi": "epubcfi(/6/2!/4,/2,/10/1:407)"
+    },
+    "Books/示例书库/道德经.epub": {
+      "pct": 0.06706706706706707,
+      "percent": 7,
+      "lastRead": 1789654549852,
+      "cfi": "epubcfi(/6/18!/4,/2,/4/1:49)"
+    },
+    "01 资料/PDF/认知觉醒.pdf": {
+      "pct": 0,
+      "percent": 0,
+      "lastRead": 1789654704396
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "settings": {
+    "language": "zh",
+    "booksFolder": "",
+    "noteTemplate": "",
+    "notesFolder": "",
+    "bookNotesFolder": "",
+    "bookNoteTemplate": "",
+    "autoBookNote": true,
+    "quotesToBookNote": true,
+    "dataFolder": "",
+    "bookTemplates": {},
+    "exportColors": true,
+    "theme": "auto",
+    "libTheme": "auto",
+    "fontSize": 18,
+    "fontFamily": "zhuque",
+    "customFontFamily": "",
+    "customFontId": "",
+    "importedFonts": [],
+    "pageButtonsVisibility": "hover",
+    "lineHeight": 1.8,
+    "columns": "1",
+    "textAlign": "left",
+    "vAlign": "top",
+    "translateEnabled": false,
+    "translateTo": "zh-CN",
+    "bookNoteLinks": {
+      "Books/示例书库/世说新语.epub": "世说新语.md",
+      "Books/示例书库/道德经.epub": "道德经.md",
+      "01 资料/PDF/认知觉醒.pdf": "认知觉醒.md"
+    },
+    "locationMarks": [],
+    "bookNotePrompted": {
+      "Books/示例书库/世说新语.epub": true,
+      "Books/示例书库/道德经.epub": true,
+      "01 资料/PDF/认知觉醒.pdf": true
+    },
+    "coverFits": {},
+    "syncMode": "auto",
+    "libCategory": "all",
+    "readerAdvOpen": true,
+    "readerHistOpen": false,
+    "askNoteTitle": true,
+    "shortNoteTitles": true,
+    "defaultHlColor": "yellow",
+    "selectionShowLabels": false,
+    "selectionActions": null,
+    "bookTags": {},
+    "navMode": "buttons",
+    "timerEnabled": true,
+    "dailyGoalMin": 15,
+    "readingLog": {},
+    "lifetimeSeconds": 0,
+    "immersive": true,
+    "mobileTopInset": 0,
+    "onboarded": true,
+    "promptedRepaired": true,
+    "readingNoteLinksRepaired": true,
+    "manualExcerptSectionsMigrated": true,
+    "figuresShownByDefault": false,
+    "einkMode": false,
+    "aiCompanionVisible": true,
+    "aiEnabled": false,
+    "aiNeedsVerification": false,
+    "aiProvider": "",
+    "aiSecret": "",
+    "aiKey": "",
+    "aiModel": "",
+    "aiBase": "",
+    "aiSecrets": {},
+    "aiBases": {},
+    "aiModels": {},
+    "aiThinking": {},
+    "aiCliEfforts": {},
+    "aiCliPaths": {},
+    "aiAcpPaths": {},
+    "aiInto": "中文",
+    "aiSystem": "",
+    "aiQuickPrompts": null,
+    "aiChatHistory": [],
+    "bookNoteAppendPromptSeen": false,
+    "languagePicked": false,
+    "readMode": "pages",
+    "pageTurnAnimation": true,
+    "progressToFrontmatter": false,
+    "quoteTemplate": "",
+    "quoteBacklinks": true,
+    "quoteBacklinkLabel": "",
+    "noteOpenMode": "split",
+    "maxLineCh": 0,
+    "notesNextToBook": false,
+    "perDevice": false,
+    "deviceProfiles": {},
+    "lastSeenVersion": "4.2.15",
+    "whatsNewNote": true,
+    "chineseDefaultsMigrated": true,
+    "iconBacklinksMigrated": true,
+    "readingNoteTitlesMigratedV4": true,
+    "cfiBacklinksMigrated": true,
+    "starterLibrary": {
+      "version": 1,
+      "folder": "Books/示例书库"
+    }
+  },
+  "progressBackups": {
+    "01 资料/PDF/认知觉醒.pdf": [
+      {
+        "pct": 0.0072992700729927005,
+        "percent": 1,
+        "lastRead": 1789654558107,
+        "ts": 1789654558269,
+        "block": 1
+      }
+    ]
+  },
+  "highlightsBackups": {
+    "01 资料/PDF/认知觉醒.pdf": [
+      {
+        "ts": 1789654685583,
+        "count": 1,
+        "sig": "hmu5m6x62r319",
+        "items": [
+          {
+            "id": "hmu5m6x62r319",
+            "color": "yellow",
+            "text": "，赶上了人类社",
+            "block": 8,
+            "occ": 0,
+            "pre": "自序 开启自我改变的原动力我们是幸运的一代人",
+            "post": "会迄今为止最大的跨越发展期，科技进步，物资丰富，万物互联。我们的",
+            "created": 1789654685546
+          }
+        ]
+      },
+      {
+        "ts": 1789654688099,
+        "count": 0,
+        "sig": "",
+        "items": []
+      }
+    ]
+  },
+  "lastBookPath": "01 资料/PDF/认知觉醒.pdf"
+}
