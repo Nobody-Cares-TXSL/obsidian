@@ -33,7 +33,7 @@
 |------|------|
 | **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · claude-md-management |
 | **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
-| **last30days-skill** | last30days（v3.24.0） |
+| **last30days-skill** | last30days（v3.28.0） |
 
 #### Skills
 
@@ -41,9 +41,9 @@
 
 | 技能 | 功能 |
 |------|------|
-| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（13 平台） |
+| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（13 平台，5 渠道可用） |
 | **[notebooklm](https://github.com/teng-lin/notebooklm-py)** | Google NotebookLM API 集成 |
-| **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · browser-sitemap · sitemap-author · adapter-author · autofix · smart-search） |
+| **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · adapter-author · autofix · smart-search） |
 | **find-skills** | 查找和安装可复用 AI 技能 |
 
 **项目技能** (`.claude/skills/`)
@@ -146,7 +146,7 @@
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
 | **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 167 站点 · 1332 命令 · 10 apps · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
+| **opencli** | 网站 CLI 框架 | 170 站点 · 1366 命令 · 10 apps · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
 | **agent-reach** | 多平台信息代理 | 13 平台（Jina·GitHub·yt-dlp·语义搜索） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
@@ -160,7 +160,7 @@
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### [opencli](https://github.com/jackwener/opencli) v1.8.7
+#### [opencli](https://github.com/jackwener/opencli) v1.8.8
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
@@ -171,7 +171,7 @@
 | 电商 | ✓ 内建 | 1688·淘宝·京东·拼多多 |
 | 公开 API | ✓ 内建 | HN·arXiv·Wikipedia·IMDb·Spotify·StackOverflow |
 
-**核心技能**：`usage`（使用指南）· `browser`（浏览器自动化）· `browser-sitemap`（站点地图浏览器）· `sitemap-author`（站点地图编写）· `adapter-author`（编写适配器）· `autofix`（自动修复适配器）· `smart-search`（智能搜索路由）
+**核心技能**：`usage`（使用指南）· `browser`（浏览器自动化）· `adapter-author`（编写适配器）· `autofix`（自动修复适配器）· `smart-search`（智能搜索路由）
 
 #### [agent-reach](https://github.com/Panniantong/Agent-Reach)
 
