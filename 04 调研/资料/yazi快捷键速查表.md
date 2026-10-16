@@ -4,6 +4,7 @@ source: "https://nonsensejoke.github.io/2026-01-25/Yazi%E7%BB%88%E7%AB%AF%E6%96%
 author:
 published:
 created: 2026-05-18
+updated: 2026-10-17
 description:
 tags:
   - "clippings"
@@ -85,3 +86,72 @@ tags:
 ---
 
 > **提示** ：Yazi 的键位设计很大程度上参考了 Vim/Neovim 的逻辑，如果你是 Vim 用户，上手会非常快。更多高级配置请参考 [Yazi GitHub 仓库](https://github.com/sxyazi/yazi) 。
+
+---
+
+## 🔌 已装插件快捷键
+
+以下为本机启用的 yazi 插件及其按键（绑定在 `~/.config/yazi/keymap.toml`）：
+
+| 按键 | 插件 | 功能 |
+| --- | --- | --- |
+| **`c`** `→` **`m`** | chmod | 修改选中文件的权限（chmod） |
+| **`T`** | toggle-pane | 最大化 / 还原预览面板 |
+| **`+`** | zoom | 放大预览图片（每次 +1） |
+| **`-`** | zoom | 缩小预览图片（每次 -1） |
+
+> **git 插件**无按键绑定——它在文件列表的 linemode 中自动显示 Git 状态标记（`M` 修改、`?` 未跟踪、`D` 删除等）。
+
+### 插件说明
+
+| 插件 | 作用 |
+| --- | --- |
+| **git** | 文件列表显示 Git 状态（依赖 `init.lua` setup + `prepend_fetchers`） |
+| **chmod** | 对选中文件执行 chmod |
+| **toggle-pane** | 切换预览面板的显示/隐藏/最大化 |
+| **zoom** | 放大缩小预览图片（**仅图片**，依赖 ImageMagick ≥ 7.1.1） |
+
+---
+
+## ⚙️ 本机配置要点
+
+配置文件位于 `~/.config/yazi/`：
+
+| 文件 | 内容 |
+| --- | --- |
+| `yazi.toml` | 主配置：`[mgr]`（显示隐藏文件/三栏比例/linemode=size）、`[preview]`（wrap=no/tab_size=4/max 1200×1200）、`[opener]`（VS Code 优先）、`[plugin]`（prepend_previewers + git fetchers） |
+| `keymap.toml` | 插件按键绑定 |
+| `init.lua` | git 插件初始化 |
+| `package.toml` | 已装插件清单（`ya pkg` 管理） |
+
+### 关键机制：`prepend_` vs 裸写
+
+`[plugin]` 段的数组键有**三种语义**：
+
+| 写法 | 效果 |
+| --- | --- |
+| `previewers = [...]` | **整体替换**预设的 22 条规则（丢失文件夹/字体/磁盘镜像等预览） |
+| `prepend_previewers = [...]` | **前插**到预设规则之前（保留全部预设） |
+| `append_previewers = [...]` | **后插**到预设规则之后（保留全部预设） |
+
+同理适用于 `fetchers` / `preloaders` / `spotters`。**追加请用 `prepend_` 或 `append_`**。
+
+### 预览依赖
+
+| 用途 | 依赖 | 本机版本 |
+| --- | --- | --- |
+| 图片渲染（X11） | ueberzugpp | 2.9.10 ✅ |
+| 视频缩略图 | ffmpeg + ffmpegthumbnailer | 6.1.1 ✅ |
+| 备用字符渲染 | chafa | 1.14.0 ✅ |
+| 图片缩放（zoom 插件） | ImageMagick | 6.9.12 ⚠️（zoom 要求 ≥ 7.1.1） |
+
+> **GIF 动画**：yazi 目前**不支持**（官方 feature list #51 中 `GIFs images support` 未勾选）。GIF 会显示**静态首帧**。ueberzugpp 本身支持 GIF，但 yazi 只解码并发送第一帧。
+
+### 插件管理命令
+
+```bash
+ya pkg add yazi-rs/plugins:<插件名>   # 安装插件
+ya pkg list                          # 列出已装
+ya pkg upgrade                       # 批量升级
+ya pkg delete <插件名>               # 卸载
+```
