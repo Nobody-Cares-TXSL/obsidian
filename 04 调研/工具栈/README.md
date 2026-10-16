@@ -31,7 +31,7 @@
 
 | 插件 | 技能 |
 |------|------|
-| **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · superpowers · claude-md-management |
+| **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · claude-md-management |
 | **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
 | **last30days-skill** | last30days（v3.24.0） |
 
