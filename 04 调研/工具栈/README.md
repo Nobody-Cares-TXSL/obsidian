@@ -33,7 +33,8 @@
 |------|------|
 | **claude-plugins-official** | code-review · code-simplifier · playground · skill-creator · claude-md-management |
 | **obsidian-skills** | obsidian-cli · obsidian-markdown · obsidian-bases · json-canvas · defuddle |
-| **last30days-skill** | last30days（v3.28.0） |
+| **last30days-skill** | last30days（v3.31.0） |
+| **answer-me-with-html** | answer-me-with-html（v0.5.10，把回答转成一页可视化 HTML） |
 
 #### Skills
 
@@ -41,7 +42,7 @@
 
 | 技能 | 功能 |
 |------|------|
-| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（13 平台，5 渠道可用） |
+| **[agent-reach](https://github.com/Panniantong/Agent-Reach)** | 多平台互联网搜索与交互（14 平台，4 渠道已接入） |
 | **[notebooklm](https://github.com/teng-lin/notebooklm-py)** | Google NotebookLM API 集成 |
 | **[opencli](https://github.com/jackwener/opencli)** | 网站 CLI 框架（usage · browser · adapter-author · autofix · smart-search） |
 | **find-skills** | 查找和安装可复用 AI 技能 |
@@ -145,9 +146,9 @@
 
 | 工具 | 定位 | 数据源 | 适用场景 |
 |------|------|--------|----------|
-| **last30days** | 舆论研究引擎 | 15 个源（Reddit·X·YouTube·TikTok·小红书·Polymarket·GitHub·Perplexity·Web） | 话题全景研究、趋势追踪、每日简报 |
-| **opencli** | 网站 CLI 框架 | 170 站点 · 1366 命令 · 10 apps · 13 外部 CLI（微博·知乎·B站·ChatGPT·Cursor·Notion·HN·arXiv·Discord·DingTalk·Lark） | 精确平台操作、自动化任务、数据抓取 |
-| **agent-reach** | 多平台信息代理 | 13 平台（Jina·GitHub·yt-dlp·语义搜索） | 中文平台深度访问、Agent 集成 |
+| **last30days** | 舆论研究引擎 | 25 个源（默认激活 Reddit·YouTube·HN·Polymarket·GitHub·Web，其余按需配置） | 话题全景研究、趋势追踪、每日简报 |
+| **opencli** | 网站 CLI 框架 | 170 站点 · 1289 命令（微博·知乎·B站·ChatGPT·Gemini·NotebookLM·HN·arXiv·YouTube 等） | 精确平台操作、自动化任务、数据抓取 |
+| **agent-reach** | 多平台信息代理 | 14 平台（Jina·GitHub·yt-dlp·语义搜索） | 中文平台深度访问、Agent 集成 |
 
 ### 配置状态
 
@@ -155,36 +156,40 @@
 
 | 通道 | 状态 | 说明 |
 |------|------|------|
-| Web · Reddit · X · YouTube · TikTok | ✓ 激活 | 默认 5 个源 |
-| Instagram · GitHub · HN · Polymarket · Bluesky · Threads · Pinterest · 小红书 · Perplexity | ⚠️ 待配置 | 需要 [ScrapeCreators](https://scrapecreators.com/) API（10,000 免费调用） |
+| Reddit · YouTube · Hacker News · Polymarket · GitHub | ✓ 激活 | 5 个免密钥源，`doctor` 实测可用 |
+| Web | ◐ 宿主代理 | Claude Code 自带网页搜索接管，无需密钥 |
+| X · TikTok · Instagram · Threads · Telegram · LinkedIn · Pinterest · Meta Ads | ⚠️ 待配置 | 需 [ScrapeCreators](https://scrapecreators.com/) API（10,000 免费调用），`setup --github` |
+| Bluesky · Perplexity · Truth Social | ⚠️ 待配置 | 各自密钥写入 `~/.config/last30days/.env` |
+| 小红书 | ⚠️ 待接入 | 需本地 xiaohongshu-mcp 服务（`localhost:18060`） |
+| arXiv · Digg · TechMeme · Trustpilot · Amazon | ○ 可选 | 需额外 CLI（`arxiv-pp-cli` 等） |
 
 **核心功能**：`--deep` 深度模式、`--store` SQLite 存储、Watchlist 自动追踪、Briefing 简报
 
-#### [opencli](https://github.com/jackwener/opencli) v1.8.8
+#### [opencli](https://github.com/jackwener/opencli) v2.0.2
 
 | 类别 | 状态 | 平台示例 |
 |------|------|----------|
 | 中文社交 | ✓ 内建 | 微博·知乎·B站·小红书·豆瓣·即刻·虎扑·V2EX·雪球 |
-| 国际平台 | ✓ 内建 | Twitter/X·Reddit·Instagram·TikTok |
-| AI 工具 | ✓ 内建 | ChatGPT·Cursor·Gemini·NotebookLM |
-| 生产力 | ✓ 内建 | Notion·飞书(Lark CLI)·企业微信·钉钉(DWS) |
-| 电商 | ✓ 内建 | 1688·淘宝·京东·拼多多 |
-| 公开 API | ✓ 内建 | HN·arXiv·Wikipedia·IMDb·Spotify·StackOverflow |
+| 国际平台 | ✓ 内建 | Twitter/X·Reddit·Instagram·TikTok·LinkedIn |
+| AI 工具 | ✓ 内建 | ChatGPT·Gemini·NotebookLM·Grok·DeepSeek·Kimi |
+| 生产力 | ✓ 内建 | 微信公众号(weixin)·视频号·微信读书·Gmail·Jira·flomo·幕布·ONES |
+| 电商 | ✓ 内建 | 1688·淘宝·京东·闲鱼 |
+| 公开 API | ✓ 内建 | HN·arXiv·Wikipedia·IMDb·Spotify·StackOverflow·PubMed |
 
 **核心技能**：`usage`（使用指南）· `browser`（浏览器自动化）· `adapter-author`（编写适配器）· `autofix`（自动修复适配器）· `smart-search`（智能搜索路由）
 
-#### [agent-reach](https://github.com/Panniantong/Agent-Reach)
+#### [agent-reach](https://github.com/Panniantong/Agent-Reach) v1.6.0
 
-| Tier | 平台 | 状态 | 依赖 |
-|------|------|------|------|
-| 0 零配置 | GitHub · V2EX · RSS · 任意网页 (Jina Reader) | ✓ 可用 | 无 |
-| 0 零配置 | YouTube (yt-dlp) · 全网语义搜索 (Exa) | ⚠️ 待配置 | Node/deno JS runtime · Exa API |
-| 1 已安装 | B站 (yt-dlp) | ✓ 可用 | yt-dlp |
-| 2 可选 | Twitter/X · Reddit · 小红书 · 小宇宙 · 雪球 · LinkedIn | ⚠️ 待安装 | 对应平台 CLI/API |
+| 级别 | 平台 | 状态 |
+|------|------|------|
+| default | GitHub · YouTube · V2EX · Web | ✓ 已接入，待实测 |
+| default | B站 | ⚠️ 待配置（bili-cli 未安装，`agent-reach add bilibili`） |
+| optional | Reddit · 小红书 · LinkedIn · Boss直聘 · 雪球 · 小宇宙 | ⚠️ 未接入（按需 `agent-reach add <channel>`） |
+| experimental | Twitter/X · Facebook · Instagram | ⚠️ 未接入（按需添加） |
 
-**当前状态**：5/13 渠道可用
+**当前状态**：14 渠道，4 个已接入待实测，1 个待配置，9 个未接入
 
-**核心功能**：`agent-reach doctor` 诊断、`agent-reach read <url>` 读取任意网页、`agent-reach search-twitter` 搜索推文、mcporter MCP 路由
+**核心功能**：`agent-reach doctor` 诊断、`agent-reach read <url>` 读取任意网页、`agent-reach channels` 列通道与动作、`agent-reach update` 升级 CLI 与技能
 
 ### 使用建议
 
