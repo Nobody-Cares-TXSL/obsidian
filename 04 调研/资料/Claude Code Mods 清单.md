@@ -203,4 +203,4 @@ mod 的同名钩子形成**中间件链**：先注册的在外层，`next(e)` �
 - 调研来源：[`mods.aidojo.si`](https://mods.aidojo.si) — 自动扫描 GitHub 上全部 Claude Code mod 的目录站，含每个 mod 的权限标注（L0 只画 / L1 读 / L2 写与跑进程 / L3 联网）
 - 数据源仓库：`karanb192/awesome-claude-code-mods`
 - 官方文档：[Mods overview](https://code.claude.com/docs/en/plugins/mods/overview)
-- 同类笔记：[[yazi快捷键速查表]]
+- 同类笔记：[[04 调研/工具栈/终端环境/04-文件管理器/yazi快捷键速查表|yazi快捷键速查表]]

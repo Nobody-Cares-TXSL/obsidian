@@ -71,6 +71,8 @@
 
 ### 终端环境
 
+完整的本机终端配置、Yazi 预览链路、tmux 工作区与维护记录见 [终端环境文档导航](./终端环境/README.md)。
+
 | 工具 | 说明 |
 |------|------|
 | **Alacritty + zsh + tmux** | 终端组合 |
@@ -83,7 +85,7 @@
 |------|------|
 | **claude code cli** | Claude Code 命令行工具 |
 | **[RTK](https://github.com/rtk-ai/rtk)** | Token 优化代理，为 Claude Code / OpenCode 节省 60-90% token（单 Rust 二进制，100+ 命令支持） |
-| **yazi + lazygit** | 文件管理器 + Git TUI · [[04 调研/资料/yazi快捷键速查表]] |
+| **yazi + lazygit** | 文件管理器 + Git TUI · [[04 调研/工具栈/终端环境/04-文件管理器/yazi快捷键速查表|Yazi 快捷键速查表]] |
 | **glow** | 终端 Markdown 阅读器 |
 | **bat** | 带语法高亮的 cat 替代品 |
 | [opencli](https://opencli.info/docs/zh/) | 命令行工具集合 |
