@@ -180,7 +180,7 @@
 
 **核心技能**：`usage`（使用指南）· `browser`（浏览器自动化）· `adapter-author`（编写适配器）· `autofix`（自动修复适配器）· `smart-search`（智能搜索路由）
 
-#### [agent-reach](https://github.com/Panniantong/Agent-Reach) v1.6.0
+#### [agent-reach](https://github.com/Panniantong/Agent-Reach) v1.6.1
 
 | 级别 | 平台 | 状态 |
 |------|------|------|
