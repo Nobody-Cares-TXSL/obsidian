@@ -151,9 +151,19 @@ init.lua 中初始化 git 插件，并设置 order=1500。yazi.toml 为普通文
 - 顶部提供“后退 / 前进”按钮，按阅读历史切换文档；没有对应历史时按钮禁用。
 - 快捷键：Alt + ← 后退、Alt + → 前进、Backspace 后退。
 - 后退后若打开新文档，会丢弃原有的前进分支，行为与浏览器历史一致。
-- 文档按需转换并在当前阅读会话内缓存；关闭窗口后清理临时服务和转换结果。
+- 文档按需转换，结果只存在 Python 进程的 dict 和页面 JS 的 Map 里；关闭窗口后停止本地 HTTP 服务，释放进程内转换缓存。**不产生持久化的 HTML 转换文件**。脚本自述即为 "on-demand conversion, no persistent cache"。
 
-这不是直接让 Chrome 打开 Markdown 原文件，而是本机专用的转换与阅读流程。
+外部依赖五项，缺一不可，且缺失表现各不相同：
+
+| 依赖 | 用途 | 缺失后果 |
+|---|---|---|
+| python3 | 脚本本体（`#!/usr/bin/env python3`） | 无法启动 |
+| pandoc | Markdown → HTML5（`--from=gfm --to=html5 --standalone`） | 抛 RuntimeError，报转换失败 |
+| bs4 (BeautifulSoup) | 改写 pandoc 输出的 HTML | import 失败，直接崩 |
+| google-chrome | `--new-window --start-maximized --app=<url>` 展示 | 打不开窗口 |
+| xdotool | `xdotool search --name <marker>` 判断阅读窗口是否已存在 | **不报错**，误判为"未启动"后退出，最难排查 |
+
+这不是直接让 Chrome 打开 Markdown 原文件，而是本机专用的转换与阅读流程。迁移新机器时 `xdotool` 是最容易漏的一项，因为 Ubuntu 桌面默认不带。
 ## 备份要求
 
 恢复 Yazi 时至少备份：

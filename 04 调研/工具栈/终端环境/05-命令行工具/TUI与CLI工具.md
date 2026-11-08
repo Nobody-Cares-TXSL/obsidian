@@ -51,14 +51,21 @@ tags: [tui, cli, terminal-tools]
 
 ### Harlequin
 
-配置：~/.harlequin.toml。当前 profile 指向本机 127.0.0.1:3306，使用 root 账号并设置 read_only=true；密码由 .zshrc 中的 DB_PASS 环境变量提供。文档不记录密码值，迁移秘密存储的事项见 [安装来源与维护决策](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md)。
+配置：~/.harlequin.toml。当前 profile 指向本机 127.0.0.1:3306，使用 root 账号并设置 `read_only=true`；密码由 .zshrc 中的 DB_PASS 环境变量提供。文档不记录密码值。
+
+两个需要注意的事实：
+
+- `read_only=true` 只约束 Harlequin 这个客户端不发写语句，服务端仍认为该账号拥有全部权限。用同一凭据直接连 MySQL 的任何程序都能写。真正的只读保证要靠服务端账号权限，不是客户端开关。
+- 2026-11-08 实测 `~/.zshrc` 权限 644、`~/.harlequin.toml` 权限 664，同机其他用户可读前者，后者还额外同组可写。
+
+已列为 P1 维护事项，处置步骤见 [安装来源与维护决策](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md)。
 
 ### btop
 
 配置：~/.config/btop/btop.conf
 
 - Default 主题、truecolor、圆角边框。
-- Braille 图表。
+- Braille 图表。`graph_symbol = "braille"`，而 `graph_symbol_cpu/gpu/mem/net/proc` 全为 `"default"`。这里的 `default` 不是一种独立样式，而是"回落到全局 `graph_symbol`"的哨兵值——依据是全局选项注释只列 `braille / block / tty` 三种，子级注释多出的唯一取值就是 `default`；上游出厂配置同样把这些子项写成 `default`。因此五个框实际都用 Braille，图表符号这一项等于没改过默认。
 - CPU、内存、网络、进程、Swap、磁盘、频率和温度信息。
 - 刷新间隔 2000ms。
 - 进程按 CPU 排序。

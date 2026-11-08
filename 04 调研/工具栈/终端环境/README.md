@@ -1,6 +1,6 @@
 ---
 title: 终端环境文档导航
-updated: 2026-11-08
+updated: 2026-11-09
 tags: [terminal, linux, ubuntu, documentation]
 ---
 
@@ -18,7 +18,7 @@ tags: [terminal, linux, ubuntu, documentation]
 - [Zsh与Starship](./02-终端与Shell/Zsh与Starship.md)：Shell、Oh My Zsh、懒加载、环境变量和提示符。
 
 ### 03-终端复用
-- [tmux配置与工作区](./03-终端复用/tmux配置与工作区.md)：分屏、图片协议透传、工作区插件、会话恢复。
+- [tmux配置与工作区](./03-终端复用/tmux配置与工作区.md)：分屏、图片预览链路与透传的区别、工作区插件及其真实入口、会话恢复。
 - [tmux快捷键速查表](./03-终端复用/tmux快捷键速查表.md)：tmux 日常操作速查。
 
 ### 04-文件管理器
@@ -31,10 +31,10 @@ tags: [terminal, linux, ubuntu, documentation]
 - [TUI与CLI工具](./05-命令行工具/TUI与CLI工具.md)：lazygit、btop、glow、fzf、fd、ripgrep 等独立终端工具。
 
 ### 06-开发工具链
-- [开发运行时与AI-CLI](./06-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%93%BE/%E5%BC%80%E5%8F%91%E8%BF%90%E8%A1%8C%E6%97%B6%E4%B8%8EAI-CLI.md)：Node、Python、Rust、Java、包管理器和编码 Agent。
+- [开发运行时与AI-CLI](./06-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%93%BE/%E5%BC%80%E5%8F%91%E8%BF%90%E8%A1%8C%E6%97%B6%E4%B8%8EAI-CLI.md)：开发工具链、Claude Code 状态 Hook 的事件映射和验收步骤。
 
 ### 07-安装与维护
-- [安装来源与维护决策](./07-安装与维护/安装来源与维护决策.md)：安装渠道、版本冲突、风险、候选工具和回滚方法。
+- [安装来源与维护决策](./07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md)：安装渠道、自建二进制、旧版副本清理、Agent 状态排查和终端替换验收基线。
 
 ## 文档职责
 

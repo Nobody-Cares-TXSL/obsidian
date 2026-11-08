@@ -14,7 +14,9 @@ ThinkPad E480 / Ubuntu 24.04 / X11 上的终端环境文档。目的是让新机
 
 单个工具的版本号、配置项，读配置文件和跑命令就能得到，价值低。**真正值得写的是工具之间手工接起来的缝**，因为这些没写在任何工具的文档里，换机器必踩：
 
-- Yazi 的 `.md` Enter 走 `~/.local/bin/md-read-hd`，不是默认 pager。链路是 pandoc 转 HTML → Python 本地 HTTP 服务 → Chrome app 窗口，依赖 `pandoc`、`bs4`、`google-chrome`。这是本机专用脚本，必须连脚本一起拷贝。
+- Yazi 的 `.md` Enter 走 `~/.local/bin/md-read-hd`，不是默认 pager。链路是 pandoc 转 HTML → Python 本地 HTTP 服务 → Chrome app 窗口，依赖五项：`python3`（脚本 shebang 本体）、`pandoc`、`bs4`、`google-chrome`、`xdotool`（脚本用 `xdotool search --name` 判断阅读窗口是否已存在，缺了不会报错，只会误判后退出）。转换结果只存在进程内存和页面 JS 缓存里，不落盘。这是本机专用脚本，必须连脚本一起拷贝。
+- 工作区预览由 TPM 加载二开版插件脚本，`@tmux-expose-command` 指向 `~/.cargo/bin/tmux-expose`（2026-11-09 起改走 `cargo install`，不再手工复制改名）。升级用 `cargo install --locked --force --path .`，卸载用 `cargo uninstall`。见 [安装来源与维护决策](./07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md#tmux-workspace-expose工作区预览)。
+- 核对 Claude Code 的 tmux 状态 Hook 时，按 [事件映射与验收](./06-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E9%93%BE/%E5%BC%80%E5%8F%91%E8%BF%90%E8%A1%8C%E6%97%B6%E4%B8%8EAI-CLI.md#claude-code-的-tmux-状态-hook) 分别确认配置、注册和实际状态。遇到陈旧徽标、写入失败或旧二进制清理，查 [维护决策](./07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md#agent-状态诊断与清理)，以目标 Pane 的读回结果为准。
 - Yazi 的 GIF / 视频预览是本机 Lua 插件（`gif-preview`、`video-grid`），且默认 preloader 被设为 `noop`，否则内置预加载器生成的静态首帧会覆盖自定义效果。
 - 图片走 X11 + ueberzugpp，不是 Kitty 协议——这是预览能在 tmux 里工作的前提。
 - tmux 挂起前要先跑 `tmux-suspend-ueberzug` 隐藏图片层，否则恢复后错位。tmux 放大在 yazi 里时会 `send-keys ,,` 触发重绘。这两处是 tmux 与 Yazi 之间的硬编码联动。
@@ -27,7 +29,9 @@ ThinkPad E480 / Ubuntu 24.04 / X11 上的终端环境文档。目的是让新机
 装工具本身不难，难在**没有包管理器记录的部分**：
 
 - `/usr/local/bin` 下的 Yazi + ya、lazygit、starship 是 GitHub Release 手工部署的，升级靠手动换二进制。
-- `~/.local/bin` 下的 `md-read-hd`、`tmux-suspend-ueberzug`、`mimeapps-guard.sh` 是本机脚本，无来源，只能拷贝。
+- `~/.local/bin` 下的 `md-read-hd`、`tmux-suspend-ueberzug`、`mimeapps-guard.sh`、`check-hard-updates` 是本机脚本，无上游来源，只能连文件拷贝。
+- `tmux-expose` 有公开来源（`Nobody-Cares-TXSL/tmux-workspace-expose`），但**不在 crates.io**，必须从源码 `cargo install --path` 安装。注意：Cargo 包名是 `tmux-workspace-expose`，而装出来的命令叫 `tmux-expose`，两者不同。
+- `~/.config/tmux-expose/` 下的 `appearance.conf`、`grid.conf` 是插件设置，目录名沿用上游旧名，无包管理器记录，只能拷贝。
 - `fd`→`fdfind`、`magick`→`convert` 是手工软链，补上游包名与命令名的差异。
 - ueberzugpp 来自 OBS 第三方源，不是 Ubuntu 官方源。
 
@@ -44,6 +48,8 @@ ThinkPad E480 / Ubuntu 24.04 / X11 上的终端环境文档。目的是让新机
 | 二进制属于哪个包 | `dpkg -S` |
 | alternatives 当前值 | `update-alternatives --query` |
 | GUI 进程实际二进制 | `pgrep -a -x` → `readlink /proc/PID/exe` |
+| tmux 重复用户选项的**全部**取值 | `grep` 配置文件；`show-options -g @opt` 只返回最后一条，会少报 |
+| 某插件/二进制是否真在用 | 同时查：配置文件引用、PATH 命中、`--version` 实际输出。三者可以互相矛盾 |
 
 **禁止为探测能力反复启动 GUI 应用。** 先 `file` 或 `readlink -f` 判断目标性质——`~/.local/bin/obsidian` 就是 Electron 本体，跑一次就弹窗。
 

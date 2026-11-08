@@ -2,7 +2,7 @@
 title: "tmux 终端多路复用器快捷键速查表 (Cheatsheet)"
 source: "https://github.com/tmux/tmux/wiki/Getting-Started"
 created: 2026-11-02
-updated: 2026-11-08
+updated: 2026-11-09
 description: "基于本机 tmux 3.4 与 ~/.tmux.conf 整理，涵盖 Pane、Window、Session、工作区插件、异常恢复和 Yazi 缩放刷新。"
 tags:
   - clippings
@@ -179,14 +179,17 @@ tmux send-keys -t %1 Enter
 
 | 按键 / 命令 | 功能 |
 |---|---|
-| Prefix → t | 打开 / 关闭左侧 tmux-pane-tree 树形导航 |
-| Prefix → T | 聚焦左侧树形导航；再次操作可返回主 Pane |
-| Alt + e | 打开 tmux.expose，全局预览 Session 并切换 |
+| Prefix → t | tmux 内置时钟模式（pane-tree 卸载后恢复默认绑定） |
+| Alt + e | tmux-workspace-expose：全局 Session 总览并切换 |
+| Alt + w | tmux-workspace-expose：当前 Session 的 Window 总览 |
+| Ctrl + , | tmux-workspace-expose 设置界面（全屏弹出；实际绑定为 S-F12，依赖终端键码，换终端需重测） |
 | Prefix → Ctrl+s | tmux-resurrect 保存当前环境 |
 | Prefix → Ctrl+r | tmux-resurrect 恢复已保存环境 |
 | Prefix → I | TPM 安装配置中声明的插件 |
 | Prefix → U | TPM 更新插件 |
-| Prefix → Alt+u | TPM 清理未在配置中声明的插件 |
+| Prefix → Alt+u | TPM 批量清理未声明的插件目录。执行前核对待清理列表 |
+
+Agent 徽标滞留时，在对应 Pane 运行 `tmux-expose agent-status clear`，再用 `tmux show-options -pqv -t "$TMUX_PANE" @agent_status` 确认输出为空。 [状态诊断与清理](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md#agent-状态诊断与清理)
 
 配置文件内容、自检命令、插件说明见 [tmux配置与工作区](./tmux%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E4%BD%9C%E5%8C%BA.md)。
 

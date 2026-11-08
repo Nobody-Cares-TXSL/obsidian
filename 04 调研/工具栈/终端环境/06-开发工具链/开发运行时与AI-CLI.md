@@ -1,6 +1,6 @@
 ---
 title: 开发运行时与 AI CLI
-updated: 2026-11-08
+updated: 2026-11-09
 tags: [runtime, nodejs, python, rust, java, ai-agent]
 ---
 
@@ -24,6 +24,18 @@ tags: [runtime, nodejs, python, rust, java, ai-agent]
 | Maven | 3.9.12 | /opt/maven |
 | JMeter | 已配置 | JMETER_HOME=/opt/jmeter，版本未单独核验 |
 | Go | 未安装 | 当前没有 go 命令 |
+
+### Rustup 组件不等于 Rust 已装好
+
+`rustup` 装完 toolchain 只带 cargo、rustc、rust-std 三件，**rustfmt 和 clippy 默认不在内**。后果不是编译失败，而是 `make check` 这类聚合门禁在第一步就报 `'cargo-fmt' is not installed for the toolchain stable-x86_64-unknown-linux-gnu`，看起来像源码格式有问题，实际是组件缺失。
+
+2026-11-09 已执行 `rustup component add rustfmt clippy`（rustfmt 1.10.0-stable、clippy 0.1.99）。新机器复现这套环境时，这一步必须跟着 toolchain 一起做，否则任何依赖 `make check` / `make lint` 的项目都会卡住。核对命令：
+
+~~~bash
+rustup component list --installed
+cargo fmt --version
+cargo clippy --version
+~~~
 
 ## pnpm 版本说明
 
@@ -49,6 +61,35 @@ PATH 命中的是 Corepack shim，Corepack 可根据项目 packageManager 字段
 | agent-reach | 版本未核验 | ~/.local/bin/agent-reach |
 
 版本是 2026-11-07/08 的现场快照，不代表自动更新状态。使用前可通过 command -v 和对应 --version 重新核验。
+
+### Claude Code 的 tmux 状态 Hook
+
+2026-11-09 核对 `~/.claude/settings.json`，以下五个事件都调用 `/home/duan/.cargo/bin/tmux-expose agent-status <状态>`。写绝对路径而不是裸名，是为了不受 hook 执行环境 PATH 差异影响——虽然 tmux server 的 PATH 首位就是 `~/.cargo/bin`，但 Claude Code 的 hook 未必在同一个 shell 环境里跑。修改时向同名事件数组追加条目，保留现有 hook。迁移前的备份为 `~/.claude/settings.json.bak-20261109-013558-migrate`。
+
+| 事件 | 状态 | 触发时机 |
+|---|---|---|
+| `UserPromptSubmit` | `working` | 提交新提示 |
+| `Stop` | `waiting` | 正常结束一轮回复 |
+| `StopFailure` | `attention` | API 错误导致本轮结束 |
+| `PermissionRequest` | `attention` | 请求工具权限 |
+| `SessionEnd` | `clear` | Claude Code 执行会话结束钩子 |
+
+公开 README 的示例使用 `Notification` 的 `permission_prompt` 匹配和 `PostToolUse`，本机改用 `PermissionRequest` 和 `StopFailure`。本机配置下，批准权限后即使工具恢复运行，标记也可能保持 `attention`，直到后续事件覆盖或清除。 [Claude Code hooks 参考](https://code.claude.com/docs/en/hooks)
+
+验收时在 tmux 中启动新的 Claude Code 会话，先用 `/hooks` 核对注册，再提交提示并读回 Pane 选项，检查正常回复后变为 `waiting`、退出后清空。当前已核对配置文件和独立 tmux 会话中的状态命令，真实 Claude Code 会话的自动触发待核实。 [Pane 选项读回命令](../03-%E7%BB%88%E7%AB%AF%E5%A4%8D%E7%94%A8/tmux%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E4%BD%9C%E5%8C%BA.md#agent-状态标记)
+
+#### 退出码能证明什么，不能证明什么
+
+分两层，别混为一谈：
+
+| 失败层次 | 43a570e 之前 | 当前部署（43a570e） |
+|---|---|---|
+| 命令找不到 / 不可执行 / 状态参数非法 | 返回非零 | 返回非零 |
+| tmux 写入失败（pane 已消失等） | **静默返回 0**，只在 stderr 留痕 | 返回非零，并报出 tmux 的 stderr |
+
+旧实现用 `let _ = Command::new("tmux")...status()` 丢弃结果，所以那时"退出码 0"从来不等于"状态写进去了"。43a570e 改为检查 `output.status.success()` 并已部署到本机（2026-11-09 实测：非法参数返回 1、无效 Pane 返回 1 并带 `no such pane`）。两者共同点是：**缺少 `$TMUX_PANE` 时直接返回成功**（不在 tmux 内无状态可写）。
+
+另外，Claude Code 是否把 hook 的非零退出码显示出来取决于事件——`StopFailure` 等事件会忽略 hook 退出码。所以验收的可靠手段始终是读回目标 Pane 的选项，而不是看 hook 有没有报错。
 
 ## NPM 全局包
 
