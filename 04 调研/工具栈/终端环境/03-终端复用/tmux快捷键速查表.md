@@ -189,7 +189,7 @@ tmux send-keys -t %1 Enter
 | Prefix → U | TPM 更新插件 |
 | Prefix → Alt+u | TPM 批量清理未声明的插件目录。执行前核对待清理列表 |
 
-Agent 徽标滞留时，在对应 Pane 运行 `tmux-expose agent-status clear`，再用 `tmux show-options -pqv -t "$TMUX_PANE" @agent_status` 确认输出为空。 [状态诊断与清理](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md#agent-状态诊断与清理)
+Agent 徽标滞留时，在对应 Pane 运行 `tmux-workspace-expose agent-status clear`，再用 `tmux show-options -pqv -t "$TMUX_PANE" @agent_status` 确认输出为空。 [状态诊断与清理](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md#agent-状态诊断与清理)
 
 配置文件内容、自检命令、插件说明见 [tmux配置与工作区](./tmux%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E4%BD%9C%E5%8C%BA.md)。
 

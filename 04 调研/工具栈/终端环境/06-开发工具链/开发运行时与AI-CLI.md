@@ -64,7 +64,9 @@ PATH 命中的是 Corepack shim，Corepack 可根据项目 packageManager 字段
 
 ### Claude Code 的 tmux 状态 Hook
 
-2026-11-09 核对 `~/.claude/settings.json`，以下五个事件都调用 `/home/duan/.cargo/bin/tmux-expose agent-status <状态>`。写绝对路径而不是裸名，是为了不受 hook 执行环境 PATH 差异影响——虽然 tmux server 的 PATH 首位就是 `~/.cargo/bin`，但 Claude Code 的 hook 未必在同一个 shell 环境里跑。修改时向同名事件数组追加条目，保留现有 hook。迁移前的备份为 `~/.claude/settings.json.bak-20261109-013558-migrate`。
+2026-11-09 改名后核对 `~/.claude/settings.json`，以下五个事件都调用 `/home/duan/.cargo/bin/tmux-workspace-expose agent-status <状态>`。写绝对路径而不是裸名，是为了不受 hook 执行环境 PATH 差异影响——虽然 tmux server 的 PATH 首位就是 `~/.cargo/bin`，但 Claude Code 的 hook 未必在同一个 shell 环境里跑。修改时向同名事件数组追加条目，保留现有 hook。迁移前的备份为 `~/.claude/settings.json.bak-20261109-013558-migrate`。
+
+**Hook 改动需要重启 Claude Code 会话才生效**——正在运行的会话仍持有旧命令路径。本次改名后，旧路径 `/home/duan/.cargo/bin/tmux-expose` 仍存在（改名前的残留二进制），所以旧会话不会报错，只是跑的是旧代码。
 
 | 事件 | 状态 | 触发时机 |
 |---|---|---|

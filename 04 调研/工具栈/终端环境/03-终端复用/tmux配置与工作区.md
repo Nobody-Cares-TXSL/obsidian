@@ -112,14 +112,16 @@ case "${plugins}" in
 
 ### tmux-workspace-expose 的入口与键位
 
-这是上游 `cesarferreira/tmux.expose` 的二开版本，已发布为公开仓库并由 TPM 加载。~/.tmux.conf 第 74–75 行：
+这是上游 `cesarferreira/tmux.expose` 的二开版本，已发布为公开仓库并由 TPM 加载。~/.tmux.conf 第 67–68 行：
 
 ~~~tmux
-set -g @tmux-expose-command '/home/duan/.cargo/bin/tmux-expose'
+set -g @tmux-expose-command '/home/duan/.cargo/bin/tmux-workspace-expose'
 set -g @plugin 'Nobody-Cares-TXSL/tmux-workspace-expose'
 ~~~
 
-三个入口都在 **root 表**（不需要 Prefix），2026-11-08 用 `tmux list-keys -T root` 实测确认：
+2026-11-09 改名后，**包名、bin 名、部署名统一为 `tmux-workspace-expose`**。之前包名与 bin 名不一致（`tmux-workspace-expose` vs `tmux-expose`）导致的混乱已经消失，入口脚本的 PATH 回退现在也能命中正确命令。
+
+三个入口都在 **root 表**（不需要 Prefix），2026-11-09 改名后重新用 `tmux list-keys -T root` 实测确认：
 
 | 按键 | 模式参数 | 打开 |
 |---|---|---|
@@ -129,7 +131,7 @@ set -g @plugin 'Nobody-Cares-TXSL/tmux-workspace-expose'
 
 `Ctrl + ,` 这一行有个不显然的机制：tmux 里实际绑的是 `S-F12`，因为 Alacritty 把 `Ctrl + ,` 发成 tmux 3.4 识别为 Shift+F12 的终端序列。也就是说这个键位是**终端与 tmux 版本共同决定的**，换终端后可能失效——绑定本身不会报错，只是按了没反应。
 
-2026-11-09 起源码树、TPM 插件副本、部署二进制**三处已对齐到 `43a570e`**：副本与源码树的 `src/`、入口脚本、`Cargo.toml` 逐字节一致，二进制 MD5 `e09c223f…`。这是靠一次人工操作达成的，不是自动同步——将来任何一处单独变动都会重新产生偏差，核对方法见 [安装来源与维护决策](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md)。
+源码树、TPM 副本、远端 main 三处已对齐到 `8e4543e`，运行中的二进制由 TPM 目录构建（来源记在 `~/.cargo/.crates.toml`）。这是靠人工操作达成的，不是自动同步——将来任何一处单独变动都会重新产生偏差。更新流程与陷阱见 [安装来源与维护决策](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md)。
 
 2026-11-09 已移出旧版 TPM 目录并卸载旧 Cargo 二进制。备份位置和核验结果见 [旧版副本清理](../07-%E5%AE%89%E8%A3%85%E4%B8%8E%E7%BB%B4%E6%8A%A4/%E5%AE%89%E8%A3%85%E6%9D%A5%E6%BA%90%E4%B8%8E%E7%BB%B4%E6%8A%A4%E5%86%B3%E7%AD%96.md#旧版副本清理)。
 
@@ -138,7 +140,7 @@ set -g @plugin 'Nobody-Cares-TXSL/tmux-workspace-expose'
 卡片上的 working / waiting / attention 徽标来自**显式命令**，插件不读终端文本猜测状态：
 
 ~~~bash
-tmux-expose agent-status working    # 或 waiting / attention / clear
+tmux-workspace-expose agent-status working    # 或 waiting / attention / clear
 ~~~
 
 Hook 子进程继承 `$TMUX_PANE`，命令把状态写进该 Pane 的选项。用下面两条命令读回状态和时间戳，清除后两项都应为空。
